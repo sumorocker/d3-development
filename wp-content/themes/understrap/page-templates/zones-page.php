@@ -19,6 +19,8 @@
   get_template_part('section-templates/cta-section');
   get_template_part('section-templates/blog-footer-section');
   get_template_part('section-templates/list-with-img-section');
+  get_template_part('section-templates/contact-section');
+  get_template_part('section-templates/2col-txt-section');
 ?>
 
 <?php
