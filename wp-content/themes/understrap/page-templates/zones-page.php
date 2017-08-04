@@ -18,6 +18,7 @@
   get_template_part('section-templates/3col-centered-section');
   get_template_part('section-templates/cta-section');
   get_template_part('section-templates/blog-footer-section');
+  get_template_part('section-templates/list-with-img-section');
 ?>
 
 <?php
