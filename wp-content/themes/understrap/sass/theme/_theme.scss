@@ -4,6 +4,11 @@
 // if we use this variable to say 50 rules and want to change the color, we would change only this variable.
 $mycolor: #67A6A6;
 
+.3-col-centered-section{
+	height: 600px;
+	background: blue;
+}
+
 // in SCSS we nest
 nav {
   // in CSS this was selected by nav a
@@ -53,7 +58,44 @@ background-color:blue;
 	.text-center{
 	text-align: center;
 
+	}
 }
+
+.subheader-text-right{
+	color: red;
+}
+
+.three-col{
+	height: 500px;
+	display: flex;
+	width: 100%;
+	align-items: center;
+     justify-content: center;
+	
+	.row {
+		flex: 1 0 auto;
+	}
+}
+
+.blog-footer-section {
+	height: 500px;
+	display: flex;
+	width: 100%;
+	align-items: center;
+    justify-content: center;
+
+    .row {
+		flex: 1 0 auto;
+
+		.blog-footer {
+			height: 200px;
+			padding: 10px;
+			color: white;
+			background-color: $mycolor;
+			background-blend-mode: multiply;
+			margin: 10px;
+		}
+	}
 }
 
 body {
