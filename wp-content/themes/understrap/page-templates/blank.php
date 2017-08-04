@@ -140,26 +140,8 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam aspernatur cupiditate praesentium, reiciendis eos tempore, inventore minus eaque distinctio deleniti.</p>
   </div>
 </div>
-<div class="row">
-  <img src="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg" alt="" class="col-sm-6 image-left">
-  <h2 class="col-sm-3 subheader-text-right">Testimonial Name</h2>
-  <p class="col-sm-3 body-text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora cupiditate, maxime. Vero placeat, saepe accusantium voluptatibus sapiente culpa repellat modi.</p>
-</div>
-<div class="row">
-  <h2 class="col-sm-3 subheader-text-left">Testimonial Name</h2>
-  <p class="col-sm-3 body-text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam esse debitis tempore distinctio eveniet architecto repellat tenetur et accusantium quod.</p>
-  <img src="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg" alt="" class="col-sm-6 image-right">
-</div>
-<div class="row">
-  <img src="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg" alt="" class="col-sm-6 image-left">
-  <h2 class="col-sm-3 subheader-text-right">Testimonial Name</h2>
-  <p class="col-sm-3 body-text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora cupiditate, maxime. Vero placeat, saepe accusantium voluptatibus sapiente culpa repellat modi.</p>
-</div>
 
-<div class="row">
-  <h1 class="col-sm-2 offset-sm-2">Title Title Title</h1>
-  <p class="col-sm-3 offset-sm-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore aut magni, soluta nam deserunt sed architecto fuga animi sequi cumque.</p>
-</div>
+<?php get_template_part('section-templates/profiles-section'); ?>
 
 
 <div class="row">

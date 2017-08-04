@@ -9245,12 +9245,9 @@ h2 {
   font-weight: bold;
   font-size: 2.5rem; }
 
-.header-col-2 {
-  background-color: blue; }
-  .header-col-2 .text-left {
-    background-color: blue; }
-  .header-col-2 .image-right {
-    background-color: blue; }
+body {
+  width: 100%;
+  overflow-x: hidden; }
 
 .cta-full-width {
   height: 500px;
@@ -9262,9 +9259,104 @@ h2 {
   .cta-full-width .text-center {
     text-align: center; }
 
-body {
-  width: 100%;
-  overflow-x: hidden; }
+.profile-section-template {
+  background-repeat: no-repeat;
+  background-size: 115%;
+  background-position-x: 232%; }
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vw; }
+  .profile-section .profile-image {
+    width: 100%;
+    height: 30vw;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center; }
+
+.header-col-2 {
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .header-col-2 .header-text {
+    padding: 0 100px 0 100px;
+    text-align: center; }
+    .header-col-2 .header-text h1 {
+      font-size: 3.75rem;
+      padding-bottom: 5%;
+      text-align: left; }
+    .header-col-2 .header-text h2 {
+      text-align: left; }
+    .header-col-2 .header-text h3 {
+      text-align: left;
+      font-size: 1.25rem;
+      padding-bottom: 5%; }
+  .header-col-2 .arrow-left {
+    width: 0;
+    transform: translate(0%, -93%);
+    height: 0;
+    float: right;
+    border-top: 207px solid transparent;
+    border-bottom: 195px solid transparent;
+    border-right: 366px solid #ffef14; }
+  .header-col-2 .image-right {
+    background-size: cover;
+    background-position: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    transition: 0.4s cubic-bezier(1, -1, 0, 2);
+    clip-path: polygon(20% 0%, 20% 100%, 80% 50%); }
+  .header-col-2 .header-section-button {
+    text-align: center; }
+    .header-col-2 .header-section-button button {
+      background-color: #ffef14;
+      width: 40%; }
+      .header-col-2 .header-section-button button h2 {
+        color: black;
+        text-align: center;
+        font-size: 1.5rem; }
+
+.list-w-img-section {
+  background-image: url("http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/innovation-triangle.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: 100%; }
+  .list-w-img-section .arrow-left-1 {
+    width: 0;
+    height: 0;
+    float: right;
+    border-top: 366px solid transparent;
+    border-right: 366px solid #ffef14; }
+  .list-w-img-section .list-section {
+    padding: 0px !important; }
+    .list-w-img-section .list-section ul {
+      list-style: none;
+      padding-left: 0px; }
+      .list-w-img-section .list-section ul li {
+        padding-left: 0px;
+        padding-bottom: 8%; }
+  .list-w-img-section .section-image {
+    height: 355px;
+    background-color: blue; }
+  .list-w-img-section .section-title {
+    padding-bottom: 8%; }
+  .list-w-img-section .header-image-one {
+    height: 500px;
+    background-repeat: no-repeat;
+    margin-bottom: 10%; }
+  .list-w-img-section .inner-triangle {
+    border-right: 200px solid transparent;
+    border-bottom: 200px solid #fefd3d;
+    height: 100%;
+    width: 0;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    z-index: 2; }
 
 /*
 * Use existing Bootstrap 4 classes and

@@ -3,7 +3,8 @@
 // variable declaration in SCSS we use variables to keep style clean and easy to modify
 // if we use this variable to say 50 rules and want to change the color, we would change only this variable.
 $mycolor: #67A6A6;
-
+$yellow: #ffef14;
+$orange: #fe5e14;
 // in SCSS we nest
 nav {
   // in CSS this was selected by nav a
@@ -31,16 +32,13 @@ h2{
 	font-size: 2.5rem;
 }
 
-
-.header-col-2{
-background-color:blue;
-	.text-left{
-	background-color:blue;
-	}
-	.image-right{
-		background-color:blue;
-	}
+body {
+	width: 100%;
+	overflow-x:hidden;
 }
+
+// fullwidth-cta-section-template
+
 
 .cta-full-width{
 	height:500px;
@@ -53,10 +51,151 @@ background-color:blue;
 	.text-center{
 	text-align: center;
 
-}
+	}
 }
 
-body {
-	width: 100%;
-	overflow-x:hidden;
+
+// profile-section-template
+
+.profile-section-template{
+	background-repeat:no-repeat;
+	background-size: 115%; 
+	background-position-x: 232%;
 }
+
+.profile-section{
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  height: 30vw;
+	.profile-title{
+	
+	}
+	.profile-body{
+
+	}
+	.profile-image{
+		width: 100%;
+		height: 30vw;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		background-size: cover;
+    	background-position: center;
+	}
+	
+}
+
+// header section template
+
+.header-col-2 {
+	 padding: 0 !important;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+
+	.header-text{
+		padding: 0 100px 0 100px;
+		text-align: center;
+			h1{
+				font-size: 3.75rem;
+				padding-bottom: 5%;
+				text-align: left;
+			}
+			h2{
+				text-align: left;
+			}
+			h3{
+				text-align: left;
+				font-size: 1.25rem;
+				padding-bottom: 5%;
+			}
+		}
+
+	.arrow-left {
+    width: 0;
+    transform: translate(0%,-93%);
+    height: 0;
+    float: right;
+    border-top: 207px solid transparent;
+    border-bottom: 195px solid transparent;
+    border-right: 366px solid $yellow;
+	}
+	.image-right{
+	background-size: cover;
+    background-position: center;
+    padding-right: 0px;
+    padding-left: 0px;
+  	transition: 0.4s cubic-bezier(1, -1, 0, 2);
+  	clip-path: polygon(20% 0%, 20% 100%, 80% 50%);
+  	}
+  	.header-section-button{
+  	text-align: center;
+  	button{
+  		background-color: $yellow;
+  		width: 40%;
+  		h2{
+  			color: black;
+  			text-align: center;
+  			font-size: 1.5rem;
+  	  	  }
+  	}
+  }
+}
+
+.list-w-img-section{
+	background-image: url('http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/innovation-triangle.png');
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position-x:100%;
+
+	.arrow-left-1 {
+    width: 0;
+    height: 0;
+    float: right;
+    border-top: 366px solid transparent;
+    border-right: 366px solid $yellow;
+	}
+
+	.list-section{
+		padding: 0px !important;
+			ul{
+				list-style: none;
+				padding-left: 0px;
+			li{
+				padding-left: 0px;
+				padding-bottom: 8%;
+			}
+		}
+	}
+
+	.section-image{
+		height: 355px;
+		background-color: blue;
+	}		
+
+	.section-title{
+		padding-bottom: 8%;
+	}
+		
+	.header-image-one{
+		height: 500px;
+    	background-repeat: no-repeat;
+    	margin-bottom: 10%;
+	}
+	.inner-triangle{
+   	border-right: 200px solid transparent;
+    border-bottom: 200px solid #fefd3d;
+    height: 100%;
+    width: 0;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+	}
+}
+
+
+
+// medium screen adjustments
+
+
