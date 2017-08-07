@@ -17,6 +17,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 ?>
 
+
+
 <div class="wrapper" id="page-wrapper">
 
 	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
@@ -24,7 +26,6 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 		<div class="row">
 
 			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check', 'none' ); ?>
 
 			<main class="site-main" id="main">
 

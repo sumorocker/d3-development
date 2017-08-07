@@ -6,10 +6,10 @@
 
 <div class="container-fluid">
   <div class='row cta-full-width justify-content-center'>
-    <div class="text-center col-lg-12">
-      <h2>Launch your Career</h2>
+    <div class="text-center col-lg-6">
+      <h1>Launch your Career</h1>
       <h3>Cross the boundaries of your discipline by solving real-world challenges and developing innovative solutions for companies and researchers.</h3>
-      <button type="button" class="btn">Basic</button>
+      <button type="button" class="btn yellow-btn"><h2>Basic</h2></button>
     </div>
   </div>
 </div>

@@ -7,7 +7,7 @@
 <div class="list-w-img-section">
   <div class="row">
   <div class="section-image col-sm-3" style="background-image:url('http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg');"></div>
-  <div class='section-title col-sm-3'>
+  <div class='section-title col-sm-3 offset-4'>
         <h1>What you get</h1>
       </div>
   </div>
