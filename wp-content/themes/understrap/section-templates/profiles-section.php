@@ -4,34 +4,31 @@
  */
 ?>
 <div class="profile-section-template" style="background-image:url('http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/z-shape.png')">
-	<div class="row profile-section">
-	  <div class="profile-image col-md-12 col-lg-6" style="background-image:url('http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg')">
+<?php if(have_rows('profile')) : while(have_rows('profile')) : the_row(); ?>
+	<div class="row profile-section" style="background-image:url('<?php the_sub_field('bg_shape_1')?>');">
+	  <div class="profile-image col-md-12 col-lg-6" style="background-image:url('<?php the_sub_field('img_1')?>');">
 	  </div>
+
+
 	  <div class="profile-title col-md-12 col-lg-3">
-	  	<h2>Testimonial Name</h2>
+	  	<h2><?php the_sub_field('testimonial_name_1'); ?></h2>
 	  </div>
 	  <div class="profile-body col-md-12 col-lg-3">
-	  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora cupiditate, maxime. Vero placeat, saepe accusantium voluptatibus sapiente culpa repellat modi.</p>
+	  	<p><?php the_sub_field('testimonial_1'); ?></p>
 	  </div>
+	
+
 	</div>
-	<div class="row profile-section" style="background-image:url('http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/z-shape.png')">
+	<div class="row profile-section" style="display: <?php the_sub_field('testimonial_2_display'); ?>;background-image:url('<?php the_sub_field('bg_shape_2')?>');">
 	  <div class="profile-title col-md-12 col-lg-3">
-	  	<h2>Testimonial Name</h2>
+	  	<h2><?php the_sub_field('testimonial_name_2'); ?></h2>
 	  </div>
 	  <div class="profile-body col-md-12 col-lg-3">
-	  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora cupiditate, maxime. Vero placeat, saepe accusantium voluptatibus sapiente culpa repellat modi.</p>
+	  	<p><?php the_sub_field('testimonial_2'); ?></p>
 	  </div>
-	  <div class="profile-image col-md-12 col-lg-6" style="background-image:url('http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg')">
-	  </div>
-	</div>
-	<div class="row profile-section">
-	 <div class="profile-image col-md-12 col-lg-6" style="background-image:url('http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg')">
-	  </div>
-	  <div class="profile-title col-md-12 col-lg-3">
-	  	<h2>Testimonial Name</h2>
-	  </div>
-	  <div class="profile-body col-md-12 col-lg-3">
-	  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora cupiditate, maxime. Vero placeat, saepe accusantium voluptatibus sapiente culpa repellat modi.</p>
+	  <div class="profile-image col-md-12 col-lg-6" style="background-image:url('<?php the_sub_field('img_2')?>');">
 	  </div>
 	</div>
+	<?php endwhile; endif; ?>
+	
 </div>

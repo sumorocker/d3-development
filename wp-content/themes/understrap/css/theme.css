@@ -9279,6 +9279,22 @@ body {
   overflow-x: hidden;
   font-family: 'Roboto'; }
 
+input:focus {
+  outline: none; }
+
+textarea:focus {
+  outline: none; }
+
+.inner-triangle {
+  border-right: 5vw solid transparent;
+  border-bottom: 5vw solid #fefd3d;
+  height: 100%;
+  width: 0;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  z-index: 2; }
+
 .yellow-btn {
   background-color: #ffef14;
   width: 50%;
@@ -9298,7 +9314,8 @@ body {
     font-size: 1.5rem; }
 
 .cta-full-width {
-  height: 500px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9317,28 +9334,29 @@ body {
   color: red; }
 
 .three-col {
-  height: 500px;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center; }
-  .three-col .row {
-    flex: 1 0 auto; }
+  padding-top: 300px;
+  width: 100%; }
+  .three-col .three-col-img {
+    height: 200px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center; }
 
 .blog-footer-section {
-  height: 350px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 100px; }
+  justify-content: center; }
   .blog-footer-section .row {
     flex: 1 0 auto;
     width: 100%;
     align-items: center; }
   .blog-footer-section .blog-footer-posts {
-    padding-bottom: 20px;
+    padding-bottom: 150px;
     height: 100px; }
     .blog-footer-section .blog-footer-posts .blog-footer-post {
       height: 200px;
@@ -9388,7 +9406,8 @@ body {
       margin-top: 10px; }
 
 .two-col-txt-section {
-  height: 500px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -9411,7 +9430,8 @@ body {
     margin-top: 10px; }
 
 .contact-section {
-  height: 500px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -9436,7 +9456,9 @@ body {
     border-bottom: 0; }
   .contact-section #message-input {
     border: 5px solid #fe5e14;
-    height: 200px; }
+    height: 200px;
+    width: 100%;
+    padding: 10px; }
   .contact-section #submit-input {
     width: 50%;
     height: 40px;
@@ -9447,7 +9469,8 @@ body {
     font-family: 'Space Mono', sans-serif;
     font-weight: bold;
     font-size: 1.25rem;
-    line-height: 20px; }
+    line-height: 20px;
+    margin-top: -10px; }
 
 .profile-section-template {
   background-repeat: no-repeat;
@@ -9458,9 +9481,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30vw; }
+  margin: 0; }
+  .profile-section .profile-title {
+    padding: 30px; }
   .profile-section .profile-image {
-    width: 100%;
     height: 30vw;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -9494,8 +9518,8 @@ body {
     border-bottom: 195px solid transparent;
     border-right: 366px solid #ffef14; }
   .header-col-2 .image-right {
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: right;
     padding-right: 0px;
     padding-left: 0px;
     clip-path: polygon(0% 0%, 0% 100%, 60% 50%); }
@@ -9514,6 +9538,16 @@ body {
   background-size: 50%;
   background-repeat: no-repeat;
   background-position-x: 100%; }
+  .list-w-img-section .section-image {
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center; }
+  .list-w-img-section .header-image-one {
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center; }
   .list-w-img-section .arrow-left-1 {
     width: 0;
     height: 0;
@@ -9537,15 +9571,6 @@ body {
     height: 500px;
     background-repeat: no-repeat;
     margin-bottom: 10%; }
-  .list-w-img-section .inner-triangle {
-    border-right: 200px solid transparent;
-    border-bottom: 200px solid #fefd3d;
-    height: 100%;
-    width: 0;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    z-index: 2; }
 
 .newsletter-section-template {
   background-color: #fe5e14;
