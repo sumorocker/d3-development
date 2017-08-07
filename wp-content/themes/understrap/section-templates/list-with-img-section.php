@@ -6,60 +6,41 @@
 
 <div class="list-w-img-section">
   <div class="row">
-  <div class="section-image col-sm-3" style="background-image:url('http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg');"></div>
+  <div class="section-image col-sm-3" style="background-image:url('<?php the_field('left_img'); ?>');"></div>
   <div class='section-title col-sm-3 offset-4'>
         <h1>What you get</h1>
       </div>
   </div>
   <div class="row">
     <div class="list-section col-sm-3 offset-sm-3">
+    <?php if(have_rows('left_list_column')) : while(have_rows('left_list_column')) : the_row(); ?>
       <ul>
         <li class="list-item">
-          <h2>title-1-line</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolore eius nobis, quod deserunt, distinctio id rem fugiat! Perferendis, velit!</p>
-        </li>
-        <li class="list-item">
-          <h2>title-1-line</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta tempore beatae incidunt non corporis, impedit odit magni optio reprehenderit voluptatem?</p>
-        </li>
-        <li class="list-item">
-          <h2>title-1-line</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure neque et deserunt doloribus facere doloremque sed placeat, quisquam dolore ullam.</p>
-        </li>
-        <li class="list-item">
-          <h2>title-1-line</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, placeat, illo. Amet architecto accusantium adipisci quasi, vitae esse fugiat, sed.</p>
-        </li>
-        <li class="list-item">
-          <h2>title-1-line</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nobis obcaecati recusandae maxime laboriosam, delectus est explicabo! Doloremque, autem fuga?</p>
-        </li>
-        <li class="list-item">
-          <h2>title-1-line</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit distinctio quaerat rerum. Labore nisi architecto soluta ex eligendi nam explicabo.</p>
+          <h2><?php the_sub_field('left_list_item_title'); ?></h2>
+          <p><?php the_sub_field('left_list_item_body'); ?></p>
         </li>
       </ul>
+      <?php endwhile; endif; ?>
     </div>
+    
+
     <div class="col-sm-5 offset-sm-1">
-      <div class="header-image-one" style="background-image:url('http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg');">
+    
+      <div class="header-image-one" style="background-image:url('<?php the_field('right_img'); ?>');">
         <div class="inner-triangle"></div>
       </div>
+
       <div class="list-section col-sm-8">
+      <?php if(have_rows('right_list_column')) : while(have_rows('right_list_column')) : the_row(); ?>
         <ul>
-          <li class="list-item">
-            <h2>title-1-line</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem praesentium fuga eum cupiditate obcaecati, distinctio, ipsam quasi vitae itaque eius!</p>
-          </li>
-          <li class="list-item">
-            <h2>title-1-line</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit pariatur ratione omnis amet eveniet iusto quod sint numquam, earum suscipit!</p>
-          </li>
-          <li class="list-item">
-            <h2>title-1-line</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus tempore aliquam incidunt rerum illum tempora totam quam eaque et ea!</p>
-          </li>
-        </ul>
+        <li class="list-item">
+          <h2><?php the_sub_field('right_list_item_title'); ?></h2>
+          <p><?php the_sub_field('right_list_item_body'); ?></p>
+        </li>
+      </ul>
+      <?php endwhile; endif; ?>
       </div>
+      
     </div>
   </div>
 </div>

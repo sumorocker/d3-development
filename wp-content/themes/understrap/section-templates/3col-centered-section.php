@@ -6,26 +6,16 @@
 
 <div class="three-col">
   <div class='row justify-content-center 2'>
+  <?php if(have_rows('img-h2-p')) : while(have_rows('img-h2-p')) : the_row(); ?>
     <div class="text-centered col-lg-3">
-		<div class="3-col-img">
-			<img src="https://placekitten.com/350/200" alt="">
+		<div class="three-col-img" style="background-image:url('<?php the_sub_field('img')?>');">
+		<div class="inner-triangle"></div>
 		</div>
-		<h2>Profil</h2>
-		<h3>lorem ipsum</h3>
+		<h2><?php the_sub_field('h2'); ?></h2>
+		<p><?php the_sub_field('p'); ?></p>
 	</div>
-	<div class="text-centered col-lg-3">
-		<div class="3-col-img">
-			<img src="https://placekitten.com/350/200" alt="">
-		</div>
-		<h2>Profil</h2>
-		<h3>lorem ipsum</h3>
+	<?php endwhile; endif; ?>
 	</div>
-	<div class="text-centered col-lg-3">
-		<div class="3-col-img">
-			<img src="https://placekitten.com/350/200" alt="">
-		</div>
-		<h2>Profil</h2>
-		<h3>lorem ipsum</h3>
-	</div>
+	
   </div>
 </div>
