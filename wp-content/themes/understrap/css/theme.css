@@ -9256,6 +9256,12 @@ body {
   overflow-x: hidden;
   font-family: 'Roboto'; }
 
+input:focus {
+  outline: none; }
+
+textarea:focus {
+  outline: none; }
+
 .cta-full-width {
   height: 500px;
   display: flex;
@@ -9389,7 +9395,9 @@ body {
     border-bottom: 0; }
   .contact-section #message-input {
     border: 5px solid #fe5e14;
-    height: 200px; }
+    height: 200px;
+    width: 100%;
+    padding: 10px; }
   .contact-section #submit-input {
     width: 50%;
     height: 40px;
@@ -9400,7 +9408,8 @@ body {
     font-family: 'Space Mono', sans-serif;
     font-weight: bold;
     font-size: 1.25rem;
-    line-height: 20px; }
+    line-height: 20px;
+    margin-top: -10px; }
 
 .profile-section-template {
   background-repeat: no-repeat;

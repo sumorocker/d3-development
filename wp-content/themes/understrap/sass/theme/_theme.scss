@@ -45,6 +45,13 @@ body {
 	font-family: 'Roboto'
 }
 
+input:focus {
+    outline:none;
+}
+textarea:focus {
+    outline:none;
+}
+
 // fullwidth-cta-section-template
 
 
@@ -237,6 +244,8 @@ body {
     #message-input{
     	border: 5px solid $orange;
     	height: 200px;
+    	width: 100%;
+    	padding: 10px;
     }
 	
 	#submit-input {
@@ -250,7 +259,7 @@ body {
 		font-weight: bold;
 		font-size: 1.25rem;
 		line-height: 20px;
-		// margin-top: 10px;
+		margin-top: -10px;
 	}
 }
 // profile-section-template

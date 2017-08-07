@@ -24,7 +24,7 @@
 			
 			<input type="text" name="email" id="email-input" class="col-lg-12" placeholder="Email Address">
 			
-			<input type="text" name="message" cols="10" rows="5" id="message-input" class="col-lg-12" placeholder="Message...">
+			<textarea cols="25" maxlength="1000" name="message" rows="6" placeholder="Message..." id="message-input"></textarea>
 			<br>
 			<input type="submit" value="Submit" id="submit-input">
 		</form>
