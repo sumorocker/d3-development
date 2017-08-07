@@ -14,7 +14,7 @@
 	  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora cupiditate, maxime. Vero placeat, saepe accusantium voluptatibus sapiente culpa repellat modi.</p>
 	  </div>
 	</div>
-	<div class="row profile-section">
+	<div class="row profile-section" style="background-image:url('http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/z-shape.png')">
 	  <div class="profile-title col-md-12 col-lg-3">
 	  	<h2>Testimonial Name</h2>
 	  </div>

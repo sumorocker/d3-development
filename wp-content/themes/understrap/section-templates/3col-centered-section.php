@@ -7,6 +7,7 @@
 <div class="three-col">
   <div class='row justify-content-center 2'>
     <div class="text-centered col-lg-3">
+    	
 		<div class="3-col-img">
 			<img src="https://placekitten.com/350/200" alt="">
 		</div>

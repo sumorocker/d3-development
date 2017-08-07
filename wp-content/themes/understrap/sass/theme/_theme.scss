@@ -6,6 +6,49 @@ $mycolor: #67A6A6;
 $yellow: #ffef14;
 $orange: #fe5e14;
 // in SCSS we nest
+
+
+
+// beatiful buttons
+
+.labs-btn{
+
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 28em 0 0 0 blue;
+}
+
+button {  
+  color: blue;
+  transition: 0.5s;
+  
+  &:hover,
+  &:focus { 
+    border-color: blue;
+    color: #fff;
+  }
+}
+
+// Basic button styles
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+code { 
+  color: #e4cb58;
+  font: inherit;
+}
+
+}
+
+
+
+
 nav {
   // in CSS this was selected by nav a
   a {
@@ -591,9 +634,12 @@ body {
 	border-radius: 0rem !important;
 }
 
+
+// metrics section
 .metrics-section{
 	.header-image{
 		height: 50vh;
+		background-repeat: no-repeat;
 	}
 	.inner-triangle{
 	   	border-right: 200px solid transparent;
@@ -615,12 +661,12 @@ body {
 	    bottom: 0;
 	    z-index: 2;
 	}
-	.inner
 	h1{
+		text-align: center;
     	padding-top: 10%;
-	}
+    }
 	.list-section{
-		padding: 0px !important;
+		padding: 0px;
 			ul{
 				list-style: none;
 				padding-left: 0px;
@@ -632,3 +678,108 @@ body {
 		}
 	}
 }
+
+// navigation section
+.two-col-navigation{
+	padding-top: 6em;
+	padding-bottom: 6em;
+
+	.navigation-item{
+	margin-top: 2em;
+	min-height: 40vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	h2{
+		padding-top: 30px;
+	}
+	p{
+		padding-left: 2em;
+		padding-right:2em;
+	}
+	button{
+		border-radius: 0px;
+		width: 50%;
+	    height: 50px;
+	    border: 5px solid #fe5e14;
+	    background-color: #fff;
+	    color: #000;
+	    font-family: 'Space Mono',sans-serif;
+	    font-weight: 700;
+	    font-size: 1.25rem;
+	    margin-top: 10px;
+		}
+	}	
+}
+
+// categories section
+
+.no-padding{
+		padding: 0px !important;
+}
+.img-w-category{
+	height: 600px;
+	background-size: cover;
+	display: flex;
+	width: 100%;
+	align-items: center;
+    justify-content: center;
+    border: 10px solid $orange;
+		.category-item{
+		margin-right: 10%;
+		}
+		ul{
+			list-style: none;
+		}
+		li{
+			list-style: none;
+			float: left;
+			}
+	}
+
+// partners section
+
+.partners{
+	img{
+		
+	}
+}
+
+@media screen and (max-width: 500px){
+	.header-col-2 .arrow-left{
+		transform: translate(0,-56%);
+	}
+	.metrics-section{
+	.list-section{
+		padding: 0px;
+			ul{
+				list-style: none;
+				padding-left: 15px;
+				padding-right: 15px;
+			li{
+				padding-left: 15px;
+				padding-right: 15px;
+				padding-bottom: 8%;
+				padding-top: 8%;
+				}
+			}
+		}	
+	}
+	// navigation section
+	.two-col-navigation{
+		.navigation-item{
+		margin-top: 2em;
+		margin-right: 1em;
+		margin-left: 1em;
+		min-height: 40vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		text-align: center
+	}
+}
+}
+
+
+
+
+
