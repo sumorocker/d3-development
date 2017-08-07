@@ -19,7 +19,6 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
 
-		<div class="row">
 
 			<!-- Do the left sidebar check -->
 			<?php get_template_part( 'global-templates/left-sidebar-check', 'none' ); ?>
@@ -30,11 +29,11 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 					<header class="page-header">
 						<?php
-						the_archive_title( '<h1 class="page-title">', '</h1>' );
+						single_term_title( '<h1 class="page-title">', '</h1>' );
 						the_archive_description( '<div class="taxonomy-description">', '</div>' );
 						?>
 					</header><!-- .page-header -->
-
+					<div class="row">
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 
@@ -47,20 +46,16 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 						 */
 						get_template_part( 'loop-templates/content', get_post_format() );
 						?>
-
 					<?php endwhile; ?>
-
 				<?php else : ?>
 
 					<?php get_template_part( 'loop-templates/content', 'none' ); ?>
-
 				<?php endif; ?>
-
-			</main><!-- #main -->
-
+				</div>
+			</main>
+			<!-- #main 1-->
 			<!-- The pagination component -->
-			<?php understrap_pagination(); ?>
-
+			<div="testing"><?php understrap_pagination(); ?></div>
 		</div><!-- #primary -->
 
 		<!-- Do the right sidebar check -->
@@ -69,11 +64,6 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 			<?php get_sidebar( 'right' ); ?>
 
 		<?php endif; ?>
-
-	</div> <!-- .row -->
-
-</div><!-- Container end -->
-
 </div><!-- Wrapper end -->
 
 <?php get_footer(); ?>

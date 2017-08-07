@@ -18,8 +18,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row">
 
 			<div class="col-md-12 content-area" id="primary">
+			<?php get_template_part('section-templates/filter-blog-3col-section'); ?>
 
-				<main class="site-main" id="main" role="main">
+				<main class="site-main poop" id="main" role="main">
 
 					<?php while ( have_posts() ) : the_post(); ?>
 

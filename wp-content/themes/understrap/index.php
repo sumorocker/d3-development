@@ -11,6 +11,23 @@
  * @package understrap
  */
 
+global $wp_query;
+$modifications = array();
+if( !empty( $_GET['catname'] ) && $_GET['thumbail'] == 'only_thumbnailed' ) {
+	$modifications['meta_query'][] = array(
+		'key' => '_thumbnail_id',
+		'value' => '',
+		'compare' => '!='
+	);
+}
+
+$args = array_merge( 
+	$wp_query->query_vars, 
+	$modifications 
+);
+
+query_posts( $args );
+
 get_header();
 
 $container   = get_theme_mod( 'understrap_container_type' );
@@ -18,55 +35,40 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 ?>
 
 <?php if ( is_front_page() && is_home() ) : ?>
-	<?php get_template_part( 'global-templates/hero', 'none' ); ?>
+	<?php get_template_part( 'global-templates/hero', 'none'); ?>
+
 <?php endif; ?>
-
-<div class="wrapper" id="wrapper-index">
-
-	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
-
-		<div class="row">
-			<div class="col-m-8" style="background-color:blue;">
-				
-			</div>
-			<div class="col-m-4" style="background-color:red">
-				
-			</div>
-
 			<!-- Do the left sidebar check and opens the primary div -->
-			<?php get_template_part( 'global-templates/left-sidebar-check', 'none' ); ?>
-
+	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
 			<main class="site-main" id="main">
-
+				<?php get_template_part( 'section-templates/filter-blog-3col-section'); ?>
+				<div class="row">
 				<?php if ( have_posts() ) : ?>
 
 					<?php /* Start the Loop */ ?>
 
 					<?php while ( have_posts() ) : the_post(); ?>
+							<?php get_template_part( 'global-templates/hero', 'none'); ?>
+							<?php
 
-						<?php
-
-						/*
-						 * Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'loop-templates/content', get_post_format() );
-						?>
-
+							/*
+							 * Include the Post-Format-specific template for the content.
+							 * If you want to override this in a child theme, then include a file
+							 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+							 */
+							get_template_part( 'loop-templates/content', get_post_format() );
+							?>
 					<?php endwhile; ?>
-
 				<?php else : ?>
 
-					<?php get_template_part( 'loop-templates/content', 'none' ); ?>
+						<?php get_template_part( 'loop-templates/content', 'none' ); ?>
 
-				<?php endif; ?>
-
+					<?php endif; ?>
+				</div>
 			</main><!-- #main -->
-
+	</div>
 			<!-- The pagination component -->
-			<?php understrap_pagination(); ?>
-
+				<div class="pagination-1"><?php understrap_pagination(); ?></div>
 		</div><!-- #primary -->
 
 		<!-- Do the right sidebar check -->
