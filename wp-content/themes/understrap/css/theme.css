@@ -9411,6 +9411,28 @@ textarea:focus {
       font-size: 1.25rem;
       margin-top: 10px; }
 
+.category-section {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  padding-top: 220px;
+  padding-bottom: 300px;
+  padding-right: 100px;
+  background-repeat: no-repeat;
+  overflow: visible;
+  background-size: initial;
+  background-position: right; }
+  .category-section .title {
+    transform: rotate(-90deg);
+    margin-top: 14vw;
+    margin-left: 20vw; }
+  .category-section ul {
+    list-style-type: none; }
+  .category-section .img-w-category-left {
+    margin-right: 100px; }
+  .category-section .img-w-category-right {
+    text-align: right;
+    margin-left: -100px; }
+
 .two-col-txt-section {
   padding-top: 10vh;
   padding-bottom: 10vh;
