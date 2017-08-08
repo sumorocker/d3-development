@@ -8,7 +8,6 @@ $orange: #fe5e14;
 // in SCSS we nest
 
 
-
 // beatiful buttons
 
 .labs-btn{
@@ -46,8 +45,12 @@ code {
 
 }
 
-
-
+li{
+	list-style: none;
+	}
+ul{
+	padding-left: 0px;
+}
 
 nav {
   // in CSS this was selected by nav a
@@ -163,11 +166,10 @@ textarea:focus {
 //3col-centered-section-template
 
 .three-col{
-	padding-top: 300px;
-	width: 100%;
-
+	padding-top: 10vh;
+	padding-bottom: 10vh;
      .three-col-img {
-     	height: 200px;
+     	height: 300px;
 
      	background-repeat: no-repeat;
 			overflow: hidden;
@@ -175,10 +177,6 @@ textarea:focus {
     		background-position: center;
 
      }
-	
-	.row {
-	
-	}
 }
 
 //blog-footer-section-template
@@ -269,8 +267,8 @@ textarea:focus {
 //two-col-txt-section-template
 
 .two-col-txt-section {
-	padding-top: 200px;
-	padding-bottom: 200px;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
 	display: flex;
 	flex-direction:column;
 	width: 100%;
@@ -279,6 +277,9 @@ textarea:focus {
 	overflow: hidden;
 	background-size: cover;
     background-position: center;
+    .two-col-txt-left{
+    	padding-left: 0px;
+    }
 
 	
 		h1{
@@ -299,8 +300,23 @@ textarea:focus {
 						margin-top: 10px;
 					}
 		
-
 }
+
+	.two-col-txt-first-section{
+	padding-bottom: 15vh;
+	h1{
+		text-align: right;
+		color: $orange;
+	}
+	.two-col-txt-right{
+		h3{
+			font-size:1.25rem;
+			line-height: 1.65rem;
+			}
+		}
+	}	
+// 2-col text first section template
+
 
 // contact-section-template
 
@@ -450,6 +466,8 @@ textarea:focus {
   }
 }
 
+// list with images section
+
 .list-w-img-section{
 	background-image: url('http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/innovation-triangle.png');
 	background-size: 50%;
@@ -457,6 +475,7 @@ textarea:focus {
 	background-position-x:100%;
 
 	.section-image {
+		margin-bottom: 5vh;
 		background-repeat: no-repeat;
 		overflow: hidden;
 		background-size: cover;
@@ -724,6 +743,44 @@ textarea:focus {
 
 }
 
+
+// 3 column list section
+
+.three-col-list-second-section{
+	padding-top: 20vh;
+	padding-bottom: 20vh;
+	.image-section{
+		padding-right: 0px;
+	}
+	.image-left{
+	height: 40vh !important;
+	background-size: cover;
+}
+
+.col-list-section{
+	display: flex;
+	align-items: center;
+	}
+}
+
+.three-col-list-section{
+	padding-bottom: 20vh;
+
+	.image-left-one{
+	height: 40vh !important;
+	background-size: cover;
+}
+
+.col-list-section{
+	display: flex;
+	align-items: center;
+	}
+}
+
+
+.3-col-list-second-section{
+	background-color: $orange;
+}
 // navigation section
 .two-col-navigation{
 	padding-top: 6em;
@@ -823,6 +880,8 @@ textarea:focus {
 	}
 }
 }
+
+
 
 
 

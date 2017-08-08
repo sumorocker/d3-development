@@ -3,19 +3,21 @@
  * @package understrap
  */
 ?>
-
-<div class="row">
-	<div class="col-lg-4 offset-lg-2">
-		<div class="image-left">
-			
+<div class="three-col-list-section">
+	<div class="row">
+		<div class="col-lg-4 offset-lg-2">
+			<div class="image-left-one" style="background-image:url('<?php the_field('image_left') ?>');"> 
+			</div>
 		</div>
-	</div>
-	<div class="col-lg-3 offset-lg-1">
-		<ul>
-			<li>
-				<h2>Title 1</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam dolorum dolores et blanditiis eligendi. Expedita odit repudiandae tenetur illum reiciendis!</p>
-			</li>
-		</ul>
+		<div class="col-lg-3 offset-lg-1 col-list-section">
+			<ul>
+				<?php if(have_rows('list_item')) : while(have_rows('list_item')) : the_row(); ?>
+					<li>
+						<h2><?php the_sub_field('list_item_header'); ?></h2>
+						<p><?php the_sub_field('list_item_content'); ?></p>
+					</li>
+				<?php endwhile; endif; ?>
+			</ul>
+		</div>
 	</div>
 </div>
