@@ -266,6 +266,39 @@ textarea:focus {
 	
 }
 
+//categories Section
+
+.category-section{
+	margin-top: 200px;
+	margin-bottom: 200px;
+	padding-top: 220px;
+	padding-bottom: 300px;
+	padding-right: 100px;
+	background-repeat: no-repeat;
+	overflow: visible;
+	background-size: initial;
+    background-position: right;
+	
+	.title{
+		transform: rotate(-90deg);
+		margin-top: 14vw;
+		margin-left: 20vw;
+	}
+	
+	ul{
+		list-style-type: none;
+	}
+	.img-w-category-left{
+		margin-right: 100px;	
+		
+	}
+	.img-w-category-right{
+		text-align: right;
+		margin-left: -100px;
+		
+	}
+}
+
 //two-col-txt-section-template
 
 .two-col-txt-section {
