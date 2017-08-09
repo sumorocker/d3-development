@@ -24,6 +24,6 @@
   </div>
   <div class="col-sm-3 offset-sm-2">
     <h2 class="quad-header-text">Call to action blah blah blah blah</h2>
-    <button type="button" class="btn">Basic</button>
+    <button type="button" class="<?php the_field('button_color'); ?>">Basic</button>
   </div>
 </div>
