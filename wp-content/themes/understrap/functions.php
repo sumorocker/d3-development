@@ -72,6 +72,7 @@ require get_template_directory() . '/inc/woocommerce.php';
  */
 function my_excerpt_length($length) {
 return 5;
+console.log("test1");
 }
 add_filter('excerpt_length', 'my_excerpt_length');
 require get_template_directory() . '/inc/editor.php';
