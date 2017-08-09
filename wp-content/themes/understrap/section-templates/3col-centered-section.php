@@ -14,8 +14,8 @@
 		src="<?php the_field('background_img'); ?>" alt="">
 	<div class="row">
 		<div class="offset-lg-1 col-lg-6 three-col-title">
-			<h1><?php the_field('three_col_header'); ?></h1>
-			<p><?php the_field('three_col_subheader'); ?></p>
+			<h1>meet our coaches</h1>
+			<p>A seasoned entrepreneur you can count on to challenge you, hold you accountable, and help you avoid costly mistakes.</p>
 		</div>
 	</div>
   <div class='row justify-content-center'>
