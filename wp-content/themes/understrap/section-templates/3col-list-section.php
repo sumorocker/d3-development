@@ -3,7 +3,11 @@
  * @package understrap
  */
 ?>
-<div class="three-col-list-section">
+<div class="three-col-list-section scrollme animateme"
+        data-when="enter"
+        data-from="1"
+        data-to="0"
+        data-translatey="200">
 	<div class="row">
 		<div class="col-lg-4 offset-lg-2">
 			<div class="image-left-one" style="background-image:url('<?php the_field('image_left') ?>');"> 

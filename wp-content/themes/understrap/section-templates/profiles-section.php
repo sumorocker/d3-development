@@ -3,7 +3,7 @@
  * @package understrap
  */
 ?>
-<div class="profile-section-template" style="background-image:url('http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/z-shape.png')">
+<div class="profile-section-template" style="background-image:url('<?php the_field('background_img_1'); ?>')">
 <?php if(have_rows('profile')) : while(have_rows('profile')) : the_row(); ?>
 	<div class="row profile-section" style="background-image:url('<?php the_sub_field('bg_shape_1')?>');">
 	  <div class="profile-image col-md-12 col-lg-6" style="background-image:url('<?php the_sub_field('img_1')?>');">

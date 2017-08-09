@@ -4,14 +4,28 @@
  */
 ?>
 
-<div class="list-w-img-section">
-  <div class="row">
+<div class="list-w-img-section" style="background-image:url('<?php the_field('background_img_2'); ?>">
+  <div class="row scrollme animateme"
+        data-when="enter"
+        data-from="1"
+        data-to="0"
+        data-translatey="400">
   <div class="section-image col-sm-3" style="background-image:url('<?php the_field('left_img'); ?>');"></div>
+  <img class="list-img" src="<?php the_field('background_img')?>" alt="">
+  <img class="grid-1 scrollme animateme"
+        data-when="enter"
+        data-from="1"
+        data-to="0"
+        data-translatey="500" src="<?php the_field('grid_2'); ?>" alt="">
   <div class='section-title col-sm-3 offset-4'>
-        <h1>What you get</h1>
-      </div>
+        <h1><?php the_field('list_title'); ?></h1>
   </div>
-  <div class="row">
+  </div>
+  <div class="row scrollme animateme"
+        data-when="enter"
+        data-from="1"
+        data-to="0"
+        data-translatey="500">
     <div class="list-section col-sm-3 offset-sm-3">
     <?php if(have_rows('left_list_column')) : while(have_rows('left_list_column')) : the_row(); ?>
       <ul>
@@ -22,8 +36,6 @@
       </ul>
       <?php endwhile; endif; ?>
     </div>
-    
-
     <div class="col-sm-5 offset-sm-1">
     
       <div class="header-image-one" style="background-image:url('<?php the_field('right_img'); ?>');">

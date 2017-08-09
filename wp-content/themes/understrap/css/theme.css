@@ -9272,7 +9272,7 @@ h2 {
   color: black;
   font-family: 'Space Mono', sans-serif;
   font-weight: bold;
-  font-size: 2.5rem; }
+  font-size: 1.5rem; }
 
 h3 {
   color: black;
@@ -9342,12 +9342,21 @@ textarea:focus {
 .three-col {
   padding-top: 10vh;
   padding-bottom: 10vh; }
+  .three-col .three-img {
+    position: absolute;
+    right: 0px;
+    transform: translate(0%, 30%); }
+  .three-col h2 {
+    padding-top: 3vh; }
   .three-col .three-col-img {
     height: 300px;
     background-repeat: no-repeat;
     overflow: hidden;
     background-size: cover;
     background-position: center; }
+  .three-col .three-col-title {
+    padding-left: 5%;
+    padding-bottom: 5%; }
 
 .blog-footer-section {
   padding-top: 200px;
@@ -9448,6 +9457,9 @@ textarea:focus {
     padding-left: 0px; }
   .two-col-txt-section h1 {
     color: #fe5e14; }
+  .two-col-txt-section h3 {
+    font-size: 1.25rem;
+    line-height: 1.65rem; }
   .two-col-txt-section button {
     width: 100%;
     height: 50px;
@@ -9460,7 +9472,12 @@ textarea:focus {
     margin-top: 10px; }
 
 .two-col-txt-first-section {
-  padding-bottom: 15vh; }
+  padding-bottom: 15vh;
+  background-repeat: no-repeat;
+  background-size: 20%; }
+  .two-col-txt-first-section img {
+    position: absolute;
+    transform: translate(0%, -15%); }
   .two-col-txt-first-section h1 {
     text-align: right;
     color: #fe5e14; }
@@ -9513,8 +9530,8 @@ textarea:focus {
 
 .profile-section-template {
   background-repeat: no-repeat;
-  background-size: 115%;
-  background-position-x: 232%; }
+  background-size: 106%;
+  background-position-x: 355%; }
 
 .profile-section {
   display: flex;
@@ -9531,10 +9548,10 @@ textarea:focus {
     background-position: center; }
 
 .header-col-2 {
-  padding: 0 !important;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  padding-bottom: 20vh; }
   .header-col-2 .header-text {
     padding: 0 100px 0 100px;
     text-align: center; }
@@ -9560,8 +9577,7 @@ textarea:focus {
     background-size: contain;
     background-position: right;
     padding-right: 0px;
-    padding-left: 0px;
-    clip-path: polygon(0% 0%, 0% 100%, 60% 50%); }
+    padding-left: 0px; }
   .header-col-2 .header-section-button {
     text-align: center; }
     .header-col-2 .header-section-button button {
@@ -9573,10 +9589,14 @@ textarea:focus {
         font-size: 1.5rem; }
 
 .list-w-img-section {
-  background-image: url("http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/innovation-triangle.png");
   background-size: 50%;
   background-repeat: no-repeat;
+  background-position-y: 25%;
   background-position-x: 100%; }
+  .list-w-img-section .list-img {
+    position: absolute;
+    right: 0px;
+    transform: translate(0%, 180%); }
   .list-w-img-section .section-image {
     margin-bottom: 5vh;
     background-repeat: no-repeat;
@@ -9771,13 +9791,21 @@ textarea:focus {
       padding-bottom: 8%;
       padding-top: 8%; }
 
+.grid {
+  height: 210px;
+  background-repeat: no-repeat; }
+
+.grid-1 {
+  position: absolute;
+  right: 0%; }
+
 .three-col-list-second-section {
   padding-top: 20vh;
   padding-bottom: 20vh; }
   .three-col-list-second-section .image-section {
     padding-right: 0px; }
   .three-col-list-second-section .image-left {
-    height: 40vh !important;
+    height: 50vh !important;
     background-size: cover; }
   .three-col-list-second-section .col-list-section {
     display: flex;
@@ -9786,14 +9814,11 @@ textarea:focus {
 .three-col-list-section {
   padding-bottom: 20vh; }
   .three-col-list-section .image-left-one {
-    height: 40vh !important;
+    height: 50vh !important;
     background-size: cover; }
   .three-col-list-section .col-list-section {
     display: flex;
     align-items: center; }
-
-.3-col-list-second-section {
-  background-color: #fe5e14; }
 
 .two-col-navigation {
   padding-top: 6em;

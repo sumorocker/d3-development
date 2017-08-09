@@ -19,7 +19,6 @@
         <div class="image-right">
           <img src="<?php the_field('header_img'); ?>" alt="">
         </div>
-        <div class="arrow-left"></div>
     </div>
   </div>
 </div>
