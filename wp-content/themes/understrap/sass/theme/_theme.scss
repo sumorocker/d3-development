@@ -502,6 +502,30 @@ textarea:focus {
 // 2-col text first section template
 
 
+//portfolio-section
+
+.portfolio {
+
+	
+	.row{
+	width: 100%;
+	margin: 0;
+	padding: 50px 20px;
+
+	}
+	.startup-section{
+		text-align: center;
+		margin-left:0px;
+		margin-bottom:60px;
+	}
+	.startup-logo {
+		height: 40vh;
+		margin-bottom: 10px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
 // contact-section-template
 
 .contact-section-template{
@@ -554,21 +578,21 @@ textarea:focus {
     }
 
     #first-name-input{
-    	border: 5px solid $orange;
+    	border: 3px solid $orange;
     	float:left
     }
     #last-name-input{
-    	border: 5px solid $orange;
+    	border: 3px solid $orange;
     	border-left: 0;
     }
     #email-input{
-    	border-left: 5px solid $orange;
-    	border-right: 5px solid $orange;
+    	border-left: 3px solid $orange;
+    	border-right: 3px solid $orange;
     	border-top: 0;
     	border-bottom: 0;
     }
     #message-input{
-    	border: 5px solid $orange;
+    	border: 3px solid $orange;
     	height: 50%;
     	width: 100%;
     	padding: 10px;
