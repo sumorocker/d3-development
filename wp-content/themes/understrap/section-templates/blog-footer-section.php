@@ -33,6 +33,6 @@
 	
 </div>
 	<div class="row justify-content-center">
-		<div class="blog-footer-cta col-lg-2"><button>View More</button></div>
+		<div class="blog-footer-cta col-lg-2"><button class="<?php the_field('button_color'); ?>">View More</button></div>
 	</div>
 </div>

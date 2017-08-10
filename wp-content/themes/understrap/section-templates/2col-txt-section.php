@@ -15,7 +15,7 @@
 		<div class="two-col-txt-right col-lg-3 offset-lg-1">
 			<h3><?php the_field('right_txt'); ?></h3>
 
-			<button style="display: <?php the_field('button_display');?>;"><?php the_field('button_txt'); ?></button>
+			<button class="<?php the_field('button_color'); ?>" style="display: <?php the_field('button_display');?>;"><?php the_field('button_txt'); ?></button>
 		</div>
 	</div>
 </div>

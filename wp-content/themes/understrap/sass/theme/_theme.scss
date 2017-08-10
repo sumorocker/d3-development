@@ -5,7 +5,8 @@
 $mycolor: #67A6A6;
 $yellow: #ffef14;
 $orange: #fe5e14;
-
+$blue: #08adff;
+$green: #14ffc4;
 // in SCSS we nest
 
 
@@ -30,14 +31,14 @@ button {
 }
 
 // Basic button styles
-button {
-  background: none;
-  border: 2px solid;
-  font: inherit;
-  line-height: 1;
-  margin: 0.5em;
-  padding: 1em 2em;
-}
+// button {
+//   background: none;
+//   border: 2px solid;
+//   font: inherit;
+//   line-height: 1;
+//   margin: 0.5em;
+//   padding: 1em 2em;
+// }
 
 code { 
   color: #e4cb58;
@@ -45,6 +46,159 @@ code {
 }
 
 }
+
+
+.btn_orange {
+	padding: 10px 40px;
+  background: none;
+  font-family: "Space Mono";
+  font-weight: 700;
+  border: 3px solid $orange;
+  border-radius: 0;
+  cursor: pointer;
+  color: $orange;
+  position: relative;
+  transition: 300ms;
+  overflow: hidden;
+  font-size: 14px;
+	
+	&:hover {
+  color: white;
+}
+&:before {
+  z-index: -1;
+  border-radius: 100%;
+  transition: 400ms ease;
+  margin-top: 50%;
+  margin-left: -50%;
+  background: $orange;
+  height: 0px;
+  width: 0px;
+  content: "";
+  position: absolute;
+  opacity: 1;
+}
+&:hover:before {
+  padding-top: 200%;
+  width: 200%;
+  margin: -100%;
+  opacity: 1;
+}
+}
+
+.btn_yellow {
+	padding: 10px 40px;
+  background: none;
+  font-family: "Space Mono";
+  font-weight: 700;
+  border: 3px solid $yellow;
+  border-radius: 0;
+  cursor: pointer;
+  color: $yellow;
+  position: relative;
+  transition: 300ms;
+  overflow: hidden;
+  font-size: 14px;
+	
+	&:hover {
+  color: white;
+}
+&:before {
+  z-index: -1;
+  transition: 400ms ease;
+  margin-top: 85%;
+  margin-left: -75%;
+  background: $yellow;
+  height: 0px;
+  width: 0px;
+  content: "";
+  position: absolute;
+  opacity: 1;
+  transform: rotate(45deg)
+}
+&:hover:before {
+  padding-top: 200%;
+  width: 200%;
+  margin: -100%;
+  opacity: 1;
+}
+}		
+
+.btn_blue {
+	padding: 10px 40px;
+  background: none;
+  font-family: "Space Mono";
+  font-weight: 700;
+  border: 3px solid $blue;
+  border-radius: 0;
+  cursor: pointer;
+  color: $blue;
+  position: relative;
+  transition: 300ms;
+  overflow: hidden;
+  font-size: 14px;
+	
+	&:hover {
+  color: white;
+}
+&:before {
+  z-index: -1;
+
+  transition: 400ms ease;
+  margin-top: 60%;
+  margin-left: -50%;
+  background: $blue;
+  height: 0px;
+  width: 0px;
+  content: "";
+  position: absolute;
+  opacity: 1;
+}
+&:hover:before {
+  padding-top: 200%;
+  width: 200%;
+  margin: -100%;
+  opacity: 1;
+}
+}
+
+.btn_green {
+	padding: 10px 40px;
+  background: none;
+  font-family: "Space Mono";
+  font-weight: 700;
+  border: 3px solid $green;
+  border-radius: 0;
+  cursor: pointer;
+  color: $green;
+  position: relative;
+  transition: 300ms;
+  overflow: hidden;
+  font-size: 14px;
+	
+	&:hover {
+  color: white;
+}
+&:before {
+  z-index: -1;
+  transition: 400ms ease;
+  margin-top: -10%;
+  margin-left: -50%;
+  background: $green;
+  height: 0px;
+  width: 0px;
+  content: "";
+  position: absolute;
+  opacity: 1;
+}
+&:hover:before {
+  padding-top: 200%;
+  width: 200%;
+  margin: -100%;
+  opacity: 1;
+}
+}			
+
 
 li{
 	list-style: none;
@@ -260,18 +414,6 @@ textarea:focus {
 		.blog-footer-cta {
 			text-align:center;
 			height: 50px;
-
-			button {
-				width: 100%;
-				height: 50px;
-				border: 5px solid $orange;
-				background-color: white;
-				color: black;
-				font-family: 'Space Mono', sans-serif;
-				font-weight: bold;
-				font-size: 1.25rem;
-				margin-top: 10px;
-			}
 	
 		}
 	
@@ -379,6 +521,31 @@ textarea:focus {
 
 // contact-section-template
 
+// portfolio section
+.portfolio {
+
+	
+	.row{
+	width: 100%;
+	margin: 0;
+	padding: 50px 20px;
+
+	}
+	.startup-section{
+		text-align: center;
+		margin-left:0px;
+		margin-bottom:60px;
+	}
+	.startup-logo {
+		height: 40vh;
+		margin-bottom: 10px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+// contact-section-template
+
 .contact-section-template{
 
 }
@@ -395,6 +562,33 @@ textarea:focus {
 	background-size: cover;
     background-position: center;
 
+    .tours-section{
+    	margin-top: 50px;
+    	.contact-title{
+    		padding-left: 30px;
+    	}
+
+
+    }
+    .container{
+    	margin-top: 30px;
+    	margin-left: -20px;
+    }
+
+    a {
+	  color: #70726F;
+	  font-size: 20px;
+	  padding: 10px;
+	  
+	  transition: all .1s ease;
+	}
+	a:first-child {
+	  
+	}
+	a:hover {
+	  color: $orange;
+	}
+
     input {
     	width: 100%;
     	padding: 10px;
@@ -402,22 +596,22 @@ textarea:focus {
     }
 
     #first-name-input{
-    	border: 5px solid $orange;
+    	border: 3px solid $orange;
     	float:left
     }
     #last-name-input{
-    	border: 5px solid $orange;
+    	border: 3px solid $orange;
     	border-left: 0;
     }
     #email-input{
-    	border-left: 5px solid $orange;
-    	border-right: 5px solid $orange;
+    	border-left: 3px solid $orange;
+    	border-right: 3px solid $orange;
     	border-top: 0;
     	border-bottom: 0;
     }
     #message-input{
-    	border: 5px solid $orange;
-    	height: 200px;
+    	border: 3px solid $orange;
+    	height: 50%;
     	width: 100%;
     	padding: 10px;
     }
@@ -436,6 +630,8 @@ textarea:focus {
 		margin-top: -10px;
 	}
 }
+
+
 // profile-section-template
 
 .profile-section-template{
@@ -504,18 +700,6 @@ textarea:focus {
     	max-width: 120% !important;
     }
   	}
-  	.header-section-button{
-  	text-align: center;
-  	button{
-  		background-color: $yellow;
-  		width: 80%;
-  		h2{
-  			color: black;
-  			text-align: center;
-  			font-size: 1.5rem;
-  	  	  }
-  	}
-  }
 }
 .about-text-left{
 	font-family: 'Roboto' !important;
