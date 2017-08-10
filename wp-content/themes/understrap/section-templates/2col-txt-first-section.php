@@ -17,7 +17,7 @@
         data-from="1"
         data-to="0"
         data-translatey="100" style="background-image:url('<?php the_field('grid_1') ?>')">
-			<h1 class="scrollme animateme three-img "
+	<h1 class="scrollme animateme three-img "
         data-when="enter"
         data-from="1"
         data-to="0"
@@ -29,12 +29,12 @@
         data-when="enter"
         data-from="1"
         data-to="0"
-        data-translatey="100">
+        data-translatey="200">
 			<h3 class="scrollme animateme"
         		data-when="enter"
         		data-from="1"
         		data-to="0"
-        		data-translatey="400"><?php the_field('right_txt_1'); ?></h3>
+        		data-translatey="200"><?php the_field('right_txt_1'); ?></h3>
 			<button style="display: <?php the_field('button_display');?>;"><?php the_field('button_txt_1'); ?></button>
 		</div>
 	</div>

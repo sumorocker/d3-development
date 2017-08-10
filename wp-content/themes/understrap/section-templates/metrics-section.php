@@ -5,6 +5,12 @@
 ?>
 
 <div class="metrics-section">
+<img class="metric-section-bg" src="<?php the_field('metrics_section_bg'); ?>" alt="">
+<div class="row">
+	<div class="col-lg-2 offset-lg-7">
+		<h1 class="metrics-list-title"><?php the_field('metrics_list_title'); ?></h1>
+	</div>
+</div>
   <div class="row">
     <div class="list-section col-lg-3 offset-lg-3 col-sm-12">
       <ul>

@@ -9453,6 +9453,8 @@ textarea:focus {
   overflow: hidden;
   background-size: cover;
   background-position: center; }
+  .two-col-txt-section img {
+    position: absolute; }
   .two-col-txt-section .two-col-txt-left {
     padding-left: 0px; }
   .two-col-txt-section h1 {
@@ -9565,28 +9567,31 @@ textarea:focus {
       text-align: left;
       font-size: 1.25rem;
       padding-bottom: 5%; }
-  .header-col-2 .arrow-left {
-    width: 0;
-    transform: translate(0%, -93%);
-    height: 0;
-    float: right;
-    border-top: 207px solid transparent;
-    border-bottom: 195px solid transparent;
-    border-right: 366px solid #ffef14; }
   .header-col-2 .image-right {
     background-size: contain;
     background-position: right;
     padding-right: 0px;
     padding-left: 0px; }
+    .header-col-2 .image-right img {
+      max-width: 120% !important; }
   .header-col-2 .header-section-button {
     text-align: center; }
     .header-col-2 .header-section-button button {
       background-color: #ffef14;
-      width: 40%; }
+      width: 80%; }
       .header-col-2 .header-section-button button h2 {
         color: black;
         text-align: center;
         font-size: 1.5rem; }
+
+.about-text-left {
+  font-family: 'Roboto' !important;
+  font-size: 1em !important;
+  font-weight: 200; }
+
+.about-title {
+  text-align: right;
+  font-size: 0.5em; }
 
 .list-w-img-section {
   background-size: 50%;
@@ -9622,6 +9627,8 @@ textarea:focus {
       .list-w-img-section .list-section ul li {
         padding-left: 0px;
         padding-bottom: 8%; }
+        .list-w-img-section .list-section ul li h2 {
+          text-align: center; }
   .list-w-img-section .section-image {
     height: 355px;
     background-color: blue; }
@@ -9753,43 +9760,52 @@ textarea:focus {
 .page-link {
   border-radius: 0rem !important; }
 
-.metrics-section .header-image {
-  height: 50vh;
-  background-repeat: no-repeat; }
-
-.metrics-section .inner-triangle {
-  border-right: 200px solid transparent;
-  border-bottom: 200px solid #ffef14;
-  height: 100%;
-  width: 0;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  z-index: 2; }
-
-.metrics-section .inner-circle {
-  border-top: 200px solid #fe5e14;
-  border-left: 200px solid #fe5e14;
-  border-radius: 0 0 100% 0;
-  width: 0;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  z-index: 2; }
-
-.metrics-section h1 {
-  text-align: center;
+.metrics-section {
   padding-top: 10%; }
-
-.metrics-section .list-section {
-  padding: 0px; }
-  .metrics-section .list-section ul {
-    list-style: none;
-    padding-left: 0px; }
-    .metrics-section .list-section ul li {
-      padding-left: 0px;
-      padding-bottom: 8%;
-      padding-top: 8%; }
+  .metrics-section .metric-section-bg {
+    position: absolute;
+    width: 35%;
+    transform: translate(-1%, -5%); }
+  .metrics-section .metrics-list-title {
+    text-align: left;
+    padding-bottom: 10%; }
+  .metrics-section .header-image {
+    height: 50vh;
+    background-repeat: no-repeat; }
+  .metrics-section .metrics-section-bg {
+    position: absolute;
+    width: 50%; }
+  .metrics-section .inner-triangle {
+    border-right: 200px solid transparent;
+    border-bottom: 200px solid #ffef14;
+    height: 100%;
+    width: 0;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    z-index: 2; }
+  .metrics-section .inner-circle {
+    border-top: 200px solid #fe5e14;
+    border-left: 200px solid #fe5e14;
+    border-radius: 0 0 100% 0;
+    width: 0;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    z-index: 2; }
+  .metrics-section h1 {
+    text-align: center;
+    padding-top: 10%; }
+  .metrics-section .list-section {
+    padding: 0px;
+    text-align: center; }
+    .metrics-section .list-section ul {
+      list-style: none;
+      padding-left: 0px; }
+      .metrics-section .list-section ul li {
+        padding-left: 0px;
+        padding-bottom: 8%;
+        padding-top: 8%; }
 
 .grid {
   height: 210px;
@@ -9805,7 +9821,7 @@ textarea:focus {
   .three-col-list-second-section .image-section {
     padding-right: 0px; }
   .three-col-list-second-section .image-left {
-    height: 50vh !important;
+    height: 100% !important;
     background-size: cover; }
   .three-col-list-second-section .col-list-section {
     display: flex;
@@ -9814,8 +9830,11 @@ textarea:focus {
 .three-col-list-section {
   padding-bottom: 20vh; }
   .three-col-list-section .image-left-one {
-    height: 50vh !important;
+    height: 100% !important;
     background-size: cover; }
+  .three-col-list-section .col-list-section-title {
+    padding-bottom: 5%;
+    font-size: 2em; }
   .three-col-list-section .col-list-section {
     display: flex;
     align-items: center; }

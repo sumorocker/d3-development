@@ -323,6 +323,9 @@ textarea:focus {
 	overflow: hidden;
 	background-size: cover;
     background-position: center;
+    img{
+    	position: absolute;
+    }
     .two-col-txt-left{
     	padding-left: 0px;
     }
@@ -492,26 +495,20 @@ textarea:focus {
 			}
 		}
 
-	.arrow-left {
-    width: 0;
-    transform: translate(0%,-93%);
-    height: 0;
-    float: right;
-    border-top: 207px solid transparent;
-    border-bottom: 195px solid transparent;
-    border-right: 366px solid $yellow;
-	}
 	.image-right{
 	background-size: contain;
     background-position: right;
     padding-right: 0px;
     padding-left: 0px;
+    img{
+    	max-width: 120% !important;
+    }
   	}
   	.header-section-button{
   	text-align: center;
   	button{
   		background-color: $yellow;
-  		width: 40%;
+  		width: 80%;
   		h2{
   			color: black;
   			text-align: center;
@@ -520,6 +517,16 @@ textarea:focus {
   	}
   }
 }
+.about-text-left{
+	font-family: 'Roboto' !important;
+	font-size: 1em !important;
+	font-weight: 200;
+}
+.about-title{
+	text-align: right;
+	font-size: 0.5em;
+}
+
 
 // list with images section
 
@@ -564,6 +571,9 @@ textarea:focus {
 			li{
 				padding-left: 0px;
 				padding-bottom: 8%;
+					h2{
+						text-align: center;
+					}
 			}
 		}
 	}
@@ -758,9 +768,23 @@ textarea:focus {
 
 // metrics section
 .metrics-section{
+	padding-top: 10%;
+	.metric-section-bg{
+		position: absolute;
+		width: 35%;
+    	transform: translate(-1%,-5%);
+	}
+	.metrics-list-title{
+		text-align: left;
+		padding-bottom: 10%;
+	}
 	.header-image{
 		height: 50vh;
 		background-repeat: no-repeat;
+	}
+	.metrics-section-bg{
+		position: absolute;
+		width: 50%;
 	}
 	.inner-triangle{
 	   	border-right: 200px solid transparent;
@@ -788,6 +812,7 @@ textarea:focus {
     }
 	.list-section{
 		padding: 0px;
+		text-align: center;
 			ul{
 				list-style: none;
 				padding-left: 0px;
@@ -822,7 +847,7 @@ textarea:focus {
 		padding-right: 0px;
 	}
 	.image-left{
-	height: 50vh !important;
+	height: 100% !important;
 	background-size: cover;
 }
 
@@ -836,9 +861,14 @@ textarea:focus {
 	padding-bottom: 20vh;
 
 	.image-left-one{
-	height: 50vh !important;
+	height: 100% !important;
 	background-size: cover;
 }
+
+.col-list-section-title{
+	padding-bottom: 5%;
+	font-size: 2em;
+     }
 
 .col-list-section{
 	display: flex;

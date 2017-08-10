@@ -7,7 +7,7 @@
 	<div class="row">
 
 	<div class="col-lg-1">
-	<h1 class="title">ZONES</h1>
+	<h1 class="title"><?php the_field('cat_title'); ?></h1>
 	</div>
 
 	<div class="col-lg-1 offset-lg-4 shape-left"></div>

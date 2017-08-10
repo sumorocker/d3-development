@@ -16,16 +16,16 @@
         data-when="enter"
         data-from="1"
         data-to="0"
-        data-translatey="500" src="<?php the_field('grid_2'); ?>" alt="">
+        data-translatey="300" src="<?php the_field('grid_2'); ?>" alt="">
   <div class='section-title col-sm-3 offset-4'>
-        <h1><?php the_field('list_title'); ?></h1>
+        <h3><?php the_field('list_title'); ?></h3>
   </div>
   </div>
   <div class="row scrollme animateme"
         data-when="enter"
         data-from="1"
         data-to="0"
-        data-translatey="500">
+        data-translatey="300">
     <div class="list-section col-sm-3 offset-sm-3">
     <?php if(have_rows('left_list_column')) : while(have_rows('left_list_column')) : the_row(); ?>
       <ul>

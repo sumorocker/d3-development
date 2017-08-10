@@ -10,7 +10,7 @@
       <h1><?php the_field('header_title'); ?></h1>
       <h3><?php the_field('header_text'); ?></h3>
       <div class="header-section-button">
-        <button type="button" class="btn">
+        <button style="display: <?php the_field('button_toggle') ?>" type="button" class="btn">
           <h2><?php the_field('header_button'); ?></h2>
         </button>
       </div>
