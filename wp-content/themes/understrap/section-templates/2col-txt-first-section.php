@@ -35,7 +35,8 @@
         		data-from="1"
         		data-to="0"
         		data-translatey="200"><?php the_field('right_txt_1'); ?></h3>
-			<button style="display: <?php the_field('button_display');?>;"><?php the_field('button_txt_1'); ?></button>
+			<button style="display: <?php the_field('button_display');?>;">
+                        <a href="<?php the_field('button_link'); ?>"><?php the_field('button_txt_1'); ?></a></button>
 		</div>
 	</div>
 </div>
