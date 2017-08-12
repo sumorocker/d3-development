@@ -6,34 +6,43 @@
 
 <div class="contact-section" style="background-image: url('');">
 	<div class="row justify-content-center contact">
-		<div class="conctact-title col-lg-3">
+		<div class="contact-title col-lg-2">
+			<div class="left-column">
 			<h3>Contact Us</h3>
 			<p><?php the_field('contact_email'); ?></p>
 			<p><?php the_field('contact_address'); ?></p>
 			<p><?php the_field('contact_phone'); ?></p>
-
+		
+			<h3>Media Inquires</h3>
+			<p>For members of the press, connect with our marketing and communications manager <a href="mailto:khalil@d3center.ca?Subject=Media%20Inquires" target="_top">here.</a> </p>
+			</div>
+			</div>
+		<div class="contact-title col-lg-2">
+		<div class="private-tour">
 			<h3>Private Tour</h3>
 			<p><?php the_field('private_tour_txt'); ?></p>
-			<button class="<?php the_field('button_color'); ?>"><?php the_field('private_tour_btn'); ?></button>
-
-
+			<button class="<?php the_field('button_color'); ?>"><a href="<?php the_field('private_tour_btn_link'); ?>"><?php the_field('private_tour_btn'); ?></a></button>
+		</div>
+		<div class="public-tour">
 			<h3>Public Tour</h3>
 			<p><?php the_field('public_tour_txt'); ?></p>
-			<button class="<?php the_field('button_color'); ?>"><?php the_field('public_tour_btn'); ?></button>
+			<button class="<?php the_field('button_color'); ?>"><a href="<?php the_field('public_tour_btn_link'); ?>"><?php the_field('public_tour_btn'); ?></a></button>
+			</div>
+			<div class="social-links">
 			<div class="container text-left">
     <a href="https://www.facebook.com/District3InnovationCentre" target="blank"><i class="fa fa-facebook"></i></a>
     <a href="https://www.instagram.com/d3center/?hl=en" target="blank"><i class="fa fa-instagram"></i></a>
     <a href="https://twitter.com/D3Centre?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
     target="blank"><i class="fa fa-twitter"></i></a>
     <a href="https://www.linkedin.com/company/district-3-innovation-center"><i class="fa fa-linkedin" target="blank"></i></a>
-
+			</div>
 
     
  
   </div>
 
 		</div>
-		<form class="contact-form col-lg-6" method="post" name="email-form" action="../contactform/form-to-email.php">
+		<form class="contact-form col-lg-4" method="post" name="email-form" action="../contactform/form-to-email.php">
 		
 			<input type="text" name="firstname" id="first-name-input" class="col-lg-6" placeholder="First Name">
 			

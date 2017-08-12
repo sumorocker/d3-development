@@ -9238,6 +9238,12 @@ h1.navbar-brand a:hover {
   .labs-btn button:hover, .labs-btn button:focus {
     border-color: blue;
     color: #fff; }
+  .labs-btn button a {
+    text-decoration: none; }
+    .labs-btn button a:active {
+      color: inherit; }
+    .labs-btn button a:visited {
+      color: inherit; }
 
 .labs-btn code {
   color: #e4cb58;
@@ -9256,6 +9262,12 @@ h1.navbar-brand a:hover {
   transition: 300ms;
   overflow: hidden;
   font-size: 14px; }
+  .btn_orange a {
+    text-decoration: none; }
+    .btn_orange a:active {
+      color: inherit; }
+    .btn_orange a:visited {
+      color: inherit; }
   .btn_orange:hover {
     color: white; }
   .btn_orange:before {
@@ -9289,6 +9301,12 @@ h1.navbar-brand a:hover {
   transition: 300ms;
   overflow: hidden;
   font-size: 14px; }
+  .btn_yellow a {
+    text-decoration: none; }
+    .btn_yellow a:active {
+      color: inherit; }
+    .btn_yellow a:visited {
+      color: inherit; }
   .btn_yellow:hover {
     color: white; }
   .btn_yellow:before {
@@ -9322,6 +9340,12 @@ h1.navbar-brand a:hover {
   transition: 300ms;
   overflow: hidden;
   font-size: 14px; }
+  .btn_blue a {
+    text-decoration: none; }
+    .btn_blue a:active {
+      color: inherit; }
+    .btn_blue a:visited {
+      color: inherit; }
   .btn_blue:hover {
     color: white; }
   .btn_blue:before {
@@ -9354,6 +9378,12 @@ h1.navbar-brand a:hover {
   transition: 300ms;
   overflow: hidden;
   font-size: 14px; }
+  .btn_green a {
+    text-decoration: none; }
+    .btn_green a:active {
+      color: inherit; }
+    .btn_green a:visited {
+      color: inherit; }
   .btn_green:hover {
     color: white; }
   .btn_green:before {
@@ -9646,8 +9676,8 @@ textarea:focus {
   background-size: cover; }
 
 .contact-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -9656,20 +9686,30 @@ textarea:focus {
   overflow: hidden;
   background-size: cover;
   background-position: center; }
-  .contact-section .tours-section {
-    margin-top: 50px; }
-    .contact-section .tours-section .contact-title {
-      padding-left: 30px; }
+  .contact-section .contact {
+    margin-bottom: 50px; }
+    .contact-section .contact .contact-title {
+      margin: 10px; }
+      .contact-section .contact .contact-title h3 {
+        margin-bottom: 20px; }
+      .contact-section .contact .contact-title p {
+        margin-bottom: 20px; }
+      .contact-section .contact .contact-title a {
+        text-decoration: none;
+        font-size: 1rem; }
+      .contact-section .contact .contact-title .private-tour {
+        margin-bottom: 20px; }
   .contact-section .container {
     margin-top: 30px;
     margin-left: -20px; }
   .contact-section a {
     color: #70726F;
     font-size: 20px;
-    padding: 10px;
     transition: all .1s ease; }
   .contact-section a:hover {
     color: #fe5e14; }
+  .contact-section i {
+    padding: 0 10px; }
   .contact-section input {
     width: 100%;
     padding: 10px; }
@@ -9686,7 +9726,7 @@ textarea:focus {
     border-bottom: 0; }
   .contact-section #message-input {
     border: 3px solid #fe5e14;
-    height: 50%;
+    height: 55%;
     width: 100%;
     padding: 10px; }
   .contact-section #submit-input {
@@ -10042,6 +10082,16 @@ textarea:focus {
   .img-w-category li {
     list-style: none;
     float: left; }
+
+.partners-container {
+  margin-top: 100px; }
+  .partners-container .partners-header {
+    margin-bottom: 7vh; }
+  .partners-container .partners {
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1%; }
 
 @media screen and (max-width: 500px) {
   .header-col-2 .arrow-left {
