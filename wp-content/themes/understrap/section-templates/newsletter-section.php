@@ -9,7 +9,7 @@
 		<form action="//d3center.us6.list-manage.com/subscribe/post?u=765424fbc69935d4af5f45860&amp;id=54e12ca5fc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 		    <div id="mc_embed_signup_scroll" class="row">
 				<div class="col-lg-6">
-					<div class="col-lg-5 offset-lg-6 subscribe-text">
+					<div class="col-lg-7 subscribe-text">
 						<h2>
 							Subscribe to our mailing list
 						</h2>

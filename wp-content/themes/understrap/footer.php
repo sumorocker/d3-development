@@ -14,15 +14,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php get_sidebar( 'footerfull' ); ?>
 
 <div class="wrapper" id="wrapper-footer">
-
+<?php get_template_part('section-templates/newsletter-section'); ?> 
 	<div class="<?php echo esc_html( $container ); ?>">
-
 		<div class="row">
 
 			<div class="col-md-12">
-
 				<footer class="site-footer" id="colophon">
-
 					<div class="site-info">
 
 							<a href="<?php  echo esc_url( __( 'http://wordpress.org/','understrap' ) ); ?>"><?php printf( 

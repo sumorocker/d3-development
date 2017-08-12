@@ -3,7 +3,29 @@
  * @package understrap
  */
 ?>
+<div class="blog-section">
+<div class="row justify-content-center community-blog">
+	<?php 
+	$query = new WP_Query( array( 'category_name' => 'community', 'posts_per_page' => '4' ) );
 
-<div class="row justify-content-center">
-    <?php echo do_shortcode( '[the-post-grid id="134" title="categories-grid"]' ); ?>
+	if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); 
+	?>
+	  <?php get_template_part( 'global-templates/hero', 'none'); ?>
+	              <?php
+
+	              /*
+	               * Include the Post-Format-specific template for the content.
+	               * If you want to override this in a child theme, then include a file
+	               * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+	               */
+	              get_template_part( 'loop-templates/content', get_post_format() );
+	              ?>
+	<?php 
+	    endwhile;
+	else :
+	    echo 'No posts';
+	endif;
+
+	?>
+</div>
 </div>

@@ -11,16 +11,13 @@
 	</div>
 
 	<div class="col-lg-1 offset-lg-4 shape-left"></div>
-
-
-
 		<div class="col-lg-3">
 		<?php if(have_rows('categories_list')) : while(have_rows('categories_list')) : the_row(); ?>
-			<div class="img-w-category-left">
-				<ul>
-					<li class="category-item"><h2><?php the_sub_field('list_left_item'); ?></h2></li>
-				</ul>
-			</div>
+				<div class="img-w-category-left">
+					<ul>
+						<li class="category-item"><h2><?php the_sub_field('list_left_item'); ?></h2></li>
+					</ul>
+				</div>
 			<?php endwhile; endif; ?>
 		</div>
 		<div class="col-lg-3">
