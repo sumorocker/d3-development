@@ -3,6 +3,7 @@
  * @package understrap
  */
 ?>
+<img class='three_col_bg_image' src="<?php the_field('three_col_bg_image'); ?>" alt="">
 <div class="three-col-list-section scrollme animateme"
         data-when="enter"
         data-from="1"

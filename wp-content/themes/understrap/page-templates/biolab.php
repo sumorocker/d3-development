@@ -17,6 +17,7 @@ get_template_part('section-templates/3col-list-section');
 get_template_part('section-templates/list-with-img-section');
 get_template_part('section-templates/3col-list-second-section');
 get_template_part('section-templates/profiles-section');
+get_template_part('section-templates/faq-section');
 ?>
 
 <?php

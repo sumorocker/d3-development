@@ -19,8 +19,8 @@
       <div class="accordion col-sm-6">
       <?php if(have_rows('question_answer')) : while(have_rows('question_answer')) : the_row(); ?>
         <div class="accordion-section">
-          <a class="accordion-section-title" href="#<?php the_sub_field('answer_class'); ?>"><?php the_sub_field('question'); ?></a>
-          <div id="<?php the_sub_field('answer_class'); ?>" class="accordion-section-content">
+          <a class="accordion-section-title" href="#<?php the_sub_field('accordion_class'); ?>"><?php the_sub_field('question'); ?></a>
+          <div id="<?php the_sub_field('accordion_class'); ?>" class="accordion-section-content">
             <p><?php the_sub_field('answer'); ?></p>
           </div><!--end .accordion-section-content-->
         </div><!--end .accordion-section-->
@@ -30,4 +30,3 @@
 
 </div>
 </div>
-

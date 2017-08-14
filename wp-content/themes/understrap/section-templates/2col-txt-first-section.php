@@ -30,12 +30,8 @@
         data-from="1"
         data-to="0"
         data-translatey="200">
-			<h3 class="scrollme animateme"
-        		data-when="enter"
-        		data-from="1"
-        		data-to="0"
-        		data-translatey="200"><?php the_field('right_txt_1'); ?></h3>
-			<button style="display: <?php the_field('button_display');?>;">
+			<h3><?php the_field('right_txt_1'); ?></h3>
+			<button  class="<?php the_field('button_color'); ?>" style="display: <?php the_field('button_display');?>;">
                         <a href="<?php the_field('button_link'); ?>"><?php the_field('button_txt_1'); ?></a></button>
 		</div>
 	</div>
