@@ -12,6 +12,8 @@
 		<div class="col-lg-4 offset-lg-2">
 			<div class="image-left-one" style="background-image:url('<?php the_field('image_left') ?>');"> 
 			</div>
+			<div class="outline">
+			</div>
 		</div>
 		<div class="col-lg-3 offset-lg-1 col-list-section">
 			<ul>

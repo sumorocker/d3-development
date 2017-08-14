@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
 		'understrap' ); ?></a>
 
-		<nav class="navbar navbar-toggleable-md  navbar-inverse bg-inverse">
+		<nav class="navbar navbar-toggleable-md">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
@@ -48,11 +48,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<?php if ( is_front_page() && is_home() ) : ?>
 
-							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+							<h1 class="navbar-brand mb-0">
+								<img class="navbar-logo" src="http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/district3-colour-logo.svg" alt="">
+								<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
+							</h1>
 							
 						<?php else : ?>
-
-							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+							<img class="navbar-logo" src="http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/district3-colour-logo.svg" alt="">
+							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
 						
 						<?php endif; ?>
 						

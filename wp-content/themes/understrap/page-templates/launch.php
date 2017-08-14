@@ -21,6 +21,7 @@
   // categories section missing
   get_template_part('section-templates/3col-list-second-section');
   get_template_part('section-templates/cta-section');
+  get_template_part('section-templates/faq-section');
   get_template_part('section-templates/blog-section');
 ?>
 
