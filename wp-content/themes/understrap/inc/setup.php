@@ -93,7 +93,6 @@ if ( ! function_exists( 'understrap_setup' ) ) :
 	}
 endif; // understrap_setup.
 add_action( 'after_setup_theme', 'understrap_setup' );
-http://localhost:3000/d3-dev-3/
 
 
 if ( ! function_exists( 'custom_excerpt_more' ) ) {

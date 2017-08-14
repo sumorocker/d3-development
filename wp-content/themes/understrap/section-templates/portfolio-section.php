@@ -3,9 +3,8 @@
  * @package understrap
  */
 ?>
-
+<img class="portfolio_bg_image" style="position:absolute; right:0;" src="<?php the_field('portfolio_bg_image'); ?>" alt="">
 <div class="portfolio">
-	
 	<img class="scrollme animateme three-img"
         data-when="enter"
         data-from="1"
@@ -31,9 +30,12 @@
 	<?php endwhile; endif; ?>
 	
 	</div>
-	
 	<div style="display:<?php the_field('second_section_display'); ?>">
-		  <div class="row">
+		  <div class="row animateme three-img"
+        data-when="enter"
+        data-from="1"
+        data-to="0"
+        data-translatey="200">
 				<div class="offset-lg-1 col-lg-6 three-col-title">
 					<h1><?php the_field('alumni_header'); ?></h1>
 					<p><?php the_field('alumni_text'); ?></p>

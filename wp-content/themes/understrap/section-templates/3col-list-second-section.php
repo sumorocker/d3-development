@@ -9,7 +9,11 @@
         data-to="0"
         data-translatey="200">
 	<div class="row">
-		<img src="<?php the_field('grid_2'); ?>" alt="" style="position:absolute;right:20%;height:250px;">
+		<img src="<?php the_field('grid_2'); ?>" class="scrollme animateme"
+        data-when="enter"
+        data-from="1"
+        data-to="0"
+        data-translatey="400" alt="" style="position:absolute;right:20%;height:250px;">
 		<div class="col-lg-4 offset-lg-2 image-section">
 			<h2><?php the_field('list_header'); ?></h2>
 			<p><?php the_field('list_subheader'); ?></p>
