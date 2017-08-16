@@ -11,20 +11,20 @@
 	</div>
 	<div class="offset-sm-4 col-sm-6"><h2><?php the_field('categories_sub_title'); ?></h2></div>
 	<div class="col-lg-1 offset-lg-4 shape-left"></div>
-		<div class="col-lg-3">
+		<div class="list col-lg-3">
 		<?php if(have_rows('categories_list')) : while(have_rows('categories_list')) : the_row(); ?>
 				<div class="img-w-category-left">
 					<ul>
-						<li class="category-item"><h2><?php the_sub_field('list_left_item'); ?></h2></li>
+						<li class="category-item"><h1><?php the_sub_field('list_left_item'); ?></h1></li>
 					</ul>
 				</div>
 			<?php endwhile; endif; ?>
 		</div>
-		<div class="col-lg-3">
+		<div class="list col-lg-3">
 			<?php if(have_rows('categories_list')) : while(have_rows('categories_list')) : the_row(); ?>
 			<div class="img-w-category-right">
 				<ul>
-					<li class="category-item"><h2><?php the_sub_field('list_right_item'); ?></h2></li>
+					<li class="category-item"><h1><?php the_sub_field('list_right_item'); ?></h1></li>
 				</ul>
 			</div>
 			<?php endwhile; endif; ?>

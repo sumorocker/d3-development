@@ -4,7 +4,7 @@
  */
 ?>
 
-<div class="container-fluid" style="background-image:url('<?php the_field('cta_background')?>')">
+<div class="container-fluid cta-background" style="background-image:url('<?php the_field('cta_background')?>');background-repeat: no-repeat;background-position: center;">
   <div class='row cta-full-width justify-content-center'>
     <div class="text-center col-lg-6">
       <h1><?php the_field('cta_title')?></h1>
