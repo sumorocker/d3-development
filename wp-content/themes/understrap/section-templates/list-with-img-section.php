@@ -40,8 +40,6 @@
       <div class="header-image-one" style="background-image:url('<?php the_field('right_img'); ?>');">
         <div class="inner-triangle"></div>
       </div>
-      <div class="outline-1">
-    </div>
       <div class="list-section col-sm-8">
       <?php if(have_rows('right_list_column')) : while(have_rows('right_list_column')) : the_row(); ?>
         <ul>
