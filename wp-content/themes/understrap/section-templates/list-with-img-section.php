@@ -54,6 +54,7 @@
       </div>
       
     </div>
+    <div class="background-img"><img src="<?php the_field('background-img'); ?>" /></div>
   </div>
 </div>
 

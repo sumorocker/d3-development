@@ -7,7 +7,9 @@
         data-when="enter"
         data-from="1"
         data-to="0"
-        data-translatey="200">
+		data-translatey="200">
+		<div class="bg-shape"><img src="<?php the_field('bg_shape'); ?>"/></div>
+
 	<div class="row">
 		<img src="<?php the_field('grid_2'); ?>" class="scrollme animateme"
         data-when="enter"

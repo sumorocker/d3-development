@@ -328,6 +328,7 @@ h1{
 	font-family: 'Space Mono', sans-serif;
 	font-weight: 900;
 	color:black;
+	text-shadow: 1px 2px 3px rgba(0,0,0,0.1);
 }
 
 h2{
@@ -335,6 +336,7 @@ h2{
 	font-family: 'Space Mono', sans-serif;
 	font-weight: bold;
 	font-size: 1.5rem;
+	text-shadow: 1px 2px 3px rgba(0,0,0,0.1);
 }
 
 h3{
@@ -342,12 +344,21 @@ h3{
 	font-family: 'Space Mono', sans-serif;
 	font-weight: bold;
 	font-size: 2rem;
+	text-shadow: 1px 2px 3px rgba(0,0,0,0.1);
 }
 
 body {
 	width: 100%;
 	overflow-x:hidden;
 	font-family: 'Roboto'
+}
+
+p {
+	text-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+}
+
+img {
+	text-shadow: 1px 2px 3px rgba(0,0,0,0.1);
 }
 
 input:focus {
@@ -372,6 +383,11 @@ textarea:focus {
 
 
 // fullwidth-cta-section-template
+
+
+.cta-background {
+	background-repeat: no-repeat;background-position: center;
+}
 
 .cta-full-width{
 	padding-top: 200px;
@@ -520,6 +536,15 @@ textarea:focus {
 	
 	ul{
 		list-style-type: none;
+	}
+
+	h1{
+		white-space: nowrap;
+		font-size: 2.75rem;
+	}
+
+	.list {
+		margin-top: -50px;
 	}
 	.img-w-category-left{
 		margin-right: 100px;	
@@ -742,8 +767,8 @@ textarea:focus {
 
 .profile-section-template{
 	background-repeat: no-repeat;
-    background-size: 106%;
-    background-position-x: 355%;
+    // background-size: 106%;
+    // background-position-x: 355%;
 
 }
 
@@ -752,7 +777,15 @@ textarea:focus {
 	  align-items: center;
 	  justify-content: center;
 	  margin: 0;
-	  
+	
+	.profile-txt {
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 30vw;
+		width: 50%;
+		display: flex;
+		align-items: center;
+	}
 
 	.profile-title{
 		padding: 30px;
@@ -856,8 +889,13 @@ textarea:focus {
     border-right: 366px solid $yellow;
 	}
 
+	.background-img{
+		position: absolute;
+		width: 100%;
+		z-index: -10;
+	}
 	.list-section{
-		padding: 0px !important;
+		padding: 50px 0px !important;
 			ul{
 				list-style: none;
 				padding-left: 0px;
@@ -1126,7 +1164,8 @@ textarea:focus {
 	}
 	h1{
 		text-align: center;
-    	padding-top: 10%;
+		padding-top: 10%;
+		
     }
 	.list-section{
 		padding: 0px;
@@ -1166,6 +1205,14 @@ textarea:focus {
 .three-col-list-second-section{
 	padding-top: 20vh;
 	padding-bottom: 20vh;
+
+	.bg-shape {
+		img{
+		position: absolute;
+		left:0;
+		}
+	}
+
 	p{
 	margin-bottom: 3rem;
 	}
@@ -1175,6 +1222,8 @@ textarea:focus {
 	.image-left{
 	height: 100% !important;
 	background-size: cover;
+
+	
 }
 
 .col-list-section{
