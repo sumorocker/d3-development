@@ -9473,24 +9473,33 @@ h1 {
   font-size: 3.75rem;
   font-family: 'Space Mono', sans-serif;
   font-weight: 900;
-  color: black; }
+  color: black;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1); }
 
 h2 {
   color: black;
   font-family: 'Space Mono', sans-serif;
   font-weight: bold;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1); }
 
 h3 {
   color: black;
   font-family: 'Space Mono', sans-serif;
   font-weight: bold;
-  font-size: 2rem; }
+  font-size: 2rem;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1); }
 
 body {
   width: 100%;
   overflow-x: hidden;
   font-family: 'Roboto'; }
+
+p {
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1); }
+
+img {
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1); }
 
 input:focus {
   outline: none; }
@@ -9507,6 +9516,10 @@ textarea:focus {
   left: 0;
   bottom: 0;
   z-index: 2; }
+
+.cta-background {
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .cta-full-width {
   padding-top: 200px;
@@ -9613,6 +9626,11 @@ textarea:focus {
     margin-left: 20vw; }
   .category-section ul {
     list-style-type: none; }
+  .category-section h1 {
+    white-space: nowrap;
+    font-size: 2.75rem; }
+  .category-section .list {
+    margin-top: -50px; }
   .category-section .img-w-category-left {
     margin-right: 100px; }
   .category-section .img-w-category-right {
@@ -9742,15 +9760,20 @@ textarea:focus {
     margin-top: -10px; }
 
 .profile-section-template {
-  background-repeat: no-repeat;
-  background-size: 106%;
-  background-position-x: 355%; }
+  background-repeat: no-repeat; }
 
 .profile-section {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0; }
+  .profile-section .profile-txt {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30vw;
+    width: 50%;
+    display: flex;
+    align-items: center; }
   .profile-section .profile-title {
     padding: 30px; }
   .profile-section .profile-image {
@@ -9823,8 +9846,12 @@ textarea:focus {
     float: right;
     border-top: 366px solid transparent;
     border-right: 366px solid #ffef14; }
+  .list-w-img-section .background-img {
+    position: absolute;
+    width: 100%;
+    z-index: -10; }
   .list-w-img-section .list-section {
-    padding: 0px !important; }
+    padding: 50px 0px !important; }
     .list-w-img-section .list-section ul {
       list-style: none;
       padding-left: 0px; }
@@ -10041,6 +10068,9 @@ textarea:focus {
 .three-col-list-second-section {
   padding-top: 20vh;
   padding-bottom: 20vh; }
+  .three-col-list-second-section .bg-shape img {
+    position: absolute;
+    left: 0; }
   .three-col-list-second-section p {
     margin-bottom: 3rem; }
   .three-col-list-second-section .image-section {
