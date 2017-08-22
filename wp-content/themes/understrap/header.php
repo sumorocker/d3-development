@@ -30,7 +30,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- ******************* The Navbar Area ******************* -->
 	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 
-		<!-- <nav class="navbar navbar-toggleable-md"> -->
 		<div class="mobile-test">
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
 		'understrap' ); ?></a>
@@ -45,11 +44,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					});
 
 				</script>
-			<!-- <div class="burger-menu"> -->
 			<input style="position:fixed" type="checkbox" id="menu-toggle"/>
 			  <label style="position:fixed" id="trigger" for="menu-toggle"></label>
 			  <label style="position:fixed" id="burger" for="menu-toggle"></label>
-			<!-- </div>   -->
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
 					array(
@@ -63,10 +60,4 @@ $container = get_theme_mod( 'understrap_container_type' );
 				); ?>
 				
 			</div>
-		
-			<!-- .container -->
-
-		<!-- </nav> -->
-		<!-- .site-navigation -->
-
 	</div><!-- .wrapper-navbar end -->
