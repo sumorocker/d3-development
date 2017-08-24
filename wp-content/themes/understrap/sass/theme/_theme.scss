@@ -10,6 +10,7 @@ $green: #14ffc4;
 // in SCSS we nest
 
 
+
 // beatiful buttons
 
 .labs-btn{
@@ -108,26 +109,34 @@ code {
   transition: 300ms;
   overflow: hidden;
   font-size: 14px;
+  z-index:1;
 
   a{
 		text-decoration: none;
+		z-index: 200;
+		position: relative;
 		&:active{
 			color: inherit;
+			
 		}
 		&:visited{
 			color: inherit;
+			
 		}
 	}
 	
 	&:hover {
   color: white;
+
+  
+ 
 }
 &:before {
-  z-index: -1;
+  z-index: 0;
   transition: 400ms ease;
   margin-top: 85%;
   margin-left: -75%;
-  background: $yellow;
+  background: $yellow !important;
   height: 0px;
   width: 0px;
   content: "";
@@ -140,6 +149,8 @@ code {
   width: 200%;
   margin: -100%;
   opacity: 1;
+  z-index:1;
+  
 }
 }		
 
@@ -159,6 +170,8 @@ code {
 
   a{
 		text-decoration: none;
+		z-index: 200;
+		position: relative;
 		&:active{
 			color: inherit;
 		}
@@ -171,7 +184,7 @@ code {
   color: white;
 }
 &:before {
-  z-index: -1;
+  z-index: 0;
 
   transition: 400ms ease;
   margin-top: 60%;
@@ -188,6 +201,7 @@ code {
   width: 200%;
   margin: -100%;
   opacity: 1;
+  z-index: 1;
 }
 }
 
@@ -207,6 +221,8 @@ code {
 
   a{
 		text-decoration: none;
+		z-index: 200;
+		position: relative;
 		&:active{
 			color: inherit;
 		}
@@ -219,7 +235,7 @@ code {
   color: white;
 }
 &:before {
-  z-index: -1;
+  z-index: 0;
   transition: 400ms ease;
   margin-top: -10%;
   margin-left: -50%;
@@ -235,6 +251,7 @@ code {
   width: 200%;
   margin: -100%;
   opacity: 1;
+  z-index: 1;
 }
 }			
 
@@ -424,10 +441,23 @@ textarea:focus {
 .three-col{
 	padding-top: 10vh;
 	padding-bottom: 10vh;
+	.lines {
+		background-size: 20px 20px;    
+		background-image: repeating-linear-gradient(0deg, #000, #000 1px, transparent 1px, transparent 20px),
+						  repeating-linear-gradient(-90deg, #000, #000 1px, white 1px, white 20px);
+		height: 100%;
+		width: 60%;
+		opacity: 0.05;
+		position: absolute;
+		top: -50px;
+		right: 10%;
+		z-index: -1;
+	}
 	.three-img{
 		position: absolute;
 		right: 0px;
 		transform:translate(0%,30%);
+		
 	}
 	h2{
 		padding-top: 3vh;
@@ -490,10 +520,25 @@ textarea:focus {
 			display: flex;
 		    flex-direction: column;
 		    flex-wrap: wrap;
-		    max-width: 100%;
+			max-width: 100%;
+			
+			$font-size: 26px;
+			$line-height: 1.4;
+			$lines-to-show: 3;
 			
 			h3 {
 				color:white;
+				display: block; /* Fallback for non-webkit */
+				display: -webkit-box;
+				max-width: 400px;
+				height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+				margin: 0 auto;
+				font-size: $font-size;
+				line-height: $line-height;
+				-webkit-line-clamp: $lines-to-show;
+				-webkit-box-orient: vertical;
+				overflow: hidden;
+				text-overflow: ellipsis;
 			}
 
 			button{
@@ -544,6 +589,7 @@ textarea:focus {
 	h1{
 		white-space: nowrap;
 		font-size: 2.75rem;
+		margin-bottom: 80px;
 	}
 
 	.list {
@@ -615,6 +661,8 @@ textarea:focus {
 	img{
 		position: absolute;
 		transform: translate(0%,-15%);
+		width: 100%;
+		margin-top: 200px;
 	}
 
 	h1{
@@ -813,7 +861,19 @@ textarea:focus {
 	 display: flex;
 	 align-items: center;
 	 justify-content: center;
-	 margin-bottom: 5em;
+	 height: 62vh;
+	 .lines {
+		background-size: 20px 20px;    
+		background-image: repeating-linear-gradient(0deg, #000, #000 1px, transparent 1px, transparent 20px),
+						  repeating-linear-gradient(-90deg, #000, #000 1px, white 1px, white 20px);
+		height: 40%;
+		width: 30%;
+		opacity: 0.05;
+		position: absolute;
+		top: 190px;
+		left: 7%;
+		z-index: -1;
+	}
 
 	.header-text{
 		padding: 0 100px 0 100px;
@@ -837,9 +897,10 @@ textarea:focus {
 	background-size: contain;
     background-position: right;
     padding-right: 0px;
-    padding-left: 0px;
+	padding-left: 0px;
+	overflow: hidden;
     img{
-    	max-width: 120% !important;
+		max-width: 100% !important;
     }
   	}
 }
@@ -861,8 +922,22 @@ textarea:focus {
 	background-repeat: no-repeat;
 	background-position-y:25%; 
 	background-position-x:100%;
-	h3{
+	.lines {
+		background-size: 20px 20px;    
+		background-image: repeating-linear-gradient(0deg, #000, #000 1px, transparent 1px, transparent 20px),
+						  repeating-linear-gradient(-90deg, #000, #000 1px, white 1px, white 20px);
+		height: 100%;
+		width: 60%;
+		opacity: 0.05;
+		position: absolute;
+		top: -50px;
+		right: 10%;
+		z-index: -1;
+	}
+	
+	h1{
 		margin-top: 25%;
+		color: $orange;
 	}
 	.list-img{
 		position: absolute;
@@ -900,8 +975,9 @@ textarea:focus {
 	.list-section{
 		padding: 50px 0px !important;
 			ul{
-				list-style: none;
+				// list-style: none;
 				padding-left: 0px;
+				list-style-image: url(http://frill-s.com/d3/img/li-line.gif);
 			li{
 				padding-left: 0px;
 				padding-bottom: 8%;
@@ -1018,11 +1094,26 @@ textarea:focus {
 .blog-single{
 	border: 10px solid white;
 	height: 275px;
-	background-color: grey;
+	background-color: none;
 	background-size: cover;
 	background-blend-mode: luminosity;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+
+	.startup-logo{
+		height: 100%;
+		width: 100%;
+		background-size: contain;
+		background-position: center ;
+		background-repeat: no-repeat;
+		
+	}
+
 		.entry-title{
-		text-shadow: 5px 5px 18px black;
+		color: black;
 		}
 		.btn-secondary{
 		    border-radius: 0px;
@@ -1036,24 +1127,24 @@ textarea:focus {
 		}
 		.entry-meta{
 		.posted-on{
-			color: white;
+			color: black;
 			a{
-				color: white;
+				color: black;
 			}
 		}
 		.byline{
-			color: white;
+			color: black;
 		}
 	}
 	.entry-header{
 		.entry-title{
 			padding-top: 10px;
-			color: white;
+			color: black;
 			a{
-			color: white;
+			color: black;
 			}
 			a.url.fn.n{
-			color: white;
+			color: black;
 			}
 		}
 	}
@@ -1212,6 +1303,18 @@ textarea:focus {
 .three-col-list-second-section{
 	padding-top: 20vh;
 	padding-bottom: 20vh;
+	.lines {
+		background-size: 20px 20px;    
+		background-image: repeating-linear-gradient(0deg, #000, #000 1px, transparent 1px, transparent 20px),
+						  repeating-linear-gradient(-90deg, #000, #000 1px, white 1px, white 20px);
+		height: 73%;
+		width: 60%;
+		opacity: 0.05;
+		position: absolute;
+		top: 100px;
+		right: 15%;
+		z-index: -1;
+	}
 
 	.bg-shape {
 		img{
@@ -1242,6 +1345,18 @@ textarea:focus {
 .three-col-list-section{
 	padding-bottom: 20vh;
 
+	.lines {
+		background-size: 20px 20px;    
+		background-image: repeating-linear-gradient(0deg, #000, #000 1px, transparent 1px, transparent 20px),
+						  repeating-linear-gradient(-90deg, #000, #000 1px, white 1px, white 20px);
+		height: 100%;
+		width: 60%;
+		opacity: 0.05;
+		position: absolute;
+		top: -50px;
+		right: 10%;
+		z-index: -1;
+	}
 	.image-left-one{
 	height: 100% !important;
 	background-size: cover;
@@ -1278,16 +1393,27 @@ textarea:focus {
 .two-col-navigation{
 	padding-top: 2em;
 	padding-bottom: 6em;
+
+
 	.navigation-spacing{
-		margin: 2em;
+		// margin: 2em;
 	}
-	.navigation-item{
+	
+	.navigation-item {
+		
 		h2{
 			padding-top: 20%;
 		}
+
+		background-size: 20px 20px;    
+		background-image: repeating-linear-gradient(0deg, rgba(0,0,0,0.05), rgba(0,0,0,0.05) 1px, transparent 1px, transparent 20px),
+						  repeating-linear-gradient(-90deg, rgba(0,0,0,0.05), rgba(0,0,0,0.05) 1px, white 1px, white 20px) !important;
+	
 	// margin: 2em 3em;
 	min-height: 40vh;
-	box-shadow: 1px 1px 37px 0px rgba(0,0,0,0.15);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
 	// background-size: cover !important;
 	margin-bottom: 2em;
 	// background-repeat: no-repeat;
@@ -1296,7 +1422,90 @@ textarea:focus {
 		padding-left: 2em;
 		padding-right:2em;
 	}
+	}
+	.navigation-item:hover {
+		box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
+	}
+	
+		
 	}	
+	
+.two-col-navigation2{
+	padding-top: 2em;
+	padding-bottom: 6em;
+
+	
+	
+
+	.navigation-spacing{
+		
+	}
+	
+	.navigation-item {
+
+		h2{
+			padding-top: 20%;
+		}
+	// margin: 2em 3em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 40vh;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	// background-size: cover !important;
+	margin-bottom: 2em;
+	// background-repeat: no-repeat;
+	text-align: center;
+	button{
+		margin: 25px;
+	}
+	p{
+		padding-left: 2em;
+		padding-right:2em;
+	}
+	}
+
+	.navigation-item:hover {
+		box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
+	}
+	
+	.yellowgrid{
+		background-size: 20px 20px;    
+		background-image: repeating-linear-gradient(0deg, rgba(255,239,20,0.25), rgba(255, 239, 18, 0.25) 1px, transparent 1px, transparent 20px),
+						  repeating-linear-gradient(-90deg, rgba(255,239,20,0.25), rgba(255,239,20,0.25) 1px, white 1px, white 20px) !important;
+		z-index: -1;
+	}
+
+	.orangegrid{
+		background-size: 20px 20px;    
+		background-image: repeating-linear-gradient(0deg, rgba(254,94,20,0.25), rgba(254,94,20,0.25) 1px, transparent 1px, transparent 20px),
+						  repeating-linear-gradient(-90deg, rgba(254,94,20,0.25), rgba(254,94,20,0.25) 1px, white 1px, white 20px) !important;
+		z-index: -1;
+	}
+
+	.bluegrid{
+		background-size: 20px 20px;    
+		background-image: repeating-linear-gradient(0deg, rgba(8,173,255,0.25), rgba(8,173,255,0.25) 1px, transparent 1px, transparent 20px),
+						  repeating-linear-gradient(-90deg, rgba(8,173,255,0.25), rgba(8,173,255,0.25) 1px, white 1px, white 20px) !important;
+		z-index: -1;
+	}
+
+	.greengrid{
+		background-size: 20px 20px;    
+		background-image: repeating-linear-gradient(0deg, rgba(20,255,196,0.25), rgba(20,255,196,0.25) 1px, transparent 1px, transparent 20px),
+						  repeating-linear-gradient(-90deg, rgba(20,255,196,0.25), rgba(20,255,196,0.25) 1px, white 1px, white 20px) !important;
+		z-index: -1;
+	}
+	.greygrid{
+		background-size: 20px 20px;    
+		background-image: repeating-linear-gradient(0deg, rgba(0,0,0,0.05), rgba(0,0,0,0.05) 1px, transparent 1px, transparent 20px),
+						  repeating-linear-gradient(-90deg, rgba(0,0,0,0.05), rgba(0,0,0,0.05) 1px, white 1px, white 20px) !important;
+		z-index: -1;
+	}
+	}
+		
+
 	.custom-btn {
   /*padding: 10px 25px;*/
   font-family: 'Roboto', sans-serif;
@@ -1307,6 +1516,56 @@ textarea:focus {
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
+
+  &:hover button{
+	  .btn_orange {
+	padding: 10px 40px;
+  background: none;
+  font-family: "Space Mono";
+  font-weight: 700;
+  border: 3px solid $orange;
+  border-radius: 0;
+  cursor: pointer;
+  color: $orange;
+  position: relative;
+  transition: 300ms;
+  overflow: hidden;
+  font-size: 14px;
+	z-index: 100;
+	a{
+		text-decoration: none;
+		&:active{
+			color: inherit;
+		}
+		&:visited{
+			color: inherit;
+		}
+	}
+
+	&:hover {
+  color: white;
+}
+&:before {
+  z-index: -1;
+  border-radius: 100%;
+  transition: 400ms ease;
+  margin-top: 50%;
+  margin-left: -50%;
+  background: $orange;
+  height: 0px;
+  width: 0px;
+  content: "";
+  position: absolute;
+  opacity: 1;
+}
+&:hover:before {
+  padding-top: 200%;
+  width: 200%;
+  margin: -100%;
+  opacity: 1;
+}
+}
+  }
 }
 .btn-5 {
   width: 100%;
@@ -1324,7 +1583,7 @@ textarea:focus {
 .btn-5:before, .btn-5:after {
   position: absolute;
   content: "";
-  right: 0;
+  right: 15px;
   bottom: 0;
   background: #fe5e14;
   transition: all 0.3s ease;
@@ -1338,7 +1597,7 @@ textarea:focus {
   height: 3px;
 }
 .btn-5:hover:before {height: 100%;}
-.btn-5:hover:after {width: 100%;}
+.btn-5:hover:after {width: calc(100% - 30px);}
 .btn-5 span:before, .btn-5 span:after {
   position: absolute;
   content: "";
@@ -1358,7 +1617,7 @@ textarea:focus {
 .btn-5 span:hover:before {height: 100%;}
 .btn-5 span:hover:after {width: 100%;}
 
-}
+
 
 .bg_image{
 		position: absolute;
