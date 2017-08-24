@@ -1092,7 +1092,7 @@ textarea:focus {
 
 .blog-single{
 	border: 10px solid white;
-	height: 275px;
+	height: 50vh;
 	background-color: none;
 	background-size: cover;
 	background-blend-mode: luminosity;
@@ -1101,13 +1101,37 @@ textarea:focus {
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
+	margin-bottom: 100px;
+	
+	p{
+	font-size: 12px;
+	}
+
+
+
+	.category-tag{
+		margin-bottom: 15px;
+
+		
+		a{
+			background-color: none;
+			color: #A6A6A6;
+			text-decoration: none;
+			padding: 5px 10px;
+			border: 2px solid #a6a6a6;
+			border-radius: 15px;
+			font-size: 12px;
+			pointer-events: none;
+		}
+	}
 
 	.startup-logo{
-		height: 100%;
+		min-height: 15vh;
 		width: 100%;
 		background-size: contain;
 		background-position: center ;
 		background-repeat: no-repeat;
+		margin-bottom: 25px;
 		
 	}
 
