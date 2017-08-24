@@ -9449,7 +9449,7 @@ ul {
     color: black !important; }
 
 #wrapper-navbar .navbar {
-  border-bottom: 3px #fe5e14 solid; }
+  border-bottom: 0px #fe5e14 solid; }
 
 #wrapper-navbar .container {
   width: 100%; }
@@ -9461,11 +9461,13 @@ ul {
   margin-left: 7px; }
 
 #navbarNavDropdown {
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  height: 15vh; }
 
 #main-menu {
   color: #fe5e14;
-  font-family: 'Space Mono',sans-serif; }
+  font-family: 'Space Mono',sans-serif;
+  align-items: center; }
   #main-menu a {
     color: black; }
 
@@ -9807,7 +9809,7 @@ textarea:focus {
     padding-right: 0px;
     padding-left: 0px; }
     .header-col-2 .image-right img {
-      max-width: 120% !important; }
+      max-width: 100% !important; }
 
 .about-text-left {
   font-family: 'Roboto' !important;
@@ -9875,7 +9877,9 @@ textarea:focus {
   background-color: #fe5e14;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%; }
   .newsletter-section-template .name {
     float: left;
     height: 60px; }
@@ -9971,6 +9975,7 @@ textarea:focus {
 
 #menu {
   height: 300px;
+  padding-top: 10%;
   -webkit-column-count: 4;
   -moz-column-count: 4;
   column-count: 4; }
@@ -9979,17 +9984,59 @@ textarea:focus {
   color: black;
   font-family: 'Space Mono', sans-serif; }
 
+.social-footer {
+  padding-top: 10px;
+  padding-bottom: 5px; }
+
+.concordia-logo img {
+  width: 60%;
+  float: right;
+  padding-right: 8%; }
+
+.social-media-footer {
+  text-align: center; }
+
+.trademark-spacing {
+  width: 50px;
+  display: inline-block; }
+
+.footer-color {
+  background-color: #e0e0e0;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.d3-footer-content {
+  text-align: center; }
+  .d3-footer-content .fa {
+    padding-right: 14px;
+    color: #fe5e14; }
+  .d3-footer-content p {
+    font-size: 14px; }
+
 .understrap-read-more-link {
   position: absolute;
   margin-bottom: 20px;
   width: 85%;
   bottom: 0; }
 
+.pagination {
+  text-align: center !important;
+  display: flex;
+  justify-content: center; }
+
+.page-link {
+  border-color: #fe5e14 !important;
+  color: #fe5e14 !important; }
+  .page-link a {
+    color: #fe5e14 !important; }
+
+.active.page-item a {
+  color: white !important;
+  font-family: 'Space Mono', sans-serif !important; }
+
 .page-item.active .page-link {
+  border-color: #fe5e14;
   background-color: #fe5e14; }
-  .page-item.active .page-link nav a {
-    color: black !important;
-    font-family: 'Space Mono', sans-serif !important; }
 
 .page-item .page-link {
   border-bottom-left-radius: 0rem;
@@ -10157,7 +10204,7 @@ textarea:focus {
   .two-col-navigation .btn-5:hover:before {
     height: 100%; }
   .two-col-navigation .btn-5:hover:after {
-    width: 100%; }
+    width: calc(100% - 15px); }
   .two-col-navigation .btn-5 span:before, .two-col-navigation .btn-5 span:after {
     position: absolute;
     content: "";
@@ -10364,14 +10411,14 @@ textarea:focus {
   justify-content: center;
   flex-direction: row; }
 
-.mobile-test {
+.corner-menu {
   z-index: 999; }
-  .mobile-test .corner-logo {
+  .corner-menu .corner-logo {
     background-image: url("http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/black-logo.svg");
-    height: 50px;
-    width: 50px;
-    margin-left: 25px;
-    margin-top: 25px;
+    height: 70px;
+    width: 70px;
+    margin-left: -7px;
+    margin-top: -48px;
     background-size: contain;
     background-repeat: no-repeat;
     position: fixed;
@@ -10390,7 +10437,7 @@ textarea:focus {
   0% {
     width: 25%;
     height: 100vh; } }
-  .mobile-test li, .mobile-test a {
+  .corner-menu li, .corner-menu a {
     color: #fe5e14;
     font: 14pt "Roboto", sans-serif;
     font-weight: 700;
@@ -10400,79 +10447,82 @@ textarea:focus {
     list-style: none;
     outline: 0;
     display: none; }
-  .mobile-test li {
+  .corner-menu li {
     width: 230px;
     text-indent: 56px;
     display: block;
     transform: translateX(-800px); }
-  .mobile-test a:focus {
+  .corner-menu a:focus {
     display: block;
     color: #333;
     background-color: #eee;
     transition: all .5s; }
-  .mobile-test aside {
+  .corner-menu aside {
     position: absolute;
     color: white;
     top: 35%;
     right: 10%;
     text-align: right; }
-  .mobile-test h1 {
+  .corner-menu h1 {
     line-height: 0;
     font-size: 4vw;
     font-weight: 700; }
-  .mobile-test h3 {
+  .corner-menu h3 {
     float: right;
     line-height: .3;
     font-size: 2.5vw;
     font-weight: lighter; }
-  .mobile-test h4 {
+  .corner-menu h4 {
     float: left;
     margin-left: -2%;
     font-size: 1.5vw;
     font-weight: lighter; }
-  .mobile-test #trigger, .mobile-test #burger, .mobile-test #burger:before, .mobile-test #burger:after {
+  .corner-menu #trigger, .corner-menu #burger, .corner-menu #burger:before, .corner-menu #burger:after {
     position: absolute;
-    top: 30px;
     left: 25px;
-    background: white;
+    top: 120px;
+    background: #fff;
     width: 30px;
     height: 3px;
     transition: .2s ease;
     cursor: pointer;
     z-index: 101;
-    margin-top: 7.5%; }
-  .mobile-test #trigger {
+    margin-top: 0px; }
+  .corner-menu #trigger {
     height: 25px;
     z-index: 101;
     background: none; }
-  .mobile-test #burger:before {
+  .corner-menu #burger:before {
     content: " ";
     top: 10px;
     left: 0; }
-  .mobile-test #burger:after {
+  .corner-menu #burger:after {
     content: " ";
     top: 20px;
     left: 0; }
-  .mobile-test #menu-toggle:checked + #trigger + #burger {
-    top: 50px;
+  .corner-menu #menu-toggle:checked + #trigger + #burger {
+    top: 130px;
     background: #fe5e14;
     transform: rotate(180deg);
     transition: transform .2s ease; }
-  .mobile-test #menu-toggle:checked + #trigger + #burger:before {
+  .corner-menu #menu-toggle:checked + .corner-logo {
+    background-image: url("http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/white-logo-1.svg");
+    border: 10px solid black; }
+  .corner-menu #menu-toggle:checked + #trigger + #burger:before {
     width: 20px;
     top: -4px;
     left: 18px;
     background: #fe5e14;
     transform: rotate(45deg) translateX(-5px);
     transition: transform .2s ease; }
-  .mobile-test #menu-toggle:checked + #trigger + #burger:after {
+  .corner-menu #menu-toggle:checked + #trigger + #burger:after {
     width: 20px;
     top: 2px;
     left: 18px;
     background: #fe5e14;
     transform: rotate(-45deg) translateX(-5px);
     transition: transform .2s ease; }
-  .mobile-test #menu {
+  .corner-menu #menu {
     z-index: 100;
     height: 180px;
     width: 180px;
@@ -10491,22 +10541,22 @@ textarea:focus {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
     animation: not-checked-anim .2s both;
     transition: .2s; }
-  .mobile-test #menu-toggle:checked + #trigger + #burger + #menu {
+  .corner-menu #menu-toggle:checked + #trigger + #burger + #menu {
     animation: checked-anim 1s ease both;
     background-color: white;
     padding-top: 12.5%;
     padding-bottom: 10%; }
-  .mobile-test #menu-toggle:checked + .corner-logo {
-    background-image: url("http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/black-logo.svg");
+  .corner-menu #menu-toggle:checked ~ .corner-logo {
+    background-image: url("http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/white-logo-1.svg");
     border: 10px solid black; }
-  .mobile-test #menu-toggle:checked + #trigger ~ #menu > li, .mobile-test a {
+  .corner-menu #menu-toggle:checked + #trigger ~ #menu > li, .corner-menu a {
     display: block;
     transform: translateX(8%);
     transition: transform .5s ease;
     animation-delay: 2s; }
-  .mobile-test #menu-toggle:checked + #trigger ~ #menu > li, .mobile-test a:hover {
+  .corner-menu #menu-toggle:checked + #trigger ~ #menu > li, .corner-menu a:hover {
     color: #fe5e14 !important; }
-  .mobile-test [type="checkbox"]:not(:checked), .mobile-test [type="checkbox"]:checked {
+  .corner-menu [type="checkbox"]:not(:checked), .corner-menu [type="checkbox"]:checked {
     display: none; }
 
 /*

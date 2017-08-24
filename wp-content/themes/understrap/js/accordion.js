@@ -5,6 +5,7 @@ jQuery(document).ready(function() {
 	}
 
 	jQuery('.accordion-section-title').click(function(e) {
+		console.log('hi');
 		// Grab current anchor value
 		var currentAttrValue = jQuery(this).attr('href');
 
@@ -16,9 +17,8 @@ jQuery(document).ready(function() {
 			// Add active class to section title
 			jQuery(this).addClass('active');
 			// Open up the hidden content panel
-			jQuery('.accordion' + currentAttrValue).slideDown(300).addClass('open'); 
+			jQuery('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
 		}
-
 		e.preventDefault();
 	});
 });

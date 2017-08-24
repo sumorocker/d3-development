@@ -300,7 +300,7 @@ nav {
 #wrapper-navbar{
 
 .navbar{
-	border-bottom:3px $orange solid;
+	border-bottom:0px $orange solid;
 }
 	.container{
 		width: 100%;
@@ -315,6 +315,7 @@ nav {
 
 #navbarNavDropdown{
 	justify-content:flex-end;
+	height: 15vh;
 }
 
 #main-menu{
@@ -323,6 +324,7 @@ nav {
 	}
 	color: $orange;
 	font-family: 'Space Mono',sans-serif;
+	align-items: center;
 }
 
 h1{
@@ -838,7 +840,7 @@ textarea:focus {
     padding-right: 0px;
     padding-left: 0px;
     img{
-    	max-width: 120% !important;
+    	max-width: 100% !important;
     }
   	}
 }
@@ -933,8 +935,10 @@ textarea:focus {
 .newsletter-section-template{
 	background-color: $orange;
 	display: flex;
-	 align-items: center;
-	 justify-content: center;
+	align-items: center;
+	justify-content: center;
+	padding-top: 5%;
+    padding-bottom: 5%;
 	.name{
 		float: left;
 		height: 60px;
@@ -1068,6 +1072,7 @@ textarea:focus {
 
 #menu{
 	 height: 300px;
+	 padding-top: 10%;
     -webkit-column-count: 4;
        -moz-column-count: 4;
             column-count: 4;
@@ -1082,13 +1087,40 @@ textarea:focus {
 	color: black;
 	font-family: 'Space Mono', sans-serif;
 }
-
-
-// grid blog table-layout
-
-.blog-posts{
-	
+.social-footer{
+	padding-top: 10px;
+    padding-bottom: 5px;
 }
+
+.concordia-logo img{
+	width: 60%;
+	float: right;
+	padding-right: 8%;
+}
+.social-media-footer{
+	text-align: center;
+}
+.trademark-spacing{
+	width: 50px;
+	display: inline-block;
+}
+.footer-color{
+	background-color: #e0e0e0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.d3-footer-content{
+	text-align: center;
+	.fa{
+		padding-right: 14px;
+		color: $orange;
+	}
+	p{
+		font-size: 14px;
+	}
+}
+// grid blog table-layout
 
 .understrap-read-more-link{
 	position: absolute;
@@ -1098,11 +1130,27 @@ textarea:focus {
 }
 
 // pagination section
-.page-item.active .page-link{
-	nav a{
-		color: black !important;
-		font-family: 'Space Mono', sans-serif !important;
+.pagination{
+	text-align: center !important;
+	display: flex;
+	justify-content: center;
+}
+
+.page-link{
+	border-color: $orange !important;
+	color: $orange !important;
+	a{
+		color: $orange !important;
 	}
+}
+
+.active.page-item a{
+	color: white !important;
+	font-family: 'Space Mono', sans-serif !important;
+
+}
+.page-item.active .page-link{
+	border-color: $orange;
 	background-color:$orange;
 }
 
@@ -1338,7 +1386,7 @@ textarea:focus {
   height: 3px;
 }
 .btn-5:hover:before {height: 100%;}
-.btn-5:hover:after {width: 100%;}
+.btn-5:hover:after {width: calc(100% - 15px);}
 .btn-5 span:before, .btn-5 span:after {
   position: absolute;
   content: "";
@@ -1608,14 +1656,15 @@ textarea:focus {
 }
 
 // toggle menu
-.mobile-test{
+
+.corner-menu{
 	z-index:999;
 	.corner-logo{
 	background-image: url('http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/black-logo.svg');
-    height: 50px;
-    width: 50px;
-    margin-left: 25px;
-    margin-top: 25px; 
+    height: 70px;
+    width: 70px;
+    margin-left: -7px;
+    margin-top: -48px;
     background-size: contain;
     background-repeat: no-repeat;
     position: fixed;
@@ -1689,15 +1738,15 @@ h4 {
 
 #trigger, #burger, #burger:before, #burger:after {
     position: absolute;
-    top: 30px;
     left: 25px;
-    background: white;
+    top: 120px;
+    background: #fff;
     width: 30px;
     height: 3px;
     transition: .2s ease;
     cursor: pointer;
     z-index: 101;
-    margin-top: 7.5%;
+    margin-top: 0px;
 }
 
 #trigger {
@@ -1716,10 +1765,15 @@ h4 {
     left: 0;
 }
 #menu-toggle:checked + #trigger + #burger {
-    top: 50px;
+    top: 130px;
     background:$orange;
     transform: rotate(180deg);
     transition: transform .2s ease;
+}
+
+#menu-toggle:checked + .corner-logo{
+	background-image:url('http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/white-logo-1.svg');
+	border:10px solid black;
 }
 
 #menu-toggle:checked + #trigger + #burger:before {
@@ -1765,8 +1819,8 @@ h4 {
     padding-bottom: 10%;
 }
 
-#menu-toggle:checked + .corner-logo{
-	background-image:url('http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/black-logo.svg');
+#menu-toggle:checked ~ .corner-logo{
+	background-image:url('http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/white-logo-1.svg');
 	border:10px solid black;
 }
 

@@ -70,10 +70,11 @@ require get_template_directory() . '/inc/woocommerce.php';
 /**
  * Load Editor functions.
  */
-function my_excerpt_length($length) {
-return 5;
-}
-add_filter('excerpt_length', 'my_excerpt_length');
+
+// filter cap for archive and filter comments length
+
+require get_template_directory() . '/inc/filtration.php';
+
 
 require get_template_directory() . '/inc/editor.php';
 

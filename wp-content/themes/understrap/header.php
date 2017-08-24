@@ -27,23 +27,66 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="hfeed site" id="page">
 
-	<!-- ******************* The Navbar Area ******************* -->
 	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 
-		<div class="mobile-test">
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
 		'understrap' ); ?></a>
-				<div class='corner-logo'>
-					<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
-				</div>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js">
-					$('#trigger').click(function() {
-					        $(".corner-logo").toggleClass("bounce");
-					        console.log('testing-1');
-					    }
-					});
 
-				</script>
+		<nav class="navbar navbar-toggleable-md">
+
+		<?php if ( 'container' == $container ) : ?>
+			<div class="container">
+		<?php endif; ?>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+					<!-- Your site title as branding in the menu -->
+					<?php if ( ! has_custom_logo() ) { ?>
+
+						<?php if ( is_front_page() && is_home() ) : ?>
+
+							<div class="corner-menu">
+								<div class='corner-logo'>
+									<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
+								</div>
+							</div>
+							
+						<?php else : ?>
+							<div class="corner-menu">
+								<div class='corner-logo'>
+									<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
+								</div>
+							</div>
+						<?php endif; ?>
+						
+					
+					<?php } else {
+						the_custom_logo();
+					} ?><!-- end custom logo -->
+
+				<!-- The WordPress Menu goes here -->
+				<?php wp_nav_menu(
+					array(
+						'theme_location'  => 'exposed_menu',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id'    => 'navbarNavDropdown',
+						'menu_class'      => 'navbar-nav',
+						'fallback_cb'     => '',
+						'menu_id'         => 'main-menu',
+						'walker'          => new WP_Bootstrap_Navwalker(),
+					)
+				); ?>
+			<?php if ( 'container' == $container ) : ?>
+			</div><!-- .container -->
+			<?php endif; ?>
+
+		</nav><!-- .site-navigation -->
+
+
+		<div class="corner-menu">
+		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
+		'understrap' ); ?></a>
 			<input style="position:fixed" type="checkbox" id="menu-toggle"/>
 			  <label style="position:fixed" id="trigger" for="menu-toggle"></label>
 			  <label style="position:fixed" id="burger" for="menu-toggle"></label>
@@ -61,3 +104,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 				
 			</div>
 	</div><!-- .wrapper-navbar end -->
+
+<?php
+/**
+ * The header for our theme.
+ *
+ * Displays all of the <head> section and everything up till <div id="content">
+ *
+ * @package understrap
+ */
+
+$container = get_theme_mod( 'understrap_container_type' );
+?>
