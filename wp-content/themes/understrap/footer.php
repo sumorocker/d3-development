@@ -52,7 +52,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php wp_footer(); ?>
 				<script>
 					$('#trigger').click(function() {
-					        $("#corner-logo").toggleClass("bounce green");
+					        $("#corner-logo").toggleClass("white-logo black-logo");
 					        console.log('testing-1');
 					});
 				</script>

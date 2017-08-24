@@ -1659,7 +1659,7 @@ textarea:focus {
 
 .corner-menu{
 	z-index:999;
-	#corner-logo{
+	.white-logo{
 		border: 0px;
 	background-image: url('http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/black-logo.svg');
     height: 70px;
@@ -1670,6 +1670,20 @@ textarea:focus {
     background-repeat: no-repeat;
     position: fixed;
     z-index: 150;
+	}
+	.black-logo{
+		background-image: url('http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/white-logo-1.svg');
+		border: 0px;
+    height: 70px;
+    width: 70px;
+    margin-left: -7px;
+    margin-top: -48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 150;
+	}
+	#corner-logo{
 	}
 @keyframes checked-anim {
     50% {
