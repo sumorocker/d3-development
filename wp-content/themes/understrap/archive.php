@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * Template Name: Blog Page Template
  *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ * Template for displaying a Zone page.
  *
  * @package understrap
  */

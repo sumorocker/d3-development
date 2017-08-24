@@ -36,6 +36,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 <?php if ( is_front_page() && is_home() ) : ?>
 	<?php get_template_part( 'global-templates/hero', 'none'); ?>
+	<?php get_template_part('section-templates/header-section') ?>
 
 <?php endif; ?>
 			<!-- Do the left sidebar check and opens the primary div -->
@@ -65,10 +66,11 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 					<?php endif; ?>
 				</div>
+				<div class="pagination-1"><?php understrap_pagination(); ?></div>
 			</main><!-- #main -->
 	</div>
 			<!-- The pagination component -->
-				<div class="pagination-1"><?php understrap_pagination(); ?></div>
+				
 		</div><!-- #primary -->
 
 		<!-- Do the right sidebar check -->
