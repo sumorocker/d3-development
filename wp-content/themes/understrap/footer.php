@@ -50,9 +50,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 		</div>	
 <?php wp_footer(); ?>
-<script>
-					$('.trigger').click(function() {
-					        console.log('testing');
+				<script>
+					$('#trigger').click(function() {
+					        $("#corner-logo").toggleClass("bounce green");
+					        console.log('testing-1');
 					});
 				</script>
 </body>

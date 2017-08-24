@@ -10413,7 +10413,7 @@ textarea:focus {
 
 .corner-menu {
   z-index: 999; }
-  .corner-menu .corner-logo {
+  .corner-menu #corner-logo {
     background-image: url("http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/black-logo.svg");
     height: 70px;
     width: 70px;
@@ -10505,9 +10505,6 @@ textarea:focus {
     background: #fe5e14;
     transform: rotate(180deg);
     transition: transform .2s ease; }
-  .corner-menu #menu-toggle:checked + .corner-logo {
-    background-image: url("http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/white-logo-1.svg");
-    border: 10px solid black; }
   .corner-menu #menu-toggle:checked + #trigger + #burger:before {
     width: 20px;
     top: -4px;
@@ -10546,9 +10543,6 @@ textarea:focus {
     background-color: white;
     padding-top: 12.5%;
     padding-bottom: 10%; }
-  .corner-menu #menu-toggle:checked ~ .corner-logo {
-    background-image: url("http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/white-logo-1.svg");
-    border: 10px solid black; }
   .corner-menu #menu-toggle:checked + #trigger ~ #menu > li, .corner-menu a {
     display: block;
     transform: translateX(8%);
@@ -10558,6 +10552,9 @@ textarea:focus {
     color: #fe5e14 !important; }
   .corner-menu [type="checkbox"]:not(:checked), .corner-menu [type="checkbox"]:checked {
     display: none; }
+
+.bounce {
+  border: 4px solid black; }
 
 /*
 * Use existing Bootstrap 4 classes and
