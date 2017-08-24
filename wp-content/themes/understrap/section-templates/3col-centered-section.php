@@ -5,7 +5,7 @@
 ?>
 
 <div class="three-col">
-	
+	<div class="lines"></div>
 	<img class="scrollme animateme three-img"
         data-when="enter"
         data-from="1"
