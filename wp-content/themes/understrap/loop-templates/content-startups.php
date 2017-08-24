@@ -11,12 +11,11 @@
 <div class="col-lg-3 col-md-4 blog-single">
 <div class="startup-logo" style="background-image:url('<?php the_field('logo_img'); ?>')"></div>
 	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-	<?php the_category( $separator, $parents, $post_id ); ?>
+	<div class="category-tag"><?php the_category( $separator, $parents, $post_id ); ?></div>
 	<p><?php the_field('description'); ?></p>
 	<a href="<?php the_field('link'); ?>"><button class="btn_orange"><header class="entry-header">
 
-			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
-			'</a></h2>' ); ?>
+			<?php the_title( ); ?>
 			<?php if ( 'post' == get_post_type() ) : ?>
 
 			<?php endif; ?>
