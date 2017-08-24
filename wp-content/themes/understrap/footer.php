@@ -51,7 +51,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>	
 <?php wp_footer(); ?>
 				<script>
-					$('#trigger').click(function() {
+					$('label').click(function() {
 					        $("#corner-logo").toggleClass("white-logo black-logo");
 					        console.log('testing-1');
 					});
