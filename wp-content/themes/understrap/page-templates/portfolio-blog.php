@@ -18,9 +18,25 @@
 
 </div>
 
+
+<div class="portfolio-blog">
+
+<div class="filter-container"> 
+    <ul>
+    <li class="button active" data-filter="post">All</li>
+        <li class="button" data-filter="category-hardware-current">Hardware</li>
+        <li class="button" data-filter="category-software-current">Software</li>
+        <li class="button" data-filter="category-social-innovation-current">Social Innovation</li>
+        <li class="button" data-filter="category-life-sciences-current">Life Sciences</li>
+        <li class="button" data-filter="category-ai-current">AI</li>
+        <li class="button" data-filter="category-e-commerce-current">E-Commerce</li>
+        <li class="button" data-filter="category-education-current">Education</li>
+</ul>
+</div>
 <h1 class='events-section-headers'>Current</h1>
 <p class="event-section-content"><?php the_field('content_1'); ?></p>
   <div class="events-section row justify-content-center">
+
 
 <?php 
 $query = new WP_Query( array( 'category_name' => 'current', 'post_per_page' => '3', 'orderby'=> 'title', 'order' => 'ASC'  ) );
@@ -45,7 +61,7 @@ else :
 endif;
 
 ?>
-
+</div>
 </div>
 <h1 class='events-section-header'>Alumni</h1>
 <p class='event-section-content'>Hear from renowned guest speakers eager to share their insights.</p>
@@ -75,6 +91,8 @@ endif;
 ?>
 
  </div>
+
+</div>
 
 
 <?php

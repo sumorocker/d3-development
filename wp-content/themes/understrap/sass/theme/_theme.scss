@@ -1034,7 +1034,7 @@ textarea:focus {
 
 	.category-tag{
 		margin-bottom: 15px;
-
+		pointer-events: none;
 		
 		a{
 			background-color: none;
@@ -1946,14 +1946,65 @@ textarea:focus {
 }
 
 // events section
+.portfolio-blog{
+	.filter-container{
+		ul{
+			display: flex;
+			flex-direction: row;
+			padding: 0;
+			margin: 0;
+		}
+		ul li{
+			list-style: none;
+			margin: 0;
+			padding: 20px;
+		
+		}
+		ul li:hover,
+		.active{
+			background: $orange;
+			color: white;
+		}
+	}
 
+	article{ 
+		img{
+			width: auto;
+			max-width: 100%;
+			height: auto;
+			max-height: 20vh;
+			padding: 15px;
+			margin-bottom: 20px;
+		}
+		.category-tag{
+			margin-bottom: 15px;
+			pointer-events: none;
+		
+			a{
+				background-color: none;
+				color: #A6A6A6;
+				text-decoration: none;
+				padding: 5px 10px;
+				border: 2px solid #a6a6a6;
+				border-radius: 15px;
+				font-size: 12px;
+				pointer-events: none;
+			}
+		}
+		
+	}
+}
 .events-section{
 	padding-bottom: 10%;
+
+	
 }
 
 .events-section-headers, .events-section-header, .event-section-content{
 	text-align: center;
 }
+
+
 
 
 // faq section
@@ -2121,6 +2172,7 @@ textarea:focus {
 	align-items: center;
 	text-align: center;
 	margin-bottom: 100px;
+	
 	article{
 		height: 100%;
 		display: flex;
@@ -2128,7 +2180,10 @@ textarea:focus {
 		justify-content: space-between;
 		.understrap-read-more-link{
 		position: inherit;
+
 		}
+
+	
 	}
 	
 	
@@ -2140,8 +2195,7 @@ textarea:focus {
 
 	.category-tag{
 		margin-bottom: 15px;
-
-		
+	
 		a{
 			background-color: none;
 			color: #A6A6A6;
@@ -2153,6 +2207,8 @@ textarea:focus {
 			pointer-events: none;
 		}
 	}
+	}
+}
 
 	.startup-logo{
 		min-height: 15vh;

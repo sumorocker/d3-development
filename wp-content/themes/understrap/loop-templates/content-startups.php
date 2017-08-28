@@ -8,9 +8,11 @@
 ?>
 
 
-<div class="col-lg-3 col-md-4 blog-single">
-<div class="startup-logo" style="background-image:url('<?php the_field('logo_img'); ?>')"></div>
-	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+
+
+
+	<article <?php post_class("col-lg-3 col-md-4 blog-single"); ?> id="post-<?php the_ID(); ?>">
+	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 	<div class="category-tag"><?php the_category( $separator, $parents, $post_id ); ?></div>
 	<p><?php the_field('description'); ?></p>
 	<a href="<?php the_field('link'); ?>"><button class="btn_orange"><header class="entry-header">
@@ -22,7 +24,7 @@
 
 		</header></button></a><!-- .entry-header -->
 
-		<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+		
 
 		<div class="entry-content">
 
@@ -38,4 +40,4 @@
 		</div><!-- .entry-content -->
 
 	</article><!-- #post-## -->
-</div>
+

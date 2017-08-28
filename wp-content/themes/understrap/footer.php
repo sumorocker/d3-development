@@ -55,6 +55,25 @@ $container = get_theme_mod( 'understrap_container_type' );
 					        jQuery("#corner-logo").toggleClass("white-logo black-logo");
 					});
 				</script>
+				<script>
+				jQuery(document).ready(function(){
+					jQuery(".button").click(function(){
+						var value = jQuery(this).attr("data-filter");
+						if (value == "all")
+						{
+							jQuery(".type-post").show("1000");
+						}
+						else
+						{
+							jQuery(".type-post").not("."+value).hide("1000");
+							jQuery(".type-post").filter("."+value).show("1000");
+						}
+						jQuery("ul .button").click(function(){
+							jQuery(this).addClass('active').siblings().removeClass('active');
+						})
+					})
+				})
+				</script>
 </body>
 
 
