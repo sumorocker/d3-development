@@ -23,7 +23,6 @@
 		<div class="startup-logo" style="background-image:url('<?php the_sub_field('startup_logo')?>');">
 		</div>
 		<h3><?php the_sub_field('startup_name'); ?></h3>
-		
 		<p><?php the_sub_field('startup_txt'); ?></p>
 		<button class="btn_orange"><a href="<?php the_sub_field('startup_button_link'); ?>" target="blank"><?php the_sub_field('startup_button_txt'); ?></a></button>
 	</div>

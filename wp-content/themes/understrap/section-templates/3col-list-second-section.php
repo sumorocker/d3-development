@@ -20,7 +20,9 @@
 		<div class="col-lg-4 offset-lg-2 image-section">
 			<h2><?php the_field('list_header'); ?></h2>
 			<p><?php the_field('list_subheader'); ?></p>
-			<div class="image-left" style="background-image:url('<?php the_field('image_left_1') ?>'); height:250px;"> 
+			<div class="image-left" style="background-image:url('<?php the_field('image_left_1') ?>'); height:350px;"> 
+			</div>
+			<div class="<?php the_field('outline_color'); ?>">
 			</div>
 		</div>
 		<div class="col-lg-3 offset-lg-1 col-list-section">

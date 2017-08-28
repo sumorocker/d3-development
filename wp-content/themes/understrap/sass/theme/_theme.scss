@@ -603,19 +603,6 @@ textarea:focus {
 			font-size:1.25rem;
 			line-height: 1.65rem;
 		}
-
-				// button {
-				// 		width: 100%;
-				// 		height: 50px;
-				// 		border: 0;
-				// 		background-color: $orange !important;
-				// 		color: white;
-				// 		font-family: 'Space Mono', sans-serif;
-				// 		font-weight: bold;
-				// 		font-size: 1.25rem;
-				// 		margin-top: 10px;
-				// 	}
-		
 }
 
 	.two-col-txt-first-section{
@@ -624,7 +611,7 @@ textarea:focus {
 	background-size: 20%;
 	img{
 		position: absolute;
-		height: 100%;
+		z-index: -10;
 		transform: translate(0%,-29%);
 	}
 
@@ -872,15 +859,13 @@ textarea:focus {
 	background-repeat: no-repeat;
 	background-position-y:25%; 
 	background-position-x:100%;
-	h3{
-		margin-top: 25%;
-	}
 	.list-img{
 		position: absolute;
 		right:0px;
 		transform:translate(0%,180%);
 	}
 	.section-image {
+		min-height: 350px;
 		margin-bottom: 5vh;
 		background-repeat: no-repeat;
 		overflow: hidden;
@@ -909,7 +894,7 @@ textarea:focus {
 		z-index: -10;
 	}
 	.list-section{
-		padding: 50px 0px !important;
+		padding: 0px 0px 0px 20px;
 			ul{
 				list-style: none;
 				padding-left: 0px;
@@ -1286,13 +1271,15 @@ textarea:focus {
 
 
 .grid{
-	height: 210px;
+	height: 350px;
 	background-repeat: no-repeat;
-	// background-size: cover;
+	background-size: cover;
+	// position: absolute;
 
 }
 
 .grid-1{
+	height: 300px;
 	position: absolute;
     right: 0;
     z-index: -10;
@@ -1313,6 +1300,7 @@ textarea:focus {
 		img{
 		position: absolute;
 		left:0;
+		height: 100%;
 		}
 	}
 
