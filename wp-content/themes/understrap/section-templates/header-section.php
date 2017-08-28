@@ -5,7 +5,7 @@
 ?>
 
 <div class="header-section">
-  <div class='row header-col-2 justify-content-center' style="flex-direction:<?php the_field('image_align'); ?>;background-color:<?php the_field('background_color'); ?>">
+  <div class='row header-col-2 justify-content-center' style="flex-direction:<?php the_field('image_align'); ?>;">
   <div class="lines"></div>
     <div class="header-text col-sm-6" >
       <h1 style="text-align:<?php the_field('header_text_align'); ?>;" ><?php the_field('header_title'); ?></h1>

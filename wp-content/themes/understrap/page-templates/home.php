@@ -12,7 +12,7 @@
 
 <?php
 	get_template_part('section-templates/header-section');
-	get_template_part('section-templates/2col-buttons-txt-img-section');
+	// get_template_part('section-templates/2col-buttons-txt-img-section');
 	get_template_part('section-templates/2col-buttons-txt-img-second-section');
 	get_template_part('section-templates/categories-img-txt-section');
 	get_template_part('section-templates/portfolio-section');

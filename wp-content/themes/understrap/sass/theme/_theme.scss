@@ -107,6 +107,7 @@ code {
   transition: 300ms;
   overflow: hidden;
   font-size: 14px;
+  z-index: 90;
 
   a{
 		text-decoration: none;
@@ -119,7 +120,7 @@ code {
 	}
 	
 	&:hover {
-  color: white;
+  color: black;
 }
 &:before {
   z-index: -1;
@@ -155,7 +156,7 @@ code {
   transition: 300ms;
   overflow: hidden;
   font-size: 14px;
-
+  z-index: 90;	
   a{
 		text-decoration: none;
 		&:active{
@@ -203,6 +204,7 @@ code {
   transition: 300ms;
   overflow: hidden;
   font-size: 14px;
+  z-index: 90;
 
   a{
 		text-decoration: none;
@@ -215,7 +217,7 @@ code {
 	}
 	
 	&:hover {
-  color: white;
+  color: black;
 }
 &:before {
   z-index: -1;
@@ -251,6 +253,7 @@ code {
   transition: 300ms;
   overflow: hidden;
   font-size: 14px;
+  z-index: 90;
 	
 	&:hover {
   color: white;
@@ -390,7 +393,11 @@ textarea:focus {
 
 
 .cta-background {
-	background-repeat: no-repeat;background-position: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	// background-color: $blue;
+	background-blend-mode: screen; 
+	background-size: cover;
 }
 
 .cta-full-width{
@@ -402,7 +409,7 @@ textarea:focus {
 	width: 100%;
 	justify-content: space-between;
 		h1{
-			text-align: left;
+			text-align: center;
 		}
 		h3{
 		text-align: left;
@@ -431,16 +438,18 @@ textarea:focus {
 		transform:translate(0%,30%);
 	}
 	h2{
-		padding-top: 3vh;
+		padding-top: 1em;
+		padding-left: 25px;
+	}
+	p{
+		padding-left: 25px;
 	}
      .three-col-img {
      	height: 300px;
-
      	background-repeat: no-repeat;
-			overflow: hidden;
-			background-size: cover;
-    		background-position: center;
-
+		overflow: hidden;
+		background-size: cover;
+    	background-position: center;
      }
      .three-col-title{
      	padding-left: 5%;
@@ -615,7 +624,8 @@ textarea:focus {
 	background-size: 20%;
 	img{
 		position: absolute;
-		transform: translate(0%,-15%);
+		height: 100%;
+		transform: translate(0%,-29%);
 	}
 
 	h1{
@@ -911,8 +921,8 @@ textarea:focus {
 	}
 
 	.section-image{
-		height: 355px;
-		background-color: blue;
+		// height: 355px;
+		// background-color: blue;
 	}		
 
 	.section-title{
@@ -1348,6 +1358,280 @@ textarea:focus {
 // navigation section
 
 .two-col-margin{
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+.two-col-navigation-header{
+	text-align: left;
+	padding-bottom: 50px;
+}
+.two-col-navigation-subheader{
+	padding-bottom: 50px;
+}
+.navigation-spacing-2{
+		border: 20px solid rgba(0,0,0,0);
+		padding-left: 0px;
+    	padding-right: 0px;
+	}
+
+.two-col-navigation2{
+	padding-top: 2em;
+	padding-bottom: 6em;
+	.navigation-spacing{
+		padding-right: 0px;
+		padding-left: 0px;
+		border:20px solid rgba(0,0,0,0); 
+	}
+	.navigation-item{
+		h2{
+			padding-top: 20%;
+		}
+	min-height: 40vh;
+	box-shadow: 1px 1px 37px 0px rgba(0,0,0,0.15);
+	margin-bottom: 0em;
+	text-align: center;
+	p{
+		padding-left: 2em;
+		padding-right:2em;
+	}
+	}	
+	.custom-btn {
+  /*padding: 10px 25px;*/
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.btn-5 {
+  width: 100%;
+  height: 100%;
+  line-height: auto;
+  padding: 0;
+  border: none;
+
+
+}
+.btn-5 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-5:before, .btn-5:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #fe5e14;
+  transition: all 0.3s ease;
+}
+.btn-5:before {
+  height: 50%;
+  width: 3px;
+}
+.btn-5:after {
+  width: 50%;
+  height: 3px;
+}
+.btn-5:hover:before {height: 100%;}
+.btn-5:hover:after {width: 100%;}
+.btn-5 span:before, .btn-5 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #fe5e14;
+  transition: all 0.3s ease;
+}
+.btn-5 span:before {
+  width: 3px;
+  height: 50%;
+}
+.btn-5 span:after {
+  width: 50%;
+  height: 3px;
+}
+.btn-5 span:hover:before {height: 100%;}
+.btn-5 span:hover:after {width: 100%;}
+
+// outline green
+
+.btn-green {
+  width: 100%;
+  height: 100%;
+  line-height: auto;
+  padding: 0;
+  border: none;
+
+
+}
+.btn-green span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-green:before, .btn-green:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: $green;
+  transition: all 0.3s ease;
+}
+.btn-green:before {
+  height: 50%;
+  width: 3px;
+}
+.btn-green:after {
+  width: 50%;
+  height: 3px;
+}
+.btn-green:hover:before {height: 100%;}
+.btn-green:hover:after {width: 100%;}
+.btn-green span:before, .btn-green span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: $green;
+  transition: all 0.3s ease;
+}
+.btn-green span:before {
+  width: 3px;
+  height: 50%;
+}
+.btn-green span:after {
+  width: 50%;
+  height: 3px;
+}
+.btn-green span:hover:before {height: 100%;}
+.btn-green span:hover:after {width: 100%;}
+
+
+// blue button
+
+.btn-blue {
+  width: 100%;
+  height: 100%;
+  line-height: auto;
+  padding: 0;
+  border: none;
+
+
+}
+.btn-blue span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-blue:before, .btn-blue:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: $blue;
+  transition: all 0.3s ease;
+}
+.btn-blue:before {
+  height: 50%;
+  width: 3px;
+}
+.btn-blue:after {
+  width: 50%;
+  height: 3px;
+}
+.btn-blue:hover:before {height: 100%;}
+.btn-blue:hover:after {width: 100%;}
+.btn-blue span:before, .btn-blue span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: $blue;
+  transition: all 0.3s ease;
+}
+.btn-blue span:before {
+  width: 3px;
+  height: 50%;
+}
+.btn-blue span:after {
+  width: 50%;
+  height: 3px;
+}
+.btn-blue span:hover:before {height: 100%;}
+.btn-blue span:hover:after {width: 100%;}
+
+// yellow button border: 
+.btn-blue {
+  width: 100%;
+  height: 100%;
+  line-height: auto;
+  padding: 0;
+  border: none;
+
+}
+
+.btn-yellow span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-yellow:before, .btn-yellow:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: $yellow;
+  transition: all 0.3s ease;
+}
+.btn-yellow:before {
+  height: 50%;
+  width: 3px;
+}
+.btn-yellow:after {
+  width: 50%;
+  height: 3px;
+}
+.btn-yellow:hover:before {height: 100%;}
+.btn-yellow:hover:after {width: 100%;}
+.btn-yellow span:before, .btn-yellow span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: $yellow;
+  transition: all 0.3s ease;
+}
+.btn-yellow span:before {
+  width: 3px;
+  height: 50%;
+}
+.btn-yellow span:after {
+  width: 50%;
+  height: 3px;
+}
+.btn-yellow span:hover:before {height: 100%;}
+.btn-yellow span:hover:after {width: 100%;}
+
+}
+
+
+
+.two-col-margin{
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
 	margin-right: 10%;
 	margin-left: 10%;
 }
@@ -1364,7 +1648,9 @@ textarea:focus {
 	padding-top: 2em;
 	padding-bottom: 6em;
 	.navigation-spacing{
-		margin: 2em;
+		padding-left: 0px;
+		padding-right: 0px;
+		border:20px solid rgba(0,0,0,0); 
 	}
 	.navigation-item{
 		h2{
@@ -1425,7 +1711,7 @@ textarea:focus {
   height: 3px;
 }
 .btn-5:hover:before {height: 100%;}
-.btn-5:hover:after {width: calc(100% - 15px);}
+.btn-5:hover:after {width: calc(100%);}
 .btn-5 span:before, .btn-5 span:after {
   position: absolute;
   content: "";
@@ -1447,6 +1733,8 @@ textarea:focus {
 
 }
 
+
+
 .bg_image{
 		position: absolute;
 		left:0;
@@ -1457,13 +1745,6 @@ textarea:focus {
 		padding-top: 2em;
 		padding-bottom: 6em;
 	
-		
-		
-	
-		.navigation-spacing{
-			
-		}
-		
 		.navigation-item {
 	
 			h2{
@@ -1477,7 +1758,7 @@ textarea:focus {
 		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 		// background-size: cover !important;
-		margin-bottom: 2em;
+		margin-bottom: 0em;
 		// background-repeat: no-repeat;
 		text-align: center;
 		button{
@@ -1498,6 +1779,7 @@ textarea:focus {
 			background-image: repeating-linear-gradient(0deg, rgba(255,239,20,0.25), rgba(255, 239, 18, 0.25) 1px, transparent 1px, transparent 20px),
 							  repeating-linear-gradient(-90deg, rgba(255,239,20,0.25), rgba(255,239,20,0.25) 1px, white 1px, white 20px) !important;
 			z-index: -1;
+			background-color: white;
 		}
 	
 		.orangegrid{
@@ -1505,6 +1787,7 @@ textarea:focus {
 			background-image: repeating-linear-gradient(0deg, rgba(254,94,20,0.25), rgba(254,94,20,0.25) 1px, transparent 1px, transparent 20px),
 							  repeating-linear-gradient(-90deg, rgba(254,94,20,0.25), rgba(254,94,20,0.25) 1px, white 1px, white 20px) !important;
 			z-index: -1;
+			background-color: white;
 		}
 	
 		.bluegrid{
@@ -1512,6 +1795,7 @@ textarea:focus {
 			background-image: repeating-linear-gradient(0deg, rgba(8,173,255,0.25), rgba(8,173,255,0.25) 1px, transparent 1px, transparent 20px),
 							  repeating-linear-gradient(-90deg, rgba(8,173,255,0.25), rgba(8,173,255,0.25) 1px, white 1px, white 20px) !important;
 			z-index: -1;
+			background-color: white;
 		}
 	
 		.greengrid{
@@ -1519,12 +1803,14 @@ textarea:focus {
 			background-image: repeating-linear-gradient(0deg, rgba(20,255,196,0.25), rgba(20,255,196,0.25) 1px, transparent 1px, transparent 20px),
 							  repeating-linear-gradient(-90deg, rgba(20,255,196,0.25), rgba(20,255,196,0.25) 1px, white 1px, white 20px) !important;
 			z-index: -1;
+			background-color: white;
 		}
 		.greygrid{
 			background-size: 20px 20px;    
 			background-image: repeating-linear-gradient(0deg, rgba(0,0,0,0.05), rgba(0,0,0,0.05) 1px, transparent 1px, transparent 20px),
 							  repeating-linear-gradient(-90deg, rgba(0,0,0,0.05), rgba(0,0,0,0.05) 1px, white 1px, white 20px) !important;
 			z-index: -1;
+			background-color: white;
 		}
 		}
 			
@@ -1685,10 +1971,18 @@ textarea:focus {
 // faq section
 
 .faq-title-section{
+	overflow: -webkit-paged-x;
 	background-color: white;
 	padding: 25px 45px 25px 45px;
 	h1{
 		padding-bottom: 15px;
+		border: 2px solid $orange;
+		// display:inline-block; 
+	}
+	.faq-title{
+		padding:5% 0 5% 5%;
+		font-size: 7em;
+		transform:rotate(270deg) translateX(10%);
 	}
 	p{
 		color:black;
@@ -1826,9 +2120,105 @@ textarea:focus {
 
 .community-blog{
 	width: 100%;
+	
+	.blog-single{
+	border: 10px solid white;
+	height: 50vh;
+	background-color: none;
+	background-size: cover;
+	background-blend-mode: luminosity;
 	display: flex;
-	justify-content:center;
-	flex-direction:row;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 100px;
+	article{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.understrap-read-more-link{
+		position: inherit;
+		}
+	}
+	
+	
+	p{
+	font-size: 12px;
+	}
+
+
+
+	.category-tag{
+		margin-bottom: 15px;
+
+		
+		a{
+			background-color: none;
+			color: #A6A6A6;
+			text-decoration: none;
+			padding: 5px 10px;
+			border: 2px solid #a6a6a6;
+			border-radius: 15px;
+			font-size: 12px;
+			pointer-events: none;
+		}
+	}
+
+	.startup-logo{
+		min-height: 15vh;
+		width: 100%;
+		background-size: contain;
+		background-position: center ;
+		background-repeat: no-repeat;
+		margin-bottom: 25px;
+		
+	}
+
+		.entry-title{
+		text-shadow: 5px 5px 18px black;
+		}
+		.btn-secondary{
+		    border-radius: 0px;
+		    border:solid 5px $orange;
+		    font-family: Space mono;
+    		font-weight: 900;
+		    width: 90%;
+		}
+		h2{
+		font-size: 1.5em;
+		}
+		.entry-meta{
+		.posted-on{
+			color: white;
+			a{
+				color: white;
+			}
+		}
+		.byline{
+			color: white;
+		}
+	}
+	.entry-header{
+		.entry-title{
+			padding-top: 10px;
+			color: white;
+			a{
+			color: white;
+			}
+			a.url.fn.n{
+			color: white;
+			}
+		}
+	}
+	.entry-date{
+		display: none;
+	}
+	.entry-content p{
+		color: white;
+	}
+}
 }
 
 // toggle menu

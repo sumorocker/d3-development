@@ -7,8 +7,7 @@
   <div class="main">
       <div class="row">
         <div class="faq-title-section col-sm-6">
-          <h1>Faq</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique molestiae quia, ad praesentium. Porro, autem dignissimos dolores. Mollitia tempora, vel excepturi deleniti recusandae soluta atque!</p>
+          <span><h1 class="faq-title">FAQ</h1></span>
            <button type="button" class="<?php the_field('button_color'); ?>">
             <h2><?php the_field('header_button'); ?></h2>
            </button>

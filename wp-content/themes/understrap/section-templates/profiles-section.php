@@ -12,7 +12,7 @@
 			<div class="profile-title col-md-12 col-lg-3">
 				<h2><?php the_sub_field('testimonial_name_1'); ?></h2>
 			</div>
-			<div class="profile-body col-md-12 col-lg-3">
+			<div class="profile-body col-md-12 col-lg-6">
 				<p><?php the_sub_field('testimonial_1'); ?></p>
 			</div>
 		</div>
@@ -22,7 +22,7 @@
 		<div class="profile-title col-md-12 col-lg-3">
 	  	<h2><?php the_sub_field('testimonial_name_2'); ?></h2>
 	  </div>
-	  <div class="profile-body col-md-12 col-lg-3">
+	  <div class="profile-body col-md-12 col-lg-6">
 	  	<p><?php the_sub_field('testimonial_2'); ?></p>
 	  </div>
 		</div>
