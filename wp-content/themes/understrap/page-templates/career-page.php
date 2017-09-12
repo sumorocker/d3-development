@@ -14,6 +14,7 @@
   get_template_part('section-templates/header-section');
   get_template_part('section-templates/2col-buttons-txt-img-section');
   get_template_part('section-templates/2col-txt-section');
+  get_template_part('section-templates/profiles-section');
 ?>
 
 <?php

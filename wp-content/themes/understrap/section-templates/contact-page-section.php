@@ -6,12 +6,13 @@
 
 <div class="contact-section" style="background-image: url('');">
 	<div class="row justify-content-center contact">
+		<div class="col-sm-10 offset-sm-2 contact-header"><h1>Contact Us</h1></div>
+		<img class="contact-grid" src="<?php the_field('grid_2'); ?>"/>
 		<div class="contact-title col-lg-2">
 			<div class="left-column">
-			<h3>Contact Us</h3>
-			<p><?php the_field('contact_email'); ?></p>
-			<p><?php the_field('contact_address'); ?></p>
-			<p><?php the_field('contact_phone'); ?></p>
+			<h3 class="contact_item"><?php the_field('contact_email'); ?></h3>
+			<h3 class="contact_item"><?php the_field('contact_address'); ?></h3>
+			<h3 class="contact_item"><?php the_field('contact_phone'); ?></h3>
 		
 			<h3>Media Inquires</h3>
 			<p>For members of the press, connect with our marketing and communications manager <a href="mailto:khalil@d3center.ca?Subject=Media%20Inquires" target="_top">here.</a> </p>
@@ -21,12 +22,12 @@
 		<div class="private-tour">
 			<h3>Private Tour</h3>
 			<p><?php the_field('private_tour_txt'); ?></p>
-			<button class="<?php the_field('button_color'); ?>"><a href="<?php the_field('private_tour_btn_link'); ?>"><?php the_field('private_tour_btn'); ?></a></button>
+			<button class="<?php the_field('button_color'); ?>"><a href="<?php the_field('private_tour_btn_link'); ?>"><?php the_field('private_tour_btn'); ?>Book</a></button>
 		</div>
 		<div class="public-tour">
 			<h3>Public Tour</h3>
 			<p><?php the_field('public_tour_txt'); ?></p>
-			<button class="<?php the_field('button_color'); ?>"><a href="<?php the_field('public_tour_btn_link'); ?>"><?php the_field('public_tour_btn'); ?></a></button>
+			<button class="<?php the_field('button_color'); ?>"><a href="<?php the_field('public_tour_btn_link'); ?>"><?php the_field('public_tour_btn'); ?>Join</a></button>
 			</div>
 			<div class="social-links">
 			<div class="container text-left">

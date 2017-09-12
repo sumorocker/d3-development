@@ -6,23 +6,32 @@
 
 <div class="two-col-txt-first-section">
 <img class="bg_img_1" src="<?php the_field('bg_img_1') ?>" alt="">
-	<div class="row two-col-txts" >		
-		<div class="two-col-txt-left col-lg-3 offset-lg-3 scrollme animateme three-img "
+	<div class="row two-col-txts" >	
+                <?php if(is_page('singularity-university')){ ?>
+                <div class="two-col-txt-left col-lg-4 offset-lg-2 scrollme animateme three-img"
         data-when="enter"
         data-from="1"
         data-to="0"
         data-translatey="100" style="display: <?php the_field('txt-left_1') ?>">
-        <div class="grid scrollme animateme three-img "
+                <?php }else{ ?>
+                <div class="two-col-txt-left col-lg-3 offset-lg-3 scrollme animateme three-img"
+        data-when="enter"
+        data-from="1"
+        data-to="0"
+        data-translatey="100" style="display: <?php the_field('txt-left_1') ?>">
+                <?php } ?>
+		
+        <div class="scrollme animateme three-img greygrid-1 grid-3"
         data-when="enter"
         data-from="1"
         data-to="0"
         data-translatey="100" style="background-image:url('<?php the_field('grid_1') ?>')">
-	<h1 class="scrollme animateme three-img "
+        </div>
+	<h1 class="scrollme animateme three-img" 
         data-when="enter"
         data-from="1"
         data-to="0"
         data-translatey="100"><?php the_field('left_title_1'); ?></h1>
-		</div>
 		</div>
 
 		<div class="two-col-txt-right col-lg-3 offset-lg-1 scrollme animateme three-img "

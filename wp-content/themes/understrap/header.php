@@ -54,7 +54,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							
 						<?php else : ?>
 							<div class="corner-menu">
-								<div id='corner-logo' class="white-logo">
+								<div id='corner-logo' class="black-logo">
 									<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
 								</div>
 							</div>

@@ -22,7 +22,6 @@
   get_template_part('section-templates/contact-section');
   get_template_part('section-templates/blog-section');
   get_template_part('section-templates/2col-txt-section');
-  get_template_part('section-templates/2col-txt-section');
 ?>
 
 <?php

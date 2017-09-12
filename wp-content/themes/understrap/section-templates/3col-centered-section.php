@@ -14,13 +14,13 @@
 		src="<?php the_field('background_img'); ?>" alt="">
 	<div class="row">
 		<div class="offset-lg-1 col-lg-6 three-col-title">
-			<h1><?php the_field('three_col_header'); ?></h1>
+			<h1 style="text-decoration-color:<?php the_field('background_color') ?>"><?php the_field('three_col_header'); ?></h1>
 			<p><?php the_field('three_col_txt'); ?></p>
 		</div>
 	</div>
   <div class='row justify-content-center'>
   <?php if(have_rows('img-h2-p')) : while(have_rows('img-h2-p')) : the_row(); ?>
-    <div class="text-centered col-lg-4">
+    <div class="text-centered col-lg-3">
 		<div class="three-col-img" style="background-image:url('<?php the_sub_field('img')?>');">
 		</div>
 		<h2><?php the_sub_field('h2'); ?></h2>

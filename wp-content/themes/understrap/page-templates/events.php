@@ -14,6 +14,8 @@
   <?php 
         get_template_part('section-templates/header-section');
         get_template_part('section-templates/3col-list-section');
+        get_template_part('section-templates/2col-buttons-txt-img-section');
+        get_template_part('section-templates/cta-section');
   ?>
 
 </div>
@@ -23,7 +25,7 @@
   <div class="events-section row justify-content-center">
 
 <?php 
-$query = new WP_Query( array( 'category_name' => 'events', 'post_per_page' => '3' ) );
+$query = new WP_Query( array( 'category_name' => 'events', 'posts_per_page' => '3' ) );
 
 if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); 
 ?>

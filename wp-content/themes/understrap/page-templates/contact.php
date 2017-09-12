@@ -11,7 +11,7 @@
 
 
 <?php
-	get_template_part('section-templates/header-section');
+	// get_template_part('section-templates/header-section');
   get_template_part('section-templates/contact-page-section');
 
 ?>

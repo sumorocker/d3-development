@@ -13,19 +13,24 @@
 		src="<?php the_field('background_img'); ?>" alt="">
 	<div class="row">
 		<div class="offset-lg-1 col-lg-6 three-col-title">
-			<h1><?php the_field('startup_header'); ?></h1>
+			<h1 style="text-decoration-color:<?php the_field('background_color') ?>"><?php the_field('startup_header'); ?></h1>
 			<p><?php the_field('startup_text'); ?></p>
 		</div>
 	</div>
   <div class='row justify-content-center'>
   <?php if(have_rows('startup_profiles')) : while(have_rows('startup_profiles')) : the_row(); ?>
-    <div class="startup-section col-lg-3">
-		<div class="startup-logo" style="background-image:url('<?php the_sub_field('startup_logo')?>');">
+  	<?php if(is_page('about-us')){ ?>
+    	<div class="startup-section prizes-section orangegrid col-lg-3">
+				<h2><?php the_sub_field('startup_name'); ?></h2>
 		</div>
-		<h3><?php the_sub_field('startup_name'); ?></h3>
-		<p><?php the_sub_field('startup_txt'); ?></p>
-		<button class="btn_orange"><a href="<?php the_sub_field('startup_button_link'); ?>" target="blank"><?php the_sub_field('startup_button_txt'); ?></a></button>
-	</div>
+	<?php }else{ ?>
+		<div class="startup-section col-lg-3">
+			<div class="startup-logo" style="background-image:url('<?php the_sub_field('startup_logo')?>');"></div>
+				<h3><?php the_sub_field('startup_name'); ?></h3>
+				<p><?php the_sub_field('startup_txt'); ?></p>
+			<button class="btn_orange" style="display:<?php the_field('header_button_display'); ?>"><a href="<?php the_sub_field('startup_button_link'); ?>" target="blank"><?php the_sub_field('startup_button_txt'); ?></a></button>
+		</div>
+	<?php }; ?>
 	<?php endwhile; endif; ?>
 	
 	</div>
@@ -36,7 +41,7 @@
         data-to="0"
         data-translatey="200">
 				<div class="offset-lg-1 col-lg-6 three-col-title">
-					<h1><?php the_field('alumni_header'); ?></h1>
+					<h1 style="text-decoration-color:<?php the_field('background_color') ?>"><?php the_field('alumni_header');?></h1>
 					<p><?php the_field('alumni_text'); ?></p>
 				</div>
 			</div>

@@ -51,9 +51,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>	
 <?php wp_footer(); ?>
 				<script>
-					jQuery('label').click(function() {
-					        jQuery("#corner-logo").toggleClass("white-logo black-logo");
-					});
+					// jQuery('label').click(function() {
+					//         jQuery("#corner-logo").toggleClass("white-logo black-logo");
+					// });
 				</script>
 				<script>
 				jQuery(document).ready(function(){
@@ -74,6 +74,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 					})
 				})
 				</script>
+				<script>
+					jQuery('.btn-orange span').on('hover', function() {
+						jQuery('.custom-btn' + '.btn_orange').trigger('hover');
+					});
+				</script>
+				<script>
+        jQuery("button").click(function() {
+          jQuery('html,body').animate({
+          scrollTop: jQuery(".second").offset().top},
+          'slow');
+          });
+        </script>
 </body>
 
 
