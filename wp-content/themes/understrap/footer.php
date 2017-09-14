@@ -36,17 +36,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row footer-color">
 			<div class="col-sm-4 offset-sm-4 d3-footer-content">
 				<div class="social-footer">
-					<a href="https://www.facebook.com/District3InnovationCentre" target="blank"><i class="fa fa-facebook"></i></a>
-			    	<a href="https://www.instagram.com/d3center/?hl=en" target="blank"><i class="fa fa-instagram"></i></a>
-			    	<a href="https://twitter.com/D3Centre?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank"><i class="fa fa-twitter"></i></a>
-			    	<a href="https://www.linkedin.com/company/district-3-innovation-center"><i class="fa fa-linkedin" target="blank"></i></a>
+					<a href="https://www.facebook.com/D3Centre/" target="blank"><i class="fa fa-facebook"></i></a>
+			    	<a href="https://www.instagram.com/d3centre/" target="blank"><i class="fa fa-instagram"></i></a>
+			    	<a href="https://www.youtube.com/channel/UCIzJb6FX7ywkwvG5RlIVDsA/featured" target="blank"><i class="fa fa-youtube"></i></a>
+			    	<a href="https://twitter.com/D3Centre" target="blank"><i class="fa fa-twitter"></i></a>
+			    	<a href="https://www.linkedin.com/company/2858911/"><i class="fa fa-linkedin" target="blank"></i></a>
+			    	<a href="https://medium.com/district3"><i class="fa fa-medium" target="blank"></i></a>
 			    </div>
 		    	<div class="d3-trademark">
 					<p>District 3 Innovation Center © 2017 proudly built in Montréal, Canada</p>	
 				</div>
 			</div>
 			<div class="col-sm-4 concordia-logo">
-				<img src="http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/Concordia_University_logo.svg.png" alt="">
+				<img src="http://dev.d3center.ca/wp-content/uploads/2017/08/Concordia_University_logo.svg.png" alt="">
 			</div>
 		</div>	
 <?php wp_footer(); ?>

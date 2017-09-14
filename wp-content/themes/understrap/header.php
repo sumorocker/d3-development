@@ -47,16 +47,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php if ( is_front_page() && is_home() ) : ?>
 
 							<div class="corner-menu">
-								<div id='corner-logo' class="bounce">
-									<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
-								</div>
+								<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+									<div id='corner-logo' class="bounce"></div>
+								</a>	
 							</div>
 							
 						<?php else : ?>
 							<div class="corner-menu">
-								<div id='corner-logo' class="black-logo">
-									<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
-								</div>
+								<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+									<div id='corner-logo' class="black-logo"></div>
+								</a>
 							</div>
 						<?php endif; ?>
 						
