@@ -64,6 +64,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						if (value == "all")
 						{
 							jQuery(".type-post").show("1000");
+							console.log('trigger');
 						}
 						else
 						{

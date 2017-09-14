@@ -90,11 +90,9 @@ code {
   opacity: 1;
 }
 &:hover:before {
-  padding-top: 250%;
+  padding-top: 200%;
   width: 200%;
-  margin-top: 50%;
-  height: 100%;
-  margin: -50%;
+  margin: -100%;
   opacity: 1;
 }
 }
@@ -142,9 +140,8 @@ code {
 }
 &:hover:before {
   padding-top: 200%;
-  margin-top: 50%;
-  width: 160%;
-  margin: -50%;
+  width: 200%;
+  margin: -100%;
   opacity: 1;
 }
 }		
@@ -190,8 +187,7 @@ code {
   opacity: 1;
 }
 &:hover:before {
-  padding-top: 250%;
-  margin-top: 50%;
+  padding-top: 200%;
   width: 200%;
   margin: -100%;
   opacity: 1;
@@ -239,7 +235,7 @@ code {
   opacity: 1;
 }
 &:hover:before {
-  padding-top: 250%;
+  padding-top: 200%;
   width: 200%;
   margin: -100%;
   opacity: 1;
@@ -399,9 +395,6 @@ textarea:focus {
 
 // fullwidth-cta-section-template
 
-.containter-fluid.cta-background{
-	padding-bottom: 200px;
-}
 
 .cta-background {
 	background-repeat: no-repeat;
@@ -414,7 +407,6 @@ textarea:focus {
 .cta-full-width{
 	padding-top: 200px;
 	padding-bottom: 200px;
-	margin-bottom: 200px;
 	display: flex;
 	flex-direction:column;
 	align-items: center;
@@ -423,16 +415,13 @@ textarea:focus {
 			text-align: center;
 		}
 		h3{
-		text-align: center;
+		text-align: left;
     	font-size: 1.25rem;
     	padding-bottom: 5%;
 		}
 
 	.text-center{
 	text-align: center;
-	h3{
-		text-align: center;
-	}
 
 	}
 }
@@ -760,7 +749,8 @@ textarea:focus {
 // portfolio section
 
 .portfolio_bg_image{
-		background-size: cover;
+		// height: 100%;
+		// transform:rotate(270deg) translate(-10%,25%);
 	}
 .portfolio-blog {
 	.row{
@@ -811,16 +801,6 @@ textarea:focus {
 			text-align: left;
 		}
 	}
-<<<<<<< HEAD
-	.startup-logo {
-		background-color:white; 
-		height: 40vh;
-		margin-bottom: 10px;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-		box-shadow: 1px 1px 37px 0px rgba(0,0,0,0.15);
-=======
 	article {
 		display: flex;
 		flex-direction: column;
@@ -846,7 +826,6 @@ textarea:focus {
 				margin-bottom: 10px;
 			}
 		}
->>>>>>> ae3b3ffc8e12ce3a9b8ff92d3cfe349d96153ae8
 	}
 	
 	.three-col-title{
@@ -869,15 +848,6 @@ textarea:focus {
 		margin-bottom: 20px;
 	}
 }
-
-
-// contact-list singularity section
-.contact-list{
-	h1{
-
-	}
-}
-
 
 // contact-section-template
 .contact-section{
@@ -1117,43 +1087,6 @@ textarea:focus {
 	text-align: right;
 	font-size: 0.5em;
 }
-
-// Singularity University
-.singularity-col-img{
-	width: 100%;
-	height: 40vh;
-	background-size: cover;
-	background-position:center;
-}
-	.category-title{
-		padding: 5% 0 5% 0;
-	}
-	.category-content {
-		padding-bottom: 5%;
-	}
-	.category-content{
-		h2{
-		padding-top: 20px;
-		}
-	}
-	.singularity-col-img_2{
-		height: 40vh;
-		width: 100%;
-		background-size: cover;
-		background-position:center;
-	}
-	.category-title_2{
-		padding: 5% 0 5% 0;
-	}
-	.category-content_2 {
-		padding-bottom: 5%;
-	}
-	.category-content_2{
-		h2{
-		padding-top: 20px;
-		}
-	}
-
 
 // startup jobs title
 
@@ -1589,23 +1522,7 @@ textarea:focus {
 }
 .text-underline-orange{
 	text-decoration: underline;
-	-webkit-text-decoration-color:#fe5e14;
-	text-decoration-color:#fe5e14;
-}
-.text-underline-yellow{
-	text-decoration: underline;
-	-webkit-text-decoration-color:#ffef14;
-	text-decoration-color:#ffef14;
-}
-.text-underline-green{
-	text-decoration: underline;
-	-webkit-text-decoration-color:#14ffc4;
-	text-decoration-color:#14ffc4;
-}
-.text-underline-blue{
-	text-decoration: underline;
-	-webkit-text-decoration-color:#08adff;
-	text-decoration-color:#08adff;
+	text-decoration-color:$orange;
 }
 
 .grid{
@@ -1695,7 +1612,6 @@ textarea:focus {
 .three-col-bg-image{
 	    height: 100%;
     width: 100%;
-    left: 0;
     position: absolute;
     background-repeat: no-repeat
 }
@@ -1952,7 +1868,7 @@ textarea:focus {
 .btn-blue span:hover:after {width: 100%;}
 
 // yellow button border: 
-.btn-yellow {
+.btn-blue {
   width: 100%;
   height: 100%;
   line-height: auto;
@@ -2049,8 +1965,6 @@ textarea:focus {
 	}
 	}	
 	.custom-btn {
-		width: 100%;
-		height: 100%;
   /*padding: 10px 25px;*/
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -2283,8 +2197,8 @@ textarea:focus {
 			background-size: 20px 20px;    
 			background-image: repeating-linear-gradient(0deg, rgba(255,239,20,0.25), rgba(255, 239, 18, 0.25) 1px, transparent 1px, transparent 20px),
 							  repeating-linear-gradient(-90deg, rgba(255,239,20,0.25), rgba(255,239,20,0.25) 1px, white 1px, white 20px) !important;
-			z-index: 1;
-			background-color: white !important;
+			z-index: 11;
+			background-color: white;
 		}
 	
 		.orangegrid{
@@ -2418,7 +2332,7 @@ textarea:focus {
 	  z-index: -1;
 	  border-radius: 100%;
 	  transition: 400ms ease;
-	  // margin-top: 50%;
+	  margin-top: 50%;
 	  margin-left: -50%;
 	  background: $orange;
 	  height: 0px;
@@ -2885,7 +2799,7 @@ textarea:focus {
  //    z-index: 150;
 	// }
 	.black-logo{
-	background-image: url('http://dev.d3center.ca/wp-content/uploads/2017/08/orange-logo.svg');
+	background-image: url('http://localhost:8888/d3-dev-3/wp-content/uploads/2017/08/orange-logo.svg');
 	border: 0px;
     height: 70px;
     width: 70px;

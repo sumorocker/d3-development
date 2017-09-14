@@ -56,7 +56,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="corner-menu">
 								<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 									<div id='corner-logo' class="black-logo"></div>
-								</a>
+								</a> 
 							</div>
 						<?php endif; ?>
 						
