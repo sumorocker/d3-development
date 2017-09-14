@@ -3,8 +3,8 @@
  * @package understrap
  */
 ?>
-<img class="portfolio_bg_image" style="position:absolute; right:0;" src="<?php the_field('portfolio_bg_image'); ?>" alt="">
-<div class="portfolio">
+<img class="portfolio_bg_image" alt="">
+<div class="portfolio greygrid-1" style="background-image:url('<?php the_field('portfolio_bg_image'); ?>')">
 	<img class="scrollme animateme three-img"
         data-when="enter"
         data-from="1"
@@ -28,7 +28,7 @@
 			<div class="startup-logo" style="background-image:url('<?php the_sub_field('startup_logo')?>');"></div>
 				<h3><?php the_sub_field('startup_name'); ?></h3>
 				<p><?php the_sub_field('startup_txt'); ?></p>
-			<button class="btn_orange" style="display:<?php the_field('header_button_display'); ?>"><a href="<?php the_sub_field('startup_button_link'); ?>" target="blank"><?php the_sub_field('startup_button_txt'); ?></a></button>
+			<button class="btn_orange" style="display:<?php the_field('header_button_display_1'); ?>"><a href="<?php the_sub_field('startup_button_link'); ?>" target="blank"><?php the_sub_field('startup_button_txt'); ?></a></button>
 		</div>
 	<?php }; ?>
 	<?php endwhile; endif; ?>
