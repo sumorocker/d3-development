@@ -20,7 +20,8 @@
 
 
 <div class="portfolio-blog">
-
+<h1 class='portfolio-section-headers'>Current</h1>
+<p class="portfolio-section-content"><?php the_field('content_1'); ?></p>
 <div class="filter-container"> 
     <ul>
     <li class="button active" data-filter="post">All</li>
@@ -33,9 +34,9 @@
         <li class="button" data-filter="category-education-current">Education</li>
 </ul>
 </div>
-<h1 class='events-section-headers'>Current</h1>
-<p class="event-section-content"><?php the_field('content_1'); ?></p>
-  <div class="events-section row justify-content-center">
+
+
+  <div class="portfolio-section row justify-content-center">
 
 
 <?php 
@@ -62,10 +63,22 @@ endif;
 
 ?>
 </div>
+
+<h1 class='portfolio-section-headers'>Alumni</h1>
+<p class='portfolio-section-content'>Hear from renowned guest speakers eager to share their insights.</p>
+<div class="filter-container"> 
+    <ul>
+    <li class="button active" data-filter="post">All</li>
+        <li class="button" data-filter="category-hardware-alumni">Hardware</li>
+        <li class="button" data-filter="category-software-alumni">Software</li>
+        <li class="button" data-filter="category-social-innovation-alumni">Social Innovation</li>
+        <li class="button" data-filter="category-life-sciences-alumni">Life Sciences</li>
+        <li class="button" data-filter="category-ai-alumni">AI</li>
+        <li class="button" data-filter="category-e-commerce-alumni">E-Commerce</li>
+        <li class="button" data-filter="category-education-alumni">Education</li>
+</ul>
 </div>
-<h1 class='events-section-header'>Alumni</h1>
-<p class='event-section-content'>Hear from renowned guest speakers eager to share their insights.</p>
-<div class="events-section row justify-content-center">
+<div class="portfolio-section row justify-content-center">
 <?php 
 $cat = new WP_Query( array( 'category_name' => 'alumni', 'posts_per_page' => '3', 'orderby'=> 'title', 'order' => 'ASC'  ) );
 
@@ -93,7 +106,7 @@ endif;
  </div>
 
 </div>
-
+</div>
 
 <?php
 	get_footer();
