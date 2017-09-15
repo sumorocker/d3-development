@@ -59,7 +59,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</script>
 				<script>
 				jQuery(document).ready(function(){
-					jQuery(".button").click(function(){
+					jQuery(".current-filter").click(function(){
 						var value = jQuery(this).attr("data-filter");
 						if (value == "all")
 						{
@@ -69,8 +69,29 @@ $container = get_theme_mod( 'understrap_container_type' );
 						{
 							jQuery(".type-post").not("."+value).hide("1000");
 							jQuery(".type-post").filter("."+value).show("1000");
+							jQuery(".type-post").filter(".category-alumni").show("1000");
 						}
-						jQuery("ul .button").click(function(){
+						jQuery(".current-filter-ul .current-filter").click(function(){
+							jQuery(this).addClass('active').siblings().removeClass('active');
+						})
+					})
+				})
+				</script>
+				<script>
+				jQuery(document).ready(function(){
+					jQuery(".alumni-filter").click(function(){
+						var value = jQuery(this).attr("data-filter");
+						if (value == "all")
+						{
+							jQuery(".type-post").show("1000");
+						}
+						else
+						{
+							jQuery(".type-post").not("."+value).hide("1000");
+							jQuery(".type-post").filter("."+value).show("1000");
+							jQuery(".type-post").filter(".category-current").show("1000");
+						}
+						jQuery(".alumni-filter-ul .alumni-filter").click(function(){
 							jQuery(this).addClass('active').siblings().removeClass('active');
 						})
 					})

@@ -16,7 +16,7 @@
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 </div>
 	<div class="text">
-	<div class="category-tag"><?php the_category( $separator, $parents, $post_id ); ?></div>
+	<div class="category-tag"><?php the_tags( '', $sep, $after ); ?></div>
 	<p><?php the_field('description'); ?></p>
 	<a href="<?php the_field('link'); ?>"><button class="btn_orange"><header class="entry-header">
 
