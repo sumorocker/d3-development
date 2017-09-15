@@ -40,8 +40,7 @@
         data-to="0"
         data-translatey="200">
 			<h3><?php the_field('right_txt_1'); ?></h3>
-			<button  class="<?php the_field('button_color'); ?>" style="display: <?php the_field('button_display_1');?>;">
-                        <a href="<?php the_field('button_link'); ?>"><?php the_field('button_txt_1'); ?></a></button>
+			<a href="<?php the_field('button_link'); ?>"><button  class="<?php the_field('button_color'); ?>" style="display: <?php the_field('button_display_1');?>;"><?php the_field('button_txt_1'); ?></button></a>
 		</div>
 	</div>
 </div>

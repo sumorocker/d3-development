@@ -42,6 +42,14 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 			<!-- Do the left sidebar check and opens the primary div -->
 	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
 			<main class="site-main" id="main">
+				<div class="blog-section-header">
+					<div class="blog-section-header-grid greygrid-1">
+						<h1 class="col-sm-6">
+							District 3 Blog
+						</h1>
+						<h2 class="col-sm-6">Giving you the latest news and insights around innovation.</h2>
+					</div>
+				</div>
 				<?php get_template_part( 'section-templates/filter-blog-3col-section'); ?>
 				<div class="row">
 				<?php if ( have_posts() ) : ?>

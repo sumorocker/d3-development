@@ -23,7 +23,7 @@
 						<span>
 							<h2><?php the_sub_field('h1'); ?></h2>
 							<p><?php the_sub_field('p'); ?></p>
-							<button href='<?php the_sub_field('button_link'); ?>' class="<?php the_sub_field('button_color'); ?>"><?php the_sub_field('button_text'); ?></button>
+							<a href='<?php the_sub_field('button_link'); ?>'><button class="<?php the_sub_field('button_color'); ?>"><?php the_sub_field('button_text'); ?></button></a>
 						</span>
 					</div>
 				</div>

@@ -27,7 +27,7 @@
 					<div class="navigation-item greygrid btn-orange" style="background-image:url('<?php the_sub_field('img'); ?>')!important"><span>
 						<h2><?php the_sub_field('h1'); ?></h2>
 						<p><?php the_sub_field('p'); ?></p>
-						<button  href='<?php the_sub_field('button_link'); ?>' class="btn_orange"><?php the_sub_field('button_text'); ?></button>
+						<a href='<?php the_sub_field('button_link'); ?>'><button class="btn_orange"><?php the_sub_field('button_text'); ?></button></a>
 					</span>
 					</div>
 				</div>
@@ -45,7 +45,7 @@
 	                 <span>
 	                	<h2><?php the_sub_field('h1'); ?></h2>
 						<p><?php the_sub_field('p'); ?></p>
-                		<button class="<?php the_sub_field('button_color'); ?>" style="display: <?php the_field('button_display');?>;"><a href="<?php the_sub_field('button_link'); ?>"><?php the_sub_field('button_text'); ?></a></button>
+                		<a href="<?php the_sub_field('button_link'); ?>"><button class="<?php the_sub_field('button_color'); ?>" style="display: <?php the_field('button_display');?>;"><?php the_sub_field('button_text'); ?></button></a>
                 	</span>
 				</div>
 			</div>
