@@ -19,7 +19,7 @@
 
 		<div class="two-col-txt-right col-lg-3 offset-lg-1">
 			<h3><?php the_field('right_txt'); ?></h3>
-			<button class="<?php the_field('button_color'); ?>" style="display: <?php the_field('button_display');?>;"><a href="<?php the_field('button_link'); ?>"><?php the_field('button_txt'); ?></a></button>
+			<a href="<?php the_field('button_link'); ?>"><button class="<?php the_field('button_color'); ?>" style="display: <?php the_field('button_display');?>;"><?php the_field('button_txt'); ?></button></a>
 		</div>
 	</div>
 </div>

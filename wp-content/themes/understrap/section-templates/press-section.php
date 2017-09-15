@@ -11,7 +11,7 @@
 	<div class="blog-footer-post col-lg-2" style="background-image: url('<?php the_sub_field('press_article_img'); ?>'); ">
 		<div class="blog-footer-post-content">
 		<h3><?php the_sub_field('press_article_title'); ?></h3>
-		<button class="white-btn"><a href="<?php the_sub_field('press_article_link'); ?>">Read More</a></button>
+		<a href="<?php the_sub_field('press_article_link'); ?>"><button class="white-btn">Read More</button></a>
 		</div>
 	</div>
 	<?php endwhile; endif; ?>

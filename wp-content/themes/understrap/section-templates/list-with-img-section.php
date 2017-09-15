@@ -21,7 +21,6 @@
       </ul>
       <?php endwhile; endif; ?>
   </div>
-  <img class="list-img" src="<?php the_field('background_img')?>" alt="">
   <img class="grid-1 scrollme animateme"
         data-when="enter"
         data-from="1"

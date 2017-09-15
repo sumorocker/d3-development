@@ -20,6 +20,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="apple-mobile-web-app-title" content="<?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i|Space+Mono:400,400i,700,700i" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -56,7 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="corner-menu">
 								<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 									<div id='corner-logo' class="black-logo"></div>
-								</a>
+								</a> 
 							</div>
 						<?php endif; ?>
 						

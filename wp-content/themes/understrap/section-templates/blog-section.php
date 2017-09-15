@@ -4,8 +4,17 @@
  */
 ?>
 <div class="blog-section">
+
 <div class="row justify-content-center community-blog">
 	<?php 
+	function excludeCat($query) {
+		if ( $query->is_front_page() && is_home()) {
+		$query->set('cat', '-1,-9,-3,-28,-27,-24,-19,-22,-21,-17,-23,-30,-20,-18,-5');
+		}
+		return $query;
+		}
+		add_filter('pre_get_posts', 'excludeCat');
+
 	$query = new WP_Query( array( 'category_name' => 'community', 'posts_per_page' => '4' ) );
 
 	if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); 

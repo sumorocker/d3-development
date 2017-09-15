@@ -22,12 +22,12 @@
 		<div class="private-tour">
 			<h3>Private Tour</h3>
 			<p><?php the_field('private_tour_txt'); ?></p>
-			<button class="<?php the_field('button_color'); ?>"><a href="<?php the_field('private_tour_btn_link'); ?>"><?php the_field('private_tour_btn'); ?>Book</a></button>
+			<a href="<?php the_field('private_tour_btn_link'); ?>"><button class="<?php the_field('button_color'); ?>"><?php the_field('private_tour_btn'); ?>Book</button></a>
 		</div>
 		<div class="public-tour">
 			<h3>Public Tour</h3>
 			<p><?php the_field('public_tour_txt'); ?></p>
-			<button class="<?php the_field('button_color'); ?>"><a href="<?php the_field('public_tour_btn_link'); ?>"><?php the_field('public_tour_btn'); ?>Join</a></button>
+			<a href="<?php the_field('public_tour_btn_link'); ?>"><button class="<?php the_field('button_color'); ?>"><?php the_field('public_tour_btn'); ?>Join</button></a>
 			</div>
 			<div class="social-links">
 			<div class="container text-left">
@@ -37,9 +37,6 @@
     target="blank"><i class="fa fa-twitter"></i></a>
     <a href="https://www.linkedin.com/company/district-3-innovation-center"><i class="fa fa-linkedin" target="blank"></i></a>
 			</div>
-
-    
- 
   </div>
 
 		</div>
