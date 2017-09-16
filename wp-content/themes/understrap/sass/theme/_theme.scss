@@ -1073,6 +1073,12 @@ textarea:focus {
 
 // profile-section-template
 
+.profile-section:nth-child(6){
+	.profile-txt{
+		background-size: cover !important;
+	}
+}
+
 .profile-section-template{
 	background-repeat: no-repeat;
 
