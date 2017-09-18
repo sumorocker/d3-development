@@ -10,7 +10,7 @@
 
    <?php if(have_rows('singularity-section_2')) : while(have_rows('singularity-section_2')) : the_row(); ?>
   	
-  	<div class='singularity-section-color col-lg-12 <?php the_sub_field('category_grid_2'); ?>' style="border-top: dashed 3px <?php the_sub_field('category_text_color_2'); ?>">
+  	<div class='singularity-section-color col-lg-12 <?php the_sub_field('category_grid_2'); ?>' style="border-top: solid 3px <?php the_sub_field('category_text_color_2'); ?>">
 	  	
 	  	<div style="text-align:center;"  class="row justify-content-center">
 				

@@ -1358,9 +1358,10 @@ textarea:focus {
 
 .wrapper{
 		padding-top: 0px !important;
+		background: #eceded;
 	}
 .newsletter-section-template{
-	background-color: #e0e0e0;
+	background-color: #eceded;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1403,7 +1404,7 @@ textarea:focus {
 		padding-right: 10px;
 	}
 	input.input-text-font{
-		background-color: #e0e0e0;
+		background-color: #eceded;
 		padding-left: 0px;
 		border-bottom: $orange 3px solid;
 	}
@@ -1540,6 +1541,10 @@ textarea:focus {
 
 
 // grid blog table-layout
+
+.menu-item{
+	width: 100%;
+}
 
 .understrap-read-more-link{
 	// position: absolute;
@@ -1826,6 +1831,7 @@ button.btn_yellow{
 button.btn_green{
 	margin-bottom: 25px;
 }
+
 
 // district fellowship nav
 
@@ -2607,8 +2613,8 @@ button.btn_green{
 
 	#menu{
 	 font-size: 12px;
-	 height: 300px;
-	 padding-top: 10%;
+	 height: 200px;
+	 padding-top: 5%;
     -webkit-column-count: 4;
        -moz-column-count: 4;
             column-count: 4;
@@ -2654,7 +2660,7 @@ button.btn_green{
 	display: inline-block;
 }
 .footer-color{
-	background-color: #e0e0e0;
+	background-color: #eceded;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
