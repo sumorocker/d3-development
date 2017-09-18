@@ -23,6 +23,10 @@
 		<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 		
 		<div class="entry-content">
+		
+			<?php if( get_field('post-link') ){ ?>
+				<a class="btn btn-secondary understrap-read-more-link" href="<?php the_field('post-link'); ?>"><?php the_field('text-link') ?></a>		
+			<?php }else{ ?>
 
 			<?php
 			the_excerpt();
@@ -34,6 +38,8 @@
 				'after'  => '</div>',
 			) );
 			?>
+
+			<?php }?>
 
 		</div><!-- .entry-content -->
 

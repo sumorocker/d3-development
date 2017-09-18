@@ -11,7 +11,7 @@
         data-from="1"
         data-to="0"
         data-translatey="200"
-		src="<?php the_field('background_img'); ?>" alt="">
+		src="<?php the_field('background_img'); ?>" style="mix-blend-mode: multiply;" alt="">
 	<div class="row">
 		<div class="offset-lg-1 col-lg-6 three-col-title">
 			<h1 style="text-decoration-color:<?php the_field('background_color') ?>"><?php the_field('three_col_header'); ?></h1>

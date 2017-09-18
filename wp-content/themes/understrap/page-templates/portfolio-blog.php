@@ -25,7 +25,7 @@
 <p class="portfolio-section-content"><?php the_field('content_1'); ?></p>
 <div class="filter-container"> 
     <ul class="current-filter-ul">
-    <li class="current-filter active" data-filter="post">All</li>
+    <li class="current-filter active" data-filter="category-current">All</li>
         <li class="current-filter" data-filter="tag-hardware">Hardware</li>
         <li class="current-filter" data-filter="tag-software">Software</li>
         <li class="current-filter" data-filter="tag-social-innovation">Social Innovation</li>
@@ -69,7 +69,7 @@ endif;
 <p class='portfolio-section-content'>Hear from renowned guest speakers eager to share their insights.</p>
 <div class="filter-container"> 
     <ul class="alumni-filter-ul">
-    <li class="alumni-filter active" data-filter="post">All</li>
+    <li class="alumni-filter active" data-filter="category-alumni">All</li>
         <li class="alumni-filter" data-filter="tag-hardware">Hardware</li>
         <li class="alumni-filter" data-filter="tag-software">Software</li>
         <li class="alumni-filter" data-filter="tag-social-innovation">Social Innovation</li>

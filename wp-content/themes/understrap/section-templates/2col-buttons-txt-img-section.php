@@ -13,7 +13,7 @@
 	<div class="row justify-content-center">
 	<img class="bg_image" src="<?php the_field('bg_image') ?>" alt="">
 		<?php if(have_rows('navigation_col')) : while(have_rows('navigation_col')) : the_row(); ?>
-				<?php if(is_page('district-fellowship')){ ?>
+				<?php if(is_page('district-fellowship') || is_page('corporations')){ ?>
 					<div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 navigation-spacing">
 				<?php }else{ ?>
 					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 navigation-spacing">

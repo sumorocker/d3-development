@@ -9,6 +9,14 @@
 		<h1 style="text-decoration-color:<?php the_field('background_color') ?>"><?php the_field('profile_section_title'); ?></h1>
 	</div>
 </div>
+<?php if(is_page('design-lab')){ ?>
+	<style>
+		.profile-section .profile-txt{
+				background-size: cover;	
+				width: 100%;
+				}
+	</style>
+<?php }; ?>
 <?php if(have_rows('profile')) : while(have_rows('profile')) : the_row(); ?>
 	<div class="row profile-section" >
 	  <div class="profile-image col-md-12 col-lg-6" style="background-image:url('<?php the_sub_field('img_1')?>');">

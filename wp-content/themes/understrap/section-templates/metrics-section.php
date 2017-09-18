@@ -5,7 +5,7 @@
 ?>
 
 <div class="metrics-section">
-<img class="metric-section-bg" src="<?php the_field('metrics_section_bg'); ?>" alt="">
+<!-- <img class="metric-section-bg" src="<?php the_field('metrics_section_bg'); ?>" alt=""> -->
 <div class="row">
   <div class="offset-lg-2 col-lg-6">
     <h1 class="metrics_header text-underline-orange"><?php the_field('metrics_header'); ?></h1>

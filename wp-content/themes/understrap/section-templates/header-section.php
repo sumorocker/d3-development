@@ -7,7 +7,7 @@
 <div class="header-section">
   <div class='row header-col-2 justify-content-center' style="flex-direction:<?php the_field('image_align'); ?>;">
   <div class="lines"></div>
-  <!-- <img class="header_background_img" src="<?php the_field('header_background_img'); ?>" alt=""> -->
+  <!--  -->
     <div class="header-text col-sm-6" >
     <div class="header_background_grid greygrid-1">
     </div>
@@ -22,7 +22,7 @@
     <?php if(is_page('home')){ ?>
       <div>
           <label id="arrow">
-            <p>explore our community</p>
+            <p>Explore our Community</p>
             <button style="button:focus {outline:0;}"type="button"></button>
           </label>
       </div>
