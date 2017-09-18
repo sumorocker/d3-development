@@ -50,7 +50,3 @@ endif;
 <?php wp_reset_query();  // Restore global post data stomped by the_post(). ?>
 
  </div>
- <div style="text-align:center;padding-bottom:5%;">
-<h2 style="text-align:center;padding-bottom:2%">Don’t see any opportunities?<br>Work with District 3 or join a project </h2>
-<a href="http://dev.d3center.ca/d3-careers/"><button class="btn_orange">Register Here</button></a>
-</div>
