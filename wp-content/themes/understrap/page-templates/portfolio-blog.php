@@ -66,7 +66,6 @@ endif;
 </div>
 
 <h1 class='portfolio-section-headers'>Alumni</h1>
-<p class='portfolio-section-content'>Hear from renowned guest speakers eager to share their insights.</p>
 <div class="filter-container"> 
     <ul class="alumni-filter-ul">
     <li class="alumni-filter active" data-filter="category-alumni">All</li>

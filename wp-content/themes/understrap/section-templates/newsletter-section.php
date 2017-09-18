@@ -11,7 +11,7 @@
 				<div class="col-lg-6">
 					<div class="offset-lg-2 col-lg-8 subscribe-text">
 						<h3>
-							Subscribe to Our newsletter
+							Subscribe to Our Newsletter
 						</h3>
 					</div>
 				</div>
