@@ -784,6 +784,59 @@ textarea:focus {
 
 // portfolio section
 
+.success-stories-section{
+	.community-blog{
+	margin: 0;
+	color: black;
+	.blog-single{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		background-color: white;
+		color:black;
+		height: 50vh;
+		article{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			background: white;
+			
+		}
+		img{
+			width: auto;
+			height: auto;
+			max-width: 75%;
+			max-height: 20vh;
+			
+			padding: 10px 0;
+		}
+
+		p{
+		font-size: 13px;
+		color: black;	
+		}
+		.entry-header{
+			.entry-title{
+				padding: 25px;
+			}
+		}
+		.entry-content{
+			color: black !important;
+			display: flex;
+			flex-direction: column;
+			height: 55%;
+			justify-content: space-between;
+			p{
+				color:black;
+			}
+		}
+	}
+	}
+	
+}
+
 .portfolio_bg_image{
 		background-size: cover;
 	}
@@ -1494,7 +1547,7 @@ textarea:focus {
 	}
 
 		.entry-title{
-		text-shadow: 5px 5px 18px black;
+		// text-shadow: 5px 5px 18px black;
 		}
 		.btn-secondary{
 		    border-radius: 0px;
@@ -2962,7 +3015,7 @@ button.btn_green{
 	}
 
 		.entry-title{
-		text-shadow: 5px 5px 18px black;
+		// text-shadow: 5px 5px 18px black;
 		}
 		.btn-secondary{
 		    border-radius: 0px;
