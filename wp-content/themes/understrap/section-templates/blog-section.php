@@ -10,7 +10,7 @@
 <div class="row justify-content-center community-blog">
 	<?php 
 
-	$query = new WP_Query( array( 'category_name' => 'launch', 'posts_per_page' => '4' ) );
+	$query = new WP_Query( array( 'category_name' => 'success-stories', 'posts_per_page' => '4' ) );
 
 	if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); 
 	?>
@@ -37,7 +37,7 @@
 <div class="row justify-content-center community-blog">
 	<?php 
 
-	$query = new WP_Query( array( 'category_name' => 'success-stories', 'posts_per_page' => '4' ) );
+	$query = new WP_Query( array( 'category_name' => 'launch', 'posts_per_page' => '4' ) );
 
 	if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); 
 	?>
