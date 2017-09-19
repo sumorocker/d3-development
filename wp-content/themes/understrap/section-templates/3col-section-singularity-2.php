@@ -18,7 +18,7 @@
 				<div class="row justify-content-center" style="width:80%;">
 					<?php if(have_rows('singularity_speaker_2')) : while(have_rows('singularity_speaker_2')) : the_row(); ?>
 
-						<div class="category-content_2 col-lg-4">
+						<div class="category-content_2 col-lg-3">
 							
 							<div class="singularity-col-img_2" style="border:solid 3px <?php the_sub_field('category_color'); ?>; background-image:url('<?php the_sub_field('img')?>');"></div>
 								

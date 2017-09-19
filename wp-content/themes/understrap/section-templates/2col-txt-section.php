@@ -13,7 +13,7 @@
 	<div class="row two-col-txts">
 		
 		<img src="<?php the_field('grid_1') ?>" alt="" style="height:250px; z-index:-100;right: 48%;position:absolute;">
-		<div class="two-col-txt-left col-lg-4 offset-lg-2" style="display: <?php the_field('txt-left') ?>">
+		<div class="two-col-txt-left col-lg-4 offset-lg-2 col-sm-12" style="display: <?php the_field('txt-left') ?>">
 			<h1><?php the_field('left_title'); ?></h1>
 		</div>
 

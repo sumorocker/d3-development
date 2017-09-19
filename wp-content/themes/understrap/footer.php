@@ -48,7 +48,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 			</div>
 			<div class="col-sm-4 concordia-logo">
-				<img src="http://dev.d3center.ca/wp-content/uploads/2017/09/univesity-logo.png" alt="">
+				<img src="http://dev.d3center.ca/wp-content/uploads/2017/09/Concordia-Logo-BLACK.jpg" alt="">
 			</div>
 		</div>	
 <?php wp_footer(); ?>

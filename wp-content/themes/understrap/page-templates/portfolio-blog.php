@@ -12,13 +12,11 @@
 
 <div>
   <?php 
-        get_template_part('section-templates/header-section');
-        get_template_part('section-templates/3col-list-section');
-        get_template_part('section-templates/blog-section');
+  get_template_part('section-templates/3col-list-section');
+  get_template_part('section-templates/metrics-section');
+      
   ?>
-
 </div>
-
 
 <div class="portfolio-blog">
 <h1 class='portfolio-section-headers'>Current</h1>
@@ -26,8 +24,8 @@
 <div class="filter-container"> 
     <ul class="current-filter-ul">
     <li class="current-filter active" data-filter="category-current">All</li>
-        <li class="current-filter" data-filter="tag-hardware">Hardware</li>
-        <li class="current-filter" data-filter="tag-software">Software</li>
+        <!-- <li class="current-filter" data-filter="tag-hardware">Hardware</li> -->
+        <!-- <li class="current-filter" data-filter="tag-software">Software</li> -->
         <li class="current-filter" data-filter="tag-social-innovation">Social Innovation</li>
         <li class="current-filter" data-filter="tag-life-sciences">Life Sciences</li>
         <li class="current-filter" data-filter="tag-ai">AI</li>

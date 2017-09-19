@@ -9,7 +9,7 @@
         <div class="faq-title-section col-md-6 col-sm-12">
           <span><h1 style="border:2px solid <?php the_field('background_color') ?>" class="faq-title">FAQ</h1></span>
         </div>
-        <div class="accordion col-md-6 col-sm-12">
+        <div class="accordion col-md-6 col-sm-10">
         <?php if(have_rows('question_answer')) : while(have_rows('question_answer')) : the_row(); ?>
           <div class="accordion-section">
             <a class="accordion-section-title" style="border-bottom:1px solid <?php the_field('background_color') ?>" href="#<?php the_sub_field('accordion_class'); ?>">

@@ -15,7 +15,7 @@
 		<div class="row row_1">
 			<?php if(have_rows('categories_list')) : while(have_rows('categories_list')) : the_row(); ?>
 				<?php if( get_sub_field('list_left_item') ): ?>
-					<div class="list col-lg-3">
+					<div class="list col-lg-3 col-md-6">
 						<div class="img-w-category-left <?php the_field('grid-color'); ?>" >
 							<ul>
 								<li class="category-section-item" style="background: <?php the_field('background_color'); ?>;background-image: url(<?php the_sub_field('background_left_img'); ?>);"><h1><?php the_sub_field('list_left_item'); ?></h1></li>
@@ -28,7 +28,7 @@
 		<div class="row row_2">
 			<?php if(have_rows('categories_list')) : while(have_rows('categories_list')) : the_row(); ?>
 				<?php if( get_sub_field('list_right_item') ): ?>
-					<div class="list col-lg-3">
+					<div class="list col-lg-3 col-md-6">
 						<div class="img-w-category-right <?php the_field('grid-color'); ?>" >
 							<ul style="margin-bottom: 0rem;">
 								<li class="category-section-item" style="background: <?php the_field('background_color'); ?>;background-image: url(<?php the_sub_field('background_right_img'); ?>);"><h1><?php the_sub_field('list_right_item'); ?></h1></li>

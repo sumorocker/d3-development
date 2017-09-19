@@ -8,13 +8,13 @@
 <img class="bg_img_1" src="<?php the_field('bg_img_1') ?>" alt="">
 	<div class="row two-col-txts" >	
                 <?php if(is_page('singularity-university')){ ?>
-                <div class="two-col-txt-left col-lg-4 offset-lg-2 scrollme animateme three-img"
+                <div class="two-col-txt-left col-lg-4 col-sm-12 offset-lg-2 scrollme animateme three-img"
         data-when="enter"
         data-from="1"
         data-to="0"
         data-translatey="100" style="display: <?php the_field('txt-left_1') ?>">
                 <?php }else{ ?>
-                <div class="two-col-txt-left col-lg-3 offset-lg-3 scrollme animateme three-img"
+                <div class="two-col-txt-left col-lg-3 col-sm-12 offset-lg-3 scrollme animateme three-img"
         data-when="enter"
         data-from="1"
         data-to="0"

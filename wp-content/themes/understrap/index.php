@@ -72,7 +72,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 						<?php get_template_part( 'loop-templates/content', 'none' ); ?>
 
-					<?php endif; ?>
+					<?php endif;?>
 				</div>
 				<div class="pagination-1"><?php understrap_pagination(); ?></div>
 			</main><!-- #main -->

@@ -7,7 +7,8 @@
 <div class="singularity-presenter-section">
   
   <div class='row justify-content-center'>
-
+	<h1 class="text-underline-orange" style="text-align:center; padding-bottom: 1.5em;">Meet the<br>Montreal Speakers</h1>
+	<!-- acf replace -->
    <?php if(have_rows('singularity-section')) : while(have_rows('singularity-section')) : the_row(); ?>
   	
   	<div class='singularity-section-color col-lg-12 <?php the_sub_field('category_grid'); ?>' style="border-top: solid 3px <?php the_sub_field('category_text_color'); ?>">
@@ -18,7 +19,7 @@
 				<div class="row justify-content-center" style="width:80%;">
 					<?php if(have_rows('singularity_speaker')) : while(have_rows('singularity_speaker')) : the_row(); ?>
 
-						<div class="category-content col-lg-4">
+						<div class="category-content col-lg-3">
 							
 							<div class="singularity-col-img" style="border:solid 3px <?php the_sub_field('category_color'); ?>; background-image:url('<?php the_sub_field('img')?>');"></div>
 								

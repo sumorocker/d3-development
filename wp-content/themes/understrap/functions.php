@@ -78,3 +78,13 @@ require get_template_directory() . '/inc/filtration.php';
 
 require get_template_directory() . '/inc/editor.php';
 
+add_action( 'pre_get_posts', 'my_exclude_cat' );
+
+function my_exclude_cat( $query ) {
+
+	if ( $query->is_main_query() && $query->is_home() ) {
+
+		$query->set( 'cat', '-24, -44, -9, -16, -28' );
+	}
+}
+
